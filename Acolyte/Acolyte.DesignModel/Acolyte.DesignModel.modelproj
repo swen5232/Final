@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7b20c968-d6a6-4b01-a940-952a1a00b99b}</ProjectGuid>
+    <ProjectGuid>{145a361a-7c5b-42ec-9c7f-8e3ada60b329}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
     <Name>Acolyte.DesignModel</Name>
     <RootNamespace>Acolyte.DesignModel</RootNamespace>
