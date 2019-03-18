@@ -23,6 +23,13 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="AcolyteBrainstorm.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AcolyteBrainstorm.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AcolyteBrainstorm.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Acolyte.AnalysisModel.uml">
       <SubType>Content</SubType>
     </Content>

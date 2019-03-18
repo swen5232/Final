@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="2b489d00-d9e6-480c-98e2-01a428dd0c4f" name="AcolyteBrainstorm" linkedPackageId="b46e98bb-45e2-43d4-95a6-eecef1f2ad9c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="82e81b7d-4ae7-4f6c-b9a4-8a4c87a68966">
+      <elementDefinition Id="1f3e2676-d869-40f7-851d-f2ab593b007a" />
+      <body>Display System Stats
+- RAM
+- Network Usage
+- CPU utilization etc
+Manage Settings
+- Bluetooth
+- Wifi
+- Keylogging
+Application Assistance
+- Open/Close Applications
+Web Browser Assistance
+- Reload a page 
+- New tab
+- New window 
+- Bookmark
+- previous page
+- Browser History</body>
+    </comment>
+    <comment Id="3c4a4efd-2487-4a4b-ace7-fd3e5ba2ca1c">
+      <elementDefinition Id="5f66ddbc-c27d-458b-8ccb-199611e84e89" />
+      <body>Functional Requirements</body>
+      <annotatedElements>
+        <commentMoniker Id="82e81b7d-4ae7-4f6c-b9a4-8a4c87a68966" />
+        <commentMoniker Id="d2230f10-b4b0-4efb-bbfa-9cf0938a88fc" />
+      </annotatedElements>
+    </comment>
+    <comment Id="c120986e-a26c-4ab0-99f9-5a68dfac06b6">
+      <elementDefinition Id="6f682618-5647-470e-84a7-262c6f24f808" />
+      <body>constraints
+no outside access, only user may access</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="f80c9bf7-f58e-4add-8eb4-bcacfa170257">
+      <profileInstance Id="3d18beb4-0301-4915-bdc0-904366aef2e8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1337423d-8361-4804-a7f3-5dc2fc046c5d">
+      <profileInstance Id="2018ff1a-de8c-456d-ae6d-60365e2cff64" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="0dc02442-d03e-4498-ab0a-4c999f0cab1f" name="Acolyte" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="d2230f10-b4b0-4efb-bbfa-9cf0938a88fc">
+            <elementDefinition Id="e3019e7e-2ab1-4496-a8a6-35e75bdfd026" />
+            <body>A personal assistant that helps less tehnologically savvy people interface with their computer by providing useful statistics and performing basic functions</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="474de911-a3c4-4a00-8854-9e14db48c8ee" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fd5cadb2-4d00-4dbf-8723-c1c94d798287" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <suppliersInternal>
+          <dependency Id="c01bda99-46e4-4f74-89e3-e73badcd7876">
+            <subsystemMoniker Id="0dc02442-d03e-4498-ab0a-4c999f0cab1f" LastKnownName="Acolyte" />
+            <elementDefinition Id="120664a7-1292-4b48-a5e2-9b3812e02fa0" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b46e98bb-45e2-43d4-95a6-eecef1f2ad9c" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>
