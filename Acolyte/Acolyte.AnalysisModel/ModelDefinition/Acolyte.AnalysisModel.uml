@@ -84,7 +84,524 @@ no outside access, only user may access</body>
               LastKnownLocation="Acolyte.AnalysisModel.uml" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="250d01d3-0486-4d03-a01d-64e488d26a21"
+            isDerived="false"
+            sourceEndRoleName="Computer User"
+            targetEndRoleName="Manage Computer Settings"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="97553236-c79b-4807-a4c2-90a8da42d921"
+              LastKnownName="Manage Computer Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37edc0ec-0dc7-489d-88e1-380d6835d666"
+                  name="Computer User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f261471-8401-4ee9-9398-18e352074eb6"
+                  name="Manage Computer Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="764961a3-c99f-49ca-8616-1c0fc46e8648"
+            isDerived="false"
+            sourceEndRoleName="Computer User"
+            targetEndRoleName="View Computer Statistics"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="af3590b5-70c9-4011-818e-77e81b8050ec"
+              LastKnownName="View Computer Statistics"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6df503dd-c25f-49f2-91f6-6d0844f51868"
+                  name="Computer User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="159d9236-0bc7-48af-a272-c5a19bcad7d7"
+                  name="View Computer Statistics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="51b6bf58-d49d-4e8b-bab7-9b2beee7c792"
+            isDerived="false"
+            sourceEndRoleName="Computer User"
+            targetEndRoleName="Application Assistance"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0224307a-66bc-42c7-b6fe-e42bbda8b6b8"
+              LastKnownName="Application Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60ec8bc0-a0fa-4b5b-a423-3d5ee4a5faa9"
+                  name="Computer User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11a0720b-ee80-4401-ac95-290f428fde82"
+                  name="Application Assistance"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f4b9d8d8-b16d-4be6-bef5-3c02bccf4ad8"
+            isDerived="false"
+            sourceEndRoleName="Computer User"
+            targetEndRoleName="Web Browser Assistance"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23e4754c-8935-462c-8109-2def7b91b84c"
+                  name="Computer User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c31adc8-4099-4234-b29f-d9e14153a6b5"
+                  name="Web Browser Assistance"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="af3590b5-70c9-4011-818e-77e81b8050ec"
+        name="View Computer Statistics"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="02ddcd36-51c5-4ad7-9845-3a2c5a790ed0">
+            <useCaseMoniker
+              Id="2a348534-6f0b-4201-9b40-f598bd851ccd"
+              LastKnownName="View Network Usage"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+          <include
+            Id="bbfcc7dd-5004-4761-a141-7cb6f15128bf">
+            <useCaseMoniker
+              Id="8d277cd4-508e-450c-ad56-566871e3e5aa"
+              LastKnownName="View RAM Availability"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+          <include
+            Id="78947efd-0b2d-40e8-9463-ee356a7f7e67">
+            <useCaseMoniker
+              Id="c32ff6a7-a80c-4e43-8ff4-71cef40c2cb9"
+              LastKnownName="View CPU Utilization"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a348534-6f0b-4201-9b40-f598bd851ccd"
+        name="View Network Usage"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8d277cd4-508e-450c-ad56-566871e3e5aa"
+        name="View RAM Availability"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c32ff6a7-a80c-4e43-8ff4-71cef40c2cb9"
+        name="View CPU Utilization"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="97553236-c79b-4807-a4c2-90a8da42d921"
+        name="Manage Computer Settings"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="60a99ca3-4d34-4238-b7a8-970a520fea26">
+            <useCaseMoniker
+              Id="16905054-8431-49da-8b33-0dd7c32323a3"
+              LastKnownName="Bluetooth Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+          <include
+            Id="951f4d2c-45e4-4c93-b729-dce75bb098c1">
+            <useCaseMoniker
+              Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953"
+              LastKnownName="Wifi Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="16905054-8431-49da-8b33-0dd7c32323a3"
+        name="Bluetooth Settings"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1ef10af-2c53-4c47-b27f-0694abeadd14"
+        name="List Paired Devices"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="62235257-aee5-4b4e-9ea4-26e475376e5e">
+            <useCaseMoniker
+              Id="16905054-8431-49da-8b33-0dd7c32323a3"
+              LastKnownName="Bluetooth Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="332e1f4d-4de2-4984-8650-c6e167f03fd2"
+        name="List Available Devices"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="fa05700b-495f-4814-a84b-4cc0e196b59a">
+            <useCaseMoniker
+              Id="16905054-8431-49da-8b33-0dd7c32323a3"
+              LastKnownName="Bluetooth Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8404fbcb-5999-4a2c-8d14-c14072e02543"
+        name="Pair Device"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f381561b-cb3d-46f0-8a1a-41de013edf72">
+            <useCaseMoniker
+              Id="16905054-8431-49da-8b33-0dd7c32323a3"
+              LastKnownName="Bluetooth Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="16b97639-d470-4b42-a6ab-22e4bae717c1"
+        name="Forget Device"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="151f5990-dbf5-4c77-98de-6e44385de68b">
+            <useCaseMoniker
+              Id="16905054-8431-49da-8b33-0dd7c32323a3"
+              LastKnownName="Bluetooth Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953"
+        name="Wifi Settings"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e0e8601e-1f5f-4d29-b6c1-b84b176322bb"
+        name="Connect Wifi"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="10f66f26-0f1f-4c92-91c8-d597a32fb012">
+            <useCaseMoniker
+              Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953"
+              LastKnownName="Wifi Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1cb4fc0f-fb3c-46df-8ef5-baf770eafda4"
+        name="Disconnect Wifi"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="10a0e782-274b-4370-b6c9-7e1b8ce3ff40">
+            <useCaseMoniker
+              Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953"
+              LastKnownName="Wifi Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4e81b4ae-c017-4dd7-8b10-47e528afa689"
+        name="List Available Wifi Networks"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6b050fc0-acbe-48a4-b0e3-92b5f3248a18">
+            <useCaseMoniker
+              Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953"
+              LastKnownName="Wifi Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0224307a-66bc-42c7-b6fe-e42bbda8b6b8"
+        name="Application Assistance"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5aa42c7-ad40-40f0-825b-0a4465e99d89"
+        name="Open Application"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0949d270-0c82-4b74-b5d1-e31ecbcd38ec">
+            <useCaseMoniker
+              Id="0224307a-66bc-42c7-b6fe-e42bbda8b6b8"
+              LastKnownName="Application Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e03f5a9f-dc5e-41da-b23d-d13f43a748a4"
+        name="Close Application"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3e8bea1c-579d-4f4c-8410-a2c0cc666425">
+            <useCaseMoniker
+              Id="0224307a-66bc-42c7-b6fe-e42bbda8b6b8"
+              LastKnownName="Application Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+        name="Web Browser Assistance"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="787ed80f-c202-4063-9abd-7d2f1d4dedd3"
+        name="Open New WIndow"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c48b36ce-a81c-4bb7-8da1-0481d943b84b">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8dc4fde2-597f-4ade-acab-3135474ee2ac"
+        name="Open New Tab"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6c881b0d-f16f-42f2-873e-572596d79857">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bef4c468-8512-42db-ad7b-ffe7bc22bd94"
+        name="Reload Page"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7ba9746a-6ab2-47a6-898c-97bd222dba3b">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8e72c57a-edd0-4b4d-a9a7-a5e948132fe3"
+        name="Open Previous Page"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="013b18d9-31a9-46f8-a043-f8cefe9a5457">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cfa30ce4-6a1b-495d-8cc0-7e4a15e61b40"
+        name="Bookmark Page"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9f0b4694-33b6-49a1-8dc0-180932b66796">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c483ecc-60c6-428d-a5aa-106ed04c534a"
+        name="View Browser History"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="98d23699-3e07-472c-b2bb-f2f28149032d">
+            <useCaseMoniker
+              Id="65243c51-51ad-4bd2-8739-f5ff13775631"
+              LastKnownName="Web Browser Assistance"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

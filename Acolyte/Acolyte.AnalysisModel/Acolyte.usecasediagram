@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1d53f34e-8209-45b3-8172-65741c83908f" name="Acolyte" linkedPackageId="79ad75d6-ed49-4b9a-9e13-6d3b2ef5f1eb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="cb615ffa-5997-4f03-8fb9-88b62243c7e1">
+      <profileInstance Id="7773ccff-2602-4e04-8f21-0cfefafe565a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d1c88242-64ae-472e-b55c-df0d1464d912">
+      <profileInstance Id="68ee8cda-17be-45a1-bd95-793ec34bc706" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="772dd360-2c7d-4a28-a5a7-2974343301a5" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="1ab4423e-4e72-40d0-9072-ad1161c77a63" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Manage Computer Settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b9e6359e-aa36-4abf-9aa6-526a5ccbd69a" LastKnownName="Manage Computer Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f9586d5-3c03-4787-b782-4ba17a4340d2" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37edc0ec-0dc7-489d-88e1-380d6835d666" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba09502a-cb1d-4b1a-ba45-75156b4c5690" name="Manage Computer Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f261471-8401-4ee9-9398-18e352074eb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="250d01d3-0486-4d03-a01d-64e488d26a21" />
+          </association>
+          <association Id="df2ea01b-6e65-45dd-b2e2-fada42fb8e6a" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="View Computer Statistics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="afcf8e4e-f90c-48b9-81e3-b246eb87770c" LastKnownName="View Computer Statistics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81e2114a-7708-4405-8a85-b873b3939aba" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6df503dd-c25f-49f2-91f6-6d0844f51868" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7547e2ca-1914-4995-aaf2-82531b57ee65" name="View Computer Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="159d9236-0bc7-48af-a272-c5a19bcad7d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="764961a3-c99f-49ca-8616-1c0fc46e8648" />
+          </association>
+          <association Id="44285af0-3e8f-40ae-86f8-cdee0cedbe67" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Application Assistance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f70c1ecc-1338-4801-965e-b4a0be590906" LastKnownName="Application Assistance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e168a960-ba45-4d66-8513-6b519a942b2a" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60ec8bc0-a0fa-4b5b-a423-3d5ee4a5faa9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc099011-af47-4ee0-ad9a-eea89b1379dc" name="Application Assistance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="11a0720b-ee80-4401-ac95-290f428fde82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51b6bf58-d49d-4e8b-bab7-9b2beee7c792" />
+          </association>
+          <association Id="56ab07c0-2351-4f48-bcea-49ad0bd7494d" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Web Browser Assistance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60724723-f171-4aeb-bdb4-f4500cc3e436" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="23e4754c-8935-462c-8109-2def7b91b84c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2e395ce-6008-4d80-b910-8883630d2b10" name="Web Browser Assistance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c31adc8-4099-4234-b29f-d9e14153a6b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f4b9d8d8-b16d-4be6-bef5-3c02bccf4ad8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="afcf8e4e-f90c-48b9-81e3-b246eb87770c" name="View Computer Statistics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af3590b5-70c9-4011-818e-77e81b8050ec" />
+        <additions>
+          <include Id="2172fdad-65fe-4f08-bb41-3c342a1ec9ed">
+            <useCaseMoniker Id="368f7981-f2de-4251-b2de-1c6ccfb8b036" LastKnownName="View Network Usage" />
+            <elementDefinition Id="02ddcd36-51c5-4ad7-9845-3a2c5a790ed0" />
+          </include>
+          <include Id="fdf79a38-ef84-4e06-9228-375b8fbf8438">
+            <useCaseMoniker Id="fd77d5cc-4cb3-4693-8379-a7f652cde13e" LastKnownName="View RAM Availability" />
+            <elementDefinition Id="bbfcc7dd-5004-4761-a141-7cb6f15128bf" />
+          </include>
+          <include Id="5263188c-69b3-4aa2-83ce-b90241e18f4c">
+            <useCaseMoniker Id="4b0ca34d-f8e1-4451-b9e7-66549b0665b1" LastKnownName="View CPU Utilization" />
+            <elementDefinition Id="78947efd-0b2d-40e8-9463-ee356a7f7e67" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="368f7981-f2de-4251-b2de-1c6ccfb8b036" name="View Network Usage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a348534-6f0b-4201-9b40-f598bd851ccd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd77d5cc-4cb3-4693-8379-a7f652cde13e" name="View RAM Availability" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d277cd4-508e-450c-ad56-566871e3e5aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4b0ca34d-f8e1-4451-b9e7-66549b0665b1" name="View CPU Utilization" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c32ff6a7-a80c-4e43-8ff4-71cef40c2cb9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b9e6359e-aa36-4abf-9aa6-526a5ccbd69a" name="Manage Computer Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97553236-c79b-4807-a4c2-90a8da42d921" />
+        <additions>
+          <include Id="99b42373-6ba4-4c86-b27a-6d9c5cb7b655">
+            <useCaseMoniker Id="0c069baa-5600-4a39-b053-66ac99974695" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="60a99ca3-4d34-4238-b7a8-970a520fea26" />
+          </include>
+          <include Id="322f9f6f-9002-42fd-a984-e4fe1a00e18c">
+            <useCaseMoniker Id="0a797678-57a4-4cf7-9d68-392d38fd3308" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="951f4d2c-45e4-4c93-b729-dce75bb098c1" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c069baa-5600-4a39-b053-66ac99974695" name="Bluetooth Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16905054-8431-49da-8b33-0dd7c32323a3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d7dbd99b-7863-4076-9ded-909383d79fd2" name="List Paired Devices" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1ef10af-2c53-4c47-b27f-0694abeadd14" />
+        <extendedCases>
+          <extend Id="560d7cf5-42f6-4100-9785-8b3aac3f5d95">
+            <useCaseMoniker Id="0c069baa-5600-4a39-b053-66ac99974695" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="62235257-aee5-4b4e-9ea4-26e475376e5e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4a1ae6a8-4023-4fd6-a4b2-218bd3c8f53d" name="List Available Devices" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="332e1f4d-4de2-4984-8650-c6e167f03fd2" />
+        <extendedCases>
+          <extend Id="eebc6184-e4b0-43b2-8df4-94ed852fdb34">
+            <useCaseMoniker Id="0c069baa-5600-4a39-b053-66ac99974695" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="fa05700b-495f-4814-a84b-4cc0e196b59a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="01f5587e-ad27-4457-a63d-7a7212f270bb" name="Pair Device" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8404fbcb-5999-4a2c-8d14-c14072e02543" />
+        <extendedCases>
+          <extend Id="b41d1473-1280-45ee-9b1e-e614478cce4f">
+            <useCaseMoniker Id="0c069baa-5600-4a39-b053-66ac99974695" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="f381561b-cb3d-46f0-8a1a-41de013edf72" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ccf92485-c96e-4705-91b7-a136b55ff860" name="Forget Device" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16b97639-d470-4b42-a6ab-22e4bae717c1" />
+        <extendedCases>
+          <extend Id="30db4090-a7e3-41c2-b196-6bd74fe26858">
+            <useCaseMoniker Id="0c069baa-5600-4a39-b053-66ac99974695" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="151f5990-dbf5-4c77-98de-6e44385de68b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0a797678-57a4-4cf7-9d68-392d38fd3308" name="Wifi Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="abe84346-efdb-480b-85be-1d56553cfd25" name="Connect Wifi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0e8601e-1f5f-4d29-b6c1-b84b176322bb" />
+        <extendedCases>
+          <extend Id="a35e16ca-1bbe-4525-b87e-55dd432ea145">
+            <useCaseMoniker Id="0a797678-57a4-4cf7-9d68-392d38fd3308" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="10f66f26-0f1f-4c92-91c8-d597a32fb012" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c0df4801-a08d-48d3-bae0-b2eea8690e3d" name="Disconnect Wifi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1cb4fc0f-fb3c-46df-8ef5-baf770eafda4" />
+        <extendedCases>
+          <extend Id="7ab14341-ca8e-46c0-a897-9616d5fca82f">
+            <useCaseMoniker Id="0a797678-57a4-4cf7-9d68-392d38fd3308" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="10a0e782-274b-4370-b6c9-7e1b8ce3ff40" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7e5cb51d-fa0c-48c7-b4d8-a02ae779d2fe" name="List Available Wifi Networks" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e81b4ae-c017-4dd7-8b10-47e528afa689" />
+        <extendedCases>
+          <extend Id="61b82fe7-1389-4caf-bc51-7c19ced0f6f0">
+            <useCaseMoniker Id="0a797678-57a4-4cf7-9d68-392d38fd3308" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="6b050fc0-acbe-48a4-b0e3-92b5f3248a18" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f70c1ecc-1338-4801-965e-b4a0be590906" name="Application Assistance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0224307a-66bc-42c7-b6fe-e42bbda8b6b8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ab83d8aa-3bc6-4df3-a15a-ab5956e2db98" name="Open Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5aa42c7-ad40-40f0-825b-0a4465e99d89" />
+        <additions>
+          <include Id="587840a8-d217-4ab1-9a6a-a5f78d795574">
+            <useCaseMoniker Id="f70c1ecc-1338-4801-965e-b4a0be590906" LastKnownName="Application Assistance" />
+            <elementDefinition Id="0949d270-0c82-4b74-b5d1-e31ecbcd38ec" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="50ea01f6-1adf-4e7a-a731-f1d0e8cbe65a" name="Close Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e03f5a9f-dc5e-41da-b23d-d13f43a748a4" />
+        <additions>
+          <include Id="9ee868d1-4ce8-4d75-b28e-0e4817f396f4">
+            <useCaseMoniker Id="f70c1ecc-1338-4801-965e-b4a0be590906" LastKnownName="Application Assistance" />
+            <elementDefinition Id="3e8bea1c-579d-4f4c-8410-a2c0cc666425" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" name="Web Browser Assistance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65243c51-51ad-4bd2-8739-f5ff13775631" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="418fe235-152c-4d43-b835-c47d3e3cf737" name="Open New WIndow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="787ed80f-c202-4063-9abd-7d2f1d4dedd3" />
+        <additions>
+          <include Id="a38a25fa-e6eb-4249-b8e6-d582856cf6d2">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="c48b36ce-a81c-4bb7-8da1-0481d943b84b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5cfdfed4-70d4-4b18-a168-798afb9707ab" name="Open New Tab" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8dc4fde2-597f-4ade-acab-3135474ee2ac" />
+        <additions>
+          <include Id="d3d0027f-72b0-496b-87eb-60aac9c78159">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="6c881b0d-f16f-42f2-873e-572596d79857" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="51cda8c0-e05b-4535-a982-4627e59fb4db" name="Reload Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bef4c468-8512-42db-ad7b-ffe7bc22bd94" />
+        <additions>
+          <include Id="cb9bbdea-5c8c-490a-875c-5f71bc0d0324">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="7ba9746a-6ab2-47a6-898c-97bd222dba3b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="009a27c8-e967-4592-91a4-f781ad0b801f" name="Open Previous Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e72c57a-edd0-4b4d-a9a7-a5e948132fe3" />
+        <additions>
+          <include Id="cb4add88-908f-4c95-950b-fc0210915a2a">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="013b18d9-31a9-46f8-a043-f8cefe9a5457" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d8a03349-b290-45b4-9bf6-2039c3b3a5f8" name="Bookmark Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cfa30ce4-6a1b-495d-8cc0-7e4a15e61b40" />
+        <additions>
+          <include Id="792380df-c32f-4717-96a7-faa3bc440308">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="9f0b4694-33b6-49a1-8dc0-180932b66796" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="589abfab-b20a-441a-9c3c-df7f08e24175" name="View Browser History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c483ecc-60c6-428d-a5aa-106ed04c534a" />
+        <additions>
+          <include Id="5554c0fd-d8b1-4448-868b-480c41dae2e4">
+            <useCaseMoniker Id="92b237ce-82d4-4666-b33d-b25f0b76fb02" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="98d23699-3e07-472c-b2bb-f2f28149032d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="79ad75d6-ed49-4b9a-9e13-6d3b2ef5f1eb" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>
