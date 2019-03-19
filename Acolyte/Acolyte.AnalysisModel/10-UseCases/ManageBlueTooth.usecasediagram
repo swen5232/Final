@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c9fbc878-253a-4f84-81b3-9b33c5c6f567" name="ManageComputerSettings" linkedPackageId="76e7c90b-6188-4b29-9064-65dbd65dc6d8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0680c774-d472-45b2-8ef2-00193afe20f2">
+      <profileInstance Id="26677b95-764f-482c-898a-a2a1484d9bd9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2e8c3517-0738-4c8c-8e28-9e4074b10cdd">
+      <profileInstance Id="7c0d4378-24a0-454f-81cf-fa0d07ba0a5c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="a22439b3-1efe-4675-9239-6d52b635a963" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="b2464188-1da1-4a65-bbf8-0e16f8539af6" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Manage Computer Settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e562fedf-22e9-4227-8fc5-2016a584e345" LastKnownName="Manage Computer Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c9f3378-3f81-4a27-9cf1-803d035cf420" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37edc0ec-0dc7-489d-88e1-380d6835d666" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ff7144b5-6c26-4614-a218-b3e8c148992e" name="Manage Computer Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f261471-8401-4ee9-9398-18e352074eb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="250d01d3-0486-4d03-a01d-64e488d26a21" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e562fedf-22e9-4227-8fc5-2016a584e345" name="Manage Computer Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97553236-c79b-4807-a4c2-90a8da42d921" />
+        <additions>
+          <include Id="09c056df-c879-4589-aabf-ddff58cd2dee">
+            <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="60a99ca3-4d34-4238-b7a8-970a520fea26" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" name="Bluetooth Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16905054-8431-49da-8b33-0dd7c32323a3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f5fb8efa-1673-4017-a644-06edf69965ee" name="List Paired Devices" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1ef10af-2c53-4c47-b27f-0694abeadd14" />
+        <extendedCases>
+          <extend Id="7a1c8ccf-bd9d-4cdb-b6b2-8626738a1113">
+            <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="62235257-aee5-4b4e-9ea4-26e475376e5e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="94dde2ec-2d61-43f3-b4b9-64e0944e8eae" name="List Available Devices" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="332e1f4d-4de2-4984-8650-c6e167f03fd2" />
+        <extendedCases>
+          <extend Id="bb6cd8f3-97d2-4b0d-ade8-b13e72135b1f">
+            <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="fa05700b-495f-4814-a84b-4cc0e196b59a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2e099e95-c9c0-4e73-b489-4fb55aed158e" name="Forget Device" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16b97639-d470-4b42-a6ab-22e4bae717c1" />
+        <extendedCases>
+          <extend Id="f00683cf-52f4-46ce-a554-dd2c971eb7ef">
+            <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="151f5990-dbf5-4c77-98de-6e44385de68b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d269fb7-4301-4b57-b49c-fdd4cd48e1bd" name="Pair Device" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8404fbcb-5999-4a2c-8d14-c14072e02543" />
+        <extendedCases>
+          <extend Id="2012a1c5-d7de-4a8d-abbe-86242512fa6b">
+            <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="f381561b-cb3d-46f0-8a1a-41de013edf72" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="76e7c90b-6188-4b29-9064-65dbd65dc6d8" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ManageComputerSettings">
+  <useCaseModelRootMoniker Id="c9fbc878-253a-4f84-81b3-9b33c5c6f567" />
+  <nestedChildShapes>
+    <actorShape Id="2647c0c3-b21d-4fc7-a13b-066f2d10641c" absoluteBounds="3.625, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="a22439b3-1efe-4675-9239-6d52b635a963" LastKnownName="Computer User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="8a78df53-2125-4e98-aca1-cf4cb3ba5d70" absoluteBounds="5, 2.5, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e562fedf-22e9-4227-8fc5-2016a584e345" LastKnownName="Manage Computer Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.125 : 2.875); (5 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b2464188-1da1-4a65-bbf8-0e16f8539af6" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="2647c0c3-b21d-4fc7-a13b-066f2d10641c" />
+        <useCaseShapeMoniker Id="8a78df53-2125-4e98-aca1-cf4cb3ba5d70" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="201a40da-2117-40eb-8b05-829eb4774e11" absoluteBounds="7.5, 2.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(6 : 2.875); (7.5 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="09c056df-c879-4589-aabf-ddff58cd2dee" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="8a78df53-2125-4e98-aca1-cf4cb3ba5d70" />
+        <useCaseShapeMoniker Id="201a40da-2117-40eb-8b05-829eb4774e11" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="c55b6500-d87e-4b89-adb2-6391ad6fdd90" absoluteBounds="6.375, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f5fb8efa-1673-4017-a644-06edf69965ee" LastKnownName="List Paired Devices" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(7.06431642286025 : 4.01861326094858); (7.81068357713975 : 3.10638673905142)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="7a1c8ccf-bd9d-4cdb-b6b2-8626738a1113" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="c55b6500-d87e-4b89-adb2-6391ad6fdd90" />
+        <useCaseShapeMoniker Id="201a40da-2117-40eb-8b05-829eb4774e11" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="18a0be7f-e7be-4c7a-9922-cfa31c53006d" absoluteBounds="8.5, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="94dde2ec-2d61-43f3-b4b9-64e0944e8eae" LastKnownName="List Available Devices" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(8.82912846845665 : 4.01505164412789); (8.17087153154335 : 3.10994835587211)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="bb6cd8f3-97d2-4b0d-ade8-b13e72135b1f" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="18a0be7f-e7be-4c7a-9922-cfa31c53006d" />
+        <useCaseShapeMoniker Id="201a40da-2117-40eb-8b05-829eb4774e11" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="4bd30984-4530-4edb-9f4e-e87b564b3c89" absoluteBounds="8.625, 1.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2e099e95-c9c0-4e73-b489-4fb55aed158e" LastKnownName="Forget Device" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(8.9198176613356 : 1.85298037629378); (8.2051823386644 : 2.64701962370622)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="f00683cf-52f4-46ce-a554-dd2c971eb7ef" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="4bd30984-4530-4edb-9f4e-e87b564b3c89" />
+        <useCaseShapeMoniker Id="201a40da-2117-40eb-8b05-829eb4774e11" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="3a39ca90-154f-4cbb-98c3-f32893802561" absoluteBounds="6.5, 1.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="7d269fb7-4301-4b57-b49c-fdd4cd48e1bd" LastKnownName="Pair Device" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(7.18569533817705 : 1.85711917272131); (7.81430466182295 : 2.64288082727869)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="2012a1c5-d7de-4a8d-abbe-86242512fa6b" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="3a39ca90-154f-4cbb-98c3-f32893802561" />
+        <useCaseShapeMoniker Id="201a40da-2117-40eb-8b05-829eb4774e11" />
+      </nodes>
+    </extendConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

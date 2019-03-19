@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="101fa4a2-a7b1-408d-b699-16cd6afe5720" name="ViewComputerStats" linkedPackageId="2e41ae37-6e41-4495-992a-6b1a9f8936ed" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="f2a0458d-bdbc-4ca7-b9fd-27917f51182e">
+      <profileInstance Id="045fb6f0-919c-4226-8896-cc6752a8477e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a7f124a2-c5a2-400c-b735-a85fe9fc8fbc">
+      <profileInstance Id="d33ca4f4-9b46-40c3-b65d-1c6382f53a83" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="5606e213-f51f-4419-9173-1091b467df7a" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="766618d9-fbd8-4907-b51b-d976df3026c6" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="View Computer Statistics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cd8305c4-7672-49db-a908-d1c1ae0cbbab" LastKnownName="View Computer Statistics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c30fcfc3-7f8a-4e34-945d-522f22570c80" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6df503dd-c25f-49f2-91f6-6d0844f51868" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5e298c7-521c-48e0-9595-dc1976f1b5d5" name="View Computer Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="159d9236-0bc7-48af-a272-c5a19bcad7d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="764961a3-c99f-49ca-8616-1c0fc46e8648" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cd8305c4-7672-49db-a908-d1c1ae0cbbab" name="View Computer Statistics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af3590b5-70c9-4011-818e-77e81b8050ec" />
+        <additions>
+          <include Id="4b498db3-3168-464f-b802-8a5d5f6479d0">
+            <useCaseMoniker Id="7d6fbee7-1c8f-424f-b25d-d00edfcd7484" LastKnownName="View Network Usage" />
+            <elementDefinition Id="02ddcd36-51c5-4ad7-9845-3a2c5a790ed0" />
+          </include>
+          <include Id="19c77fe2-4240-46bf-9230-ed02e26303f1">
+            <useCaseMoniker Id="3d9c4b15-c0ef-4b25-843e-6ab2b35f5d5f" LastKnownName="View RAM Availability" />
+            <elementDefinition Id="bbfcc7dd-5004-4761-a141-7cb6f15128bf" />
+          </include>
+          <include Id="395beb11-3400-40c7-9c61-22cef1f3d409">
+            <useCaseMoniker Id="d08a74bf-3d95-4686-a726-7e01144b6f93" LastKnownName="View CPU Utilization" />
+            <elementDefinition Id="78947efd-0b2d-40e8-9463-ee356a7f7e67" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d08a74bf-3d95-4686-a726-7e01144b6f93" name="View CPU Utilization" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c32ff6a7-a80c-4e43-8ff4-71cef40c2cb9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3d9c4b15-c0ef-4b25-843e-6ab2b35f5d5f" name="View RAM Availability" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d277cd4-508e-450c-ad56-566871e3e5aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d6fbee7-1c8f-424f-b25d-d00edfcd7484" name="View Network Usage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a348534-6f0b-4201-9b40-f598bd851ccd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2e41ae37-6e41-4495-992a-6b1a9f8936ed" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

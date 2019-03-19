@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ViewComputerStats">
+  <useCaseModelRootMoniker Id="101fa4a2-a7b1-408d-b699-16cd6afe5720" />
+  <nestedChildShapes>
+    <actorShape Id="e2b2f6ae-0928-49ca-b7f5-1612b8771621" absoluteBounds="2.75, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="5606e213-f51f-4419-9173-1091b467df7a" LastKnownName="Computer User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="2414cce5-4167-4ffd-86aa-c97f49642838" absoluteBounds="4.75, 2.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cd8305c4-7672-49db-a908-d1c1ae0cbbab" LastKnownName="View Computer Statistics" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.25 : 3.25); (4.75 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="766618d9-fbd8-4907-b51b-d976df3026c6" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="e2b2f6ae-0928-49ca-b7f5-1612b8771621" />
+        <useCaseShapeMoniker Id="2414cce5-4167-4ffd-86aa-c97f49642838" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0e64b175-9dd9-4abb-b025-0133ea1bee0e" absoluteBounds="4.75, 4.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d08a74bf-3d95-4686-a726-7e01144b6f93" LastKnownName="View CPU Utilization" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(5.25 : 3.625); (5.25 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="395beb11-3400-40c7-9c61-22cef1f3d409" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="2414cce5-4167-4ffd-86aa-c97f49642838" />
+        <useCaseShapeMoniker Id="0e64b175-9dd9-4abb-b025-0133ea1bee0e" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="a5561d7c-db02-4ec7-98fa-2072f8fa9714" absoluteBounds="7.25, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3d9c4b15-c0ef-4b25-843e-6ab2b35f5d5f" LastKnownName="View RAM Availability" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(5.75 : 3.25); (7.25 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="19c77fe2-4240-46bf-9230-ed02e26303f1" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="2414cce5-4167-4ffd-86aa-c97f49642838" />
+        <useCaseShapeMoniker Id="a5561d7c-db02-4ec7-98fa-2072f8fa9714" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="fb93ab3b-7dd5-4775-ad95-a1deb526f52f" absoluteBounds="4.75, 1.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="7d6fbee7-1c8f-424f-b25d-d00edfcd7484" LastKnownName="View Network Usage" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(5.25 : 2.875); (5.25 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="4b498db3-3168-464f-b802-8a5d5f6479d0" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="2414cce5-4167-4ffd-86aa-c97f49642838" />
+        <useCaseShapeMoniker Id="fb93ab3b-7dd5-4775-ad95-a1deb526f52f" />
+      </nodes>
+    </includeConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

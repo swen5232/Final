@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1807bd59-14eb-487f-8576-078de60c1bb0" name="WebBrowserAssistance" linkedPackageId="e19c4353-e0dc-4d31-9595-ca6bbf27a965" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="eb837f6b-9ab1-46df-9bce-ce69bbb39ac9">
+      <profileInstance Id="7a111b11-d567-4ccb-b04c-ad03ca3e7207" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5da14cd8-cdf7-4ba0-a1ea-d841a486db20">
+      <profileInstance Id="9e7d1f30-845b-481c-828b-754b59f53bc2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="71aecfde-53ed-4139-89cb-093dabb7238e" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="ff1dfd04-6baa-4367-b436-fa428346aa9f" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Web Browser Assistance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad91ea0c-7807-4bbc-9b9d-3a0008629e4f" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="23e4754c-8935-462c-8109-2def7b91b84c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21a06468-6f51-4eb3-87be-5ac16a3cbd86" name="Web Browser Assistance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c31adc8-4099-4234-b29f-d9e14153a6b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f4b9d8d8-b16d-4be6-bef5-3c02bccf4ad8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" name="Web Browser Assistance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65243c51-51ad-4bd2-8739-f5ff13775631" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="31ceca24-e36a-422b-a325-aaf39eb036c9" name="View Browser History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c483ecc-60c6-428d-a5aa-106ed04c534a" />
+        <additions>
+          <include Id="77cebd2c-8eb5-46b8-9ffd-2d9ccc7eaab8">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="98d23699-3e07-472c-b2bb-f2f28149032d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="17d0b860-29c7-46cf-bca5-4d3b0c4eec12" name="Bookmark Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cfa30ce4-6a1b-495d-8cc0-7e4a15e61b40" />
+        <additions>
+          <include Id="f2b54654-5ccf-4e6d-b047-4888bad4484a">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="9f0b4694-33b6-49a1-8dc0-180932b66796" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2e99c841-3ee5-4fb3-8034-0e0927b6b462" name="Open New Tab" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8dc4fde2-597f-4ade-acab-3135474ee2ac" />
+        <additions>
+          <include Id="e9b3b944-ed0f-453e-8823-0cb75e0b04aa">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="6c881b0d-f16f-42f2-873e-572596d79857" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fb13f20a-ac4b-4395-b395-088cedaec8eb" name="Open New WIndow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="787ed80f-c202-4063-9abd-7d2f1d4dedd3" />
+        <additions>
+          <include Id="066d4bf1-1644-4a59-b24a-0d9906953d92">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="c48b36ce-a81c-4bb7-8da1-0481d943b84b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0794c000-2fb0-4ff6-837b-72f809b73271" name="Open Previous Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e72c57a-edd0-4b4d-a9a7-a5e948132fe3" />
+        <additions>
+          <include Id="5f1f9c30-056c-47be-91e1-8318ec2ee400">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="013b18d9-31a9-46f8-a043-f8cefe9a5457" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8cdc0a4a-9fb5-4c57-b96b-d06542e464ea" name="Reload Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bef4c468-8512-42db-ad7b-ffe7bc22bd94" />
+        <additions>
+          <include Id="c17743ac-4328-489c-a240-a5084e3815bc">
+            <useCaseMoniker Id="4c8a7b02-6fa3-42c3-acbd-cf15daf29ca1" LastKnownName="Web Browser Assistance" />
+            <elementDefinition Id="7ba9746a-6ab2-47a6-898c-97bd222dba3b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e19c4353-e0dc-4d31-9595-ca6bbf27a965" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

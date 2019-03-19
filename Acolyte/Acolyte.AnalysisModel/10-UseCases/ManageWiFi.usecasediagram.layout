@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ManageWiFi">
+  <useCaseModelRootMoniker Id="4ab95612-9e7a-4bc0-8103-20b42e1b78b7" />
+  <nestedChildShapes>
+    <actorShape Id="f609c962-838d-4dc1-b624-8a8a714bfda1" absoluteBounds="3.25, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="7c85c3a6-8581-4f3e-a649-b228949fd56d" LastKnownName="Computer User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="f332cde7-7265-4225-b758-ab6b8d584647" absoluteBounds="5, 2.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="92c12fc8-5ff5-4a34-9be4-6b083b880470" LastKnownName="Manage Computer Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.75 : 3.25); (5 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="de92469f-839b-41fd-b551-809ae5fbfe8b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="f609c962-838d-4dc1-b624-8a8a714bfda1" />
+        <useCaseShapeMoniker Id="f332cde7-7265-4225-b758-ab6b8d584647" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="49ac00ec-63e8-4352-be46-80cc482ff31c" absoluteBounds="7.25, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="aa2d2259-f593-403d-95f6-b5f14ddfeaac" LastKnownName="Wifi Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(6 : 3.25); (7.25 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="fc312323-096a-457d-bd31-ed3ec10179c6" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="f332cde7-7265-4225-b758-ab6b8d584647" />
+        <useCaseShapeMoniker Id="49ac00ec-63e8-4352-be46-80cc482ff31c" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="91250073-f0c2-4051-9a4e-3c4dcee3a85d" absoluteBounds="7.25, 1.375, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="edbb5f6c-c708-4cfa-bae9-707bb1a3ab06" LastKnownName="List Available Wifi Networks" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(7.75 : 2.125); (7.75 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="119c9c23-4dff-4ea6-ab37-0267a0605530" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="91250073-f0c2-4051-9a4e-3c4dcee3a85d" />
+        <useCaseShapeMoniker Id="49ac00ec-63e8-4352-be46-80cc482ff31c" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="22d29220-fe0a-4feb-9017-583eec2ff80c" absoluteBounds="9.25, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4b284808-4401-48e8-b33e-344683a3169a" LastKnownName="Connect Wifi" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(9.25 : 3.25); (8.25 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="ae4e9092-e6b0-4106-bbf9-cc68cfc33dfa" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="22d29220-fe0a-4feb-9017-583eec2ff80c" />
+        <useCaseShapeMoniker Id="49ac00ec-63e8-4352-be46-80cc482ff31c" />
+      </nodes>
+    </extendConnector>
+    <useCaseShape Id="7eac0cee-61ef-45f3-808e-6bd0f4edf01a" absoluteBounds="7.25, 4.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c274a46c-d2cc-4dd2-a5e6-2311b5661c8a" LastKnownName="Disconnect Wifi" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(7.75 : 4.375); (7.75 : 3.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="2a1c5821-f576-4bcf-b3f8-7a6ea9a5cb46" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="7eac0cee-61ef-45f3-808e-6bd0f4edf01a" />
+        <useCaseShapeMoniker Id="49ac00ec-63e8-4352-be46-80cc482ff31c" />
+      </nodes>
+    </extendConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

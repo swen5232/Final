@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4ab95612-9e7a-4bc0-8103-20b42e1b78b7" name="ManageWiFi" linkedPackageId="ab64ce54-35f7-42e1-b0c8-16a5e816c3d9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="adddb9a6-5658-497e-b017-0b442d603a43">
+      <profileInstance Id="b6020822-7c6f-4c89-baac-13c7551eedea" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fc2bcf18-11e7-4ffb-a83b-49949905d6d1">
+      <profileInstance Id="a1c7ada7-ef1b-4c8a-8490-a37038f9555f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7c85c3a6-8581-4f3e-a649-b228949fd56d" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="de92469f-839b-41fd-b551-809ae5fbfe8b" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Manage Computer Settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="92c12fc8-5ff5-4a34-9be4-6b083b880470" LastKnownName="Manage Computer Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88b2ec69-c7e9-4c59-9612-662702d8905a" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37edc0ec-0dc7-489d-88e1-380d6835d666" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6df62f86-8d04-48a3-a9b8-7ecdb85b9173" name="Manage Computer Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f261471-8401-4ee9-9398-18e352074eb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="250d01d3-0486-4d03-a01d-64e488d26a21" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92c12fc8-5ff5-4a34-9be4-6b083b880470" name="Manage Computer Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97553236-c79b-4807-a4c2-90a8da42d921" />
+        <additions>
+          <include Id="fc312323-096a-457d-bd31-ed3ec10179c6">
+            <useCaseMoniker Id="aa2d2259-f593-403d-95f6-b5f14ddfeaac" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="951f4d2c-45e4-4c93-b729-dce75bb098c1" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aa2d2259-f593-403d-95f6-b5f14ddfeaac" name="Wifi Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c2ab5c7-d655-4788-87a5-1a37ef97a953" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="edbb5f6c-c708-4cfa-bae9-707bb1a3ab06" name="List Available Wifi Networks" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e81b4ae-c017-4dd7-8b10-47e528afa689" />
+        <extendedCases>
+          <extend Id="119c9c23-4dff-4ea6-ab37-0267a0605530">
+            <useCaseMoniker Id="aa2d2259-f593-403d-95f6-b5f14ddfeaac" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="6b050fc0-acbe-48a4-b0e3-92b5f3248a18" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4b284808-4401-48e8-b33e-344683a3169a" name="Connect Wifi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0e8601e-1f5f-4d29-b6c1-b84b176322bb" />
+        <extendedCases>
+          <extend Id="ae4e9092-e6b0-4106-bbf9-cc68cfc33dfa">
+            <useCaseMoniker Id="aa2d2259-f593-403d-95f6-b5f14ddfeaac" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="10f66f26-0f1f-4c92-91c8-d597a32fb012" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c274a46c-d2cc-4dd2-a5e6-2311b5661c8a" name="Disconnect Wifi" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1cb4fc0f-fb3c-46df-8ef5-baf770eafda4" />
+        <extendedCases>
+          <extend Id="2a1c5821-f576-4bcf-b3f8-7a6ea9a5cb46">
+            <useCaseMoniker Id="aa2d2259-f593-403d-95f6-b5f14ddfeaac" LastKnownName="Wifi Settings" />
+            <elementDefinition Id="10a0e782-274b-4370-b6c9-7e1b8ce3ff40" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ab64ce54-35f7-42e1-b0c8-16a5e816c3d9" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

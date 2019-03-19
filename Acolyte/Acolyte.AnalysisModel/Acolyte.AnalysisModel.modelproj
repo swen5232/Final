@@ -22,13 +22,49 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Folder Include="10-UseCases\" />
     <Folder Include="ModelDefinition\" />
-    <Content Include="Acolyte.usecasediagram">
+    <Content Include="10-UseCases\Acolyte.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Acolyte.usecasediagram.layout">
+    <Content Include="10-UseCases\Acolyte.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Acolyte.usecasediagram</DependentUpon>
+      <DependentUpon>10-UseCases\Acolyte.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\ApplicationAssistance.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\ApplicationAssistance.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\ApplicationAssistance.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\ManageBlueTooth.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\ManageBlueTooth.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\ManageBlueTooth.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\ManageWiFi.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\ManageWiFi.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\ManageWiFi.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\ViewComputerStats.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\ViewComputerStats.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\ViewComputerStats.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\WebBrowserAssistance.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\WebBrowserAssistance.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\WebBrowserAssistance.usecasediagram</DependentUpon>
     </Content>
     <Content Include="AcolyteBrainstorm.usecasediagram">
       <SubType>Content</SubType>
@@ -40,5 +76,10 @@
     <Content Include="ModelDefinition\Acolyte.AnalysisModel.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="20-ActivityDiagrams" />
+    <Folder Include="30-StateDiagrams" />
+    <Folder Include="40-ClassDiagrams" />
+    <Folder Include="50-LayerDiagrams" />
+    <Folder Include="60-ComponentDiagrams" />
   </ItemGroup>
 </Project>

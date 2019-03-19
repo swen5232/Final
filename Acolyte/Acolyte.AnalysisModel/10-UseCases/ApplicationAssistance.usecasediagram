@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7df35100-11d9-4821-8305-c7c4dd694141" name="ApplicationAssistance" linkedPackageId="363203e5-cd10-45a4-a198-2cbf8a686ab9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="4835b6f1-16e0-4c54-83df-190bcbcf89db">
+      <profileInstance Id="b1bd5080-00b9-47e3-aca6-93f6a0c4aae9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c1b8b57f-2ba1-42f5-8c4e-c850f4e1979c">
+      <profileInstance Id="e685f071-997d-4ad9-961a-626f0dfb0f8e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e8108957-671a-40d7-943c-388a2356e9d5" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="0cb74ba1-5c4a-4bdd-8c46-946a43ba18f1" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Application Assistance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="747f65ce-e984-4923-b57c-de23f05ebc76" LastKnownName="Application Assistance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96be9d35-e2dc-4c12-8a14-c46b224b60f7" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60ec8bc0-a0fa-4b5b-a423-3d5ee4a5faa9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="071b2848-4558-425f-8802-6adae30f838c" name="Application Assistance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="11a0720b-ee80-4401-ac95-290f428fde82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51b6bf58-d49d-4e8b-bab7-9b2beee7c792" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="747f65ce-e984-4923-b57c-de23f05ebc76" name="Application Assistance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0224307a-66bc-42c7-b6fe-e42bbda8b6b8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a9cf43f1-d304-487a-9327-3eca66fb4e03" name="Open Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5aa42c7-ad40-40f0-825b-0a4465e99d89" />
+        <additions>
+          <include Id="7645d7b4-3003-4cf0-b96d-e34ea9be02c3">
+            <useCaseMoniker Id="747f65ce-e984-4923-b57c-de23f05ebc76" LastKnownName="Application Assistance" />
+            <elementDefinition Id="0949d270-0c82-4b74-b5d1-e31ecbcd38ec" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2e52bd9-709b-480e-b438-f516a88e633c" name="Close Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e03f5a9f-dc5e-41da-b23d-d13f43a748a4" />
+        <additions>
+          <include Id="bd64ce50-c986-4042-b237-6831e6a8ac17">
+            <useCaseMoniker Id="747f65ce-e984-4923-b57c-de23f05ebc76" LastKnownName="Application Assistance" />
+            <elementDefinition Id="3e8bea1c-579d-4f4c-8410-a2c0cc666425" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="363203e5-cd10-45a4-a198-2cbf8a686ab9" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

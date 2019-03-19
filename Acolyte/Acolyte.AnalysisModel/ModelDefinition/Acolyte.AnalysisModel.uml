@@ -45,6 +45,8 @@ Web Browser Assistance
       <body>constraints
 no outside access, only user may access</body>
     </comment>
+    <comment
+      Id="2801c8f6-b36b-41f1-aebd-572b053a5340" />
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
