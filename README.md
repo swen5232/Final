@@ -1,7 +1,7 @@
 # Final
 Adriana Arzola &amp; Erik Whiting Final
 
-Acolyte – a personal assistant
+Acolyte â€“ a personal assistant
 
 Introduction: The basic idea behind this project is to create a simple stand-alone application that helps less tech savvy people in the world to use the computer without feeling ignorant or computer illiterate. Computers have became a very important devices and as well as less expensive over time. The application works same like Siri/ Google Assistant etc. But the application deals with the computer itself mainly. The U.I of the application should be self-explanatory and minimal.
 
@@ -15,4 +15,20 @@ The system also implements the singleton pattern and the single responsibility p
 
 Functions: The system provides all the below stated functions.
 
--displaying system information such as network usage, ram etc. -opening and closing an application -altering system brightness, volume -accessing Bluetooth, WIFI -bookmarking a webpage -creating a new window or a tab in browser -going to the previous webpage on the web browser -reloading a webpage on the web browser -keylogging with keystrokes segregated according to the application and time stamps. -browser history tracking
+--displaying system information such as network usage, ram etc. 
+
+--opening and closing an application 
+
+--altering system brightness, volume 
+
+--accessing Bluetooth, WIFI -bookmarking a webpage 
+
+--creating a new window or a tab in browser 
+
+--going to the previous webpage on the web browser 
+
+--reloading a webpage on the web browser 
+
+--keylogging with keystrokes segregated according to the application and time stamps. 
+
+--browser history tracking
