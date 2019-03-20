@@ -26,5 +26,9 @@
     <Content Include="ModelDefinition\Acolyte.DesignModel.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="50-LayerDiagram" />
+    <Folder Include="60-ComponentDiagram" />
+    <Folder Include="80-ClassDiagrams" />
+    <Folder Include="70-SequenceDiagram" />
   </ItemGroup>
 </Project>

@@ -147,10 +147,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="30-ActivityDiagrams" />
-    <Folder Include="40-StateDiagrams" />
-    <Folder Include="50-ClassDiagrams" />
-    <Folder Include="60-LayerDiagrams" />
-    <Folder Include="70-ComponentDiagrams" />
     <Folder Include="20-DomainModel" />
+    <Folder Include="40-StateDiagrams" />
   </ItemGroup>
 </Project>
