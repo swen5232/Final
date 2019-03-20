@@ -166,11 +166,11 @@
       <useCaseMoniker Id="abe84346-efdb-480b-85be-1d56553cfd25" LastKnownName="Connect Wifi" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(9.69795125294065 : 7.2889165783532); (7.99937524147431 : 5.75041578446373)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
+    <extendConnector edgePoints="[(9.4436101402047 : 7.42014891648027); (7.99937524147431 : 5.75041578446373)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="a35e16ca-1bbe-4525-b87e-55dd432ea145" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="8.642323422150902, 6.8129766463323334, 0.70250000000000057, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="8.75, 6.625, 0.70250000000000057, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="f9297053-9a04-4a0e-9928-1d0e0c7d3617" />
@@ -181,11 +181,11 @@
       <useCaseMoniker Id="c0df4801-a08d-48d3-bae0-b2eea8690e3d" LastKnownName="Disconnect Wifi" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(9.61162827208038 : 6.56765698858619); (8.11318157529772 : 5.62298420396145)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
+    <extendConnector edgePoints="[(9.42982927242612 : 6.6845055260784); (8.11318157529772 : 5.62298420396145)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="7ab14341-ca8e-46c0-a897-9616d5fca82f" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="8.8133828449067568, 6.0283862979633627, 0.52541666666666842, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="8.875, 6.1875, 0.52541666666666842, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="fa6e73e9-9dbd-4884-b8f5-70fa2a241cae" />
@@ -196,11 +196,11 @@
       <useCaseMoniker Id="7e5cb51d-fa0c-48c7-b4d8-a02ae779d2fe" LastKnownName="List Available Wifi Networks" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(9.48081984997544 : 5.88851941787912); (8.04101252062076 : 5.40603079174198)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
+    <extendConnector edgePoints="[(9.37587104395821 : 6.0460072271117); (8.04101252062076 : 5.40603079174198)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="61b82fe7-1389-4caf-bc51-7c19ced0f6f0" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="9.0808132546969951, 5.5888314345989549, 0.60875000000000057, 0.14800345897674561" shapeFieldName="NameDecorator" />
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="9.0044448050933763, 5.736243290022605, 0.60875000000000057, 0.14800345897674561" shapeFieldName="NameDecorator" />
       </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="627ec92f-58c0-425b-be83-d1a176d666d7" />
@@ -343,7 +343,7 @@
       <useCaseMoniker Id="c830b7aa-40b5-4acf-8df2-67441aee35c4" LastKnownName="Enable Pairing Mode" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(9.7578063373035 : 2.60058298706694); (8.03443977327792 : 4.65048215473393)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
+    <extendConnector edgePoints="[(9.38074749994019 : 2.35478280137856); (8.03443977327792 : 4.65048215473393)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="7a6d3df8-2666-4e93-8307-c0a89beda8e1" />
       <relativeChildShapes />
       <nodes>
@@ -433,9 +433,12 @@
       <useCaseMoniker Id="7abfeec4-0106-47aa-bbd2-884072555d8c" LastKnownName="Increase Brightness" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(9.72049155826086 : 8.03299148895044); (8.09525642623708 : 6.40775595391295)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
+    <extendConnector edgePoints="[(9.49522192245188 : 8.12822839853438); (8.09525642623708 : 6.40775595391295)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="2c5ef593-3b23-436f-8df4-fb77cbf7522b" />
       <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.625, 7.0625, 0.51066982746124268, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
       <nodes>
         <useCaseShapeMoniker Id="840bee10-1c4d-49c6-83dc-98d08d327b52" />
         <useCaseShapeMoniker Id="3e05d11d-6766-4263-81f9-cd04a11d45a2" />
