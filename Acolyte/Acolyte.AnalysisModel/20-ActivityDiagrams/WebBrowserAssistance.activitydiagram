@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="075f9f1e-32de-44fe-ae2a-9e05b2d55639" name="WebBrowserAssistance" linkedPackageId="9ef3b1c0-29ee-4574-9858-51aff26ba8f2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6c567639-b28b-47c4-8a1a-217e57092975">
+      <profileInstance Id="bceac2c3-85ff-46f9-96a6-dcf08493292a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3c832b63-5cbc-4b84-bfd5-a0d0f1c8b9db">
+      <profileInstance Id="c1f2cab4-538b-4717-8e16-eb3cb075d32c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="3b0eb26c-2c21-4134-84b0-06fda0faa30f" name="WebBrowserAssistance" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0d0c97ec-8513-4dd6-b1a0-91d045435906" />
+        <nodes>
+          <initialNode Id="6edcfce6-5e30-40d0-bf52-a13d37ced90e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="064a92b5-cb7c-44e7-b301-5b5e695785c8" />
+            <flowNodeTargets>
+              <controlFlow Id="7642285c-2cc3-48dc-bb7a-b0826f403b36" isLeaf="false">
+                <opaqueActionMoniker Id="ccdb2850-dcfd-4c73-8552-6c1eb7dfa58f" LastKnownName="Launch Application" />
+                <elementDefinition Id="f45f61b3-125e-4380-a92c-95fa9eab0a62" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ccdb2850-dcfd-4c73-8552-6c1eb7dfa58f" name="Launch Application" isLeaf="false">
+            <elementDefinition Id="fcb45cb7-0a8a-403a-a2c5-ca0d32818bc9" />
+            <flowNodeTargets>
+              <controlFlow Id="542be5a9-552c-47ab-99e8-84b33987f95e" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="c49fc39f-fcfa-4cbc-9d27-9f79ed29bf72" LastKnownName="Select Web Browser Assitance" />
+                <elementDefinition Id="ffaf2c8d-f7b2-470d-af87-33cb356d5b9e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c49fc39f-fcfa-4cbc-9d27-9f79ed29bf72" name="Select Web Browser Assitance" isLeaf="false">
+            <elementDefinition Id="1d453bef-c833-41c2-87dc-87d1c099dc4c" />
+            <flowNodeTargets>
+              <controlFlow Id="67167a8f-5369-4465-8531-916b8150e5f8" isLeaf="false">
+                <opaqueActionMoniker Id="2b742833-94cd-424f-807f-4a4e6e987d77" LastKnownName="Select Browser" />
+                <elementDefinition Id="6c3a1ef0-403c-4cc9-bd04-41c24932e430" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2b742833-94cd-424f-807f-4a4e6e987d77" name="Select Browser" isLeaf="false">
+            <elementDefinition Id="c09c1bb7-2966-40d7-8acc-cab7261a95ec" />
+            <flowNodeTargets>
+              <controlFlow Id="045e5fb5-6619-4b3a-b3e6-e4751087176e" isLeaf="false">
+                <decisionNodeMoniker Id="8606292a-8717-4b69-8d85-c5dc45db2841" LastKnownName="Decision1" />
+                <elementDefinition Id="554d7c2f-1060-44c4-8c28-6fe693d224ba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8606292a-8717-4b69-8d85-c5dc45db2841" name="Decision1" isLeaf="false">
+            <elementDefinition Id="b6071cf1-cd65-4712-830c-3bbde758d7a7" />
+            <flowNodeTargets>
+              <controlFlow Id="afe04796-e915-4b62-9992-d8b39e8f32fa" isLeaf="false">
+                <opaqueActionMoniker Id="7f9160b1-dae1-4c85-b2eb-72472bd1a631" LastKnownName="View Browser History" />
+                <elementDefinition Id="86f41239-7c81-4d4e-b97d-da81fe93f22b" />
+              </controlFlow>
+              <controlFlow Id="86cf7544-9538-4e5b-aa96-aff0c563f53b" isLeaf="false">
+                <decisionNodeMoniker Id="e4420f99-d7df-4958-aba5-1cca9a2c3e02" LastKnownName="Decision3" />
+                <elementDefinition Id="f10005cc-fd01-4b2e-9d0b-e5c77e6f6df6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="7f9160b1-dae1-4c85-b2eb-72472bd1a631" name="View Browser History" isLeaf="false">
+            <elementDefinition Id="e8215961-c3eb-408f-bf87-1ba738f63eb2" />
+            <flowNodeTargets>
+              <controlFlow Id="516e99e5-1ec3-418a-941a-3e2b7033cb44" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="047d142b-d4c1-4ac3-a0a7-b299b5df7f27" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="86a41152-783e-4157-b112-b9f1c855547c" name="Browser Window" isLeaf="false">
+            <elementDefinition Id="6480161d-4af1-490c-a296-9f81421f8fba" />
+            <flowNodeTargets>
+              <controlFlow Id="292224da-c267-4664-b2aa-52f279118f3c" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e24b0287-8733-4b22-9e63-7500c807e025" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5b629f39-34fe-4121-b3ee-2a550cc9956b" name="Open New" isLeaf="false">
+            <elementDefinition Id="55ee473d-b15b-492a-96f2-a07503456308" />
+            <flowNodeTargets>
+              <controlFlow Id="6d212caa-794d-4687-bf7e-1766d6aeb7ee" isLeaf="false">
+                <decisionNodeMoniker Id="17bed25c-41df-4a8f-aa74-ba1885d6f439" LastKnownName="Decision2" />
+                <elementDefinition Id="82600efa-b3a4-4f8d-b71f-0f1f1178f029" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="17bed25c-41df-4a8f-aa74-ba1885d6f439" name="Decision2" isLeaf="false">
+            <elementDefinition Id="5cec928e-d73c-46d9-ae78-52b04a30d289" />
+            <flowNodeTargets>
+              <controlFlow Id="e628ba08-beeb-41a9-8066-f1bf192c0712" isLeaf="false">
+                <opaqueActionMoniker Id="86a41152-783e-4157-b112-b9f1c855547c" LastKnownName="Browser Window" />
+                <elementDefinition Id="9ffb0b92-5e00-40a8-9188-1da31a0eb585" />
+              </controlFlow>
+              <controlFlow Id="a50247db-c73f-4885-94c7-5cd7193a4fe7" isLeaf="false">
+                <opaqueActionMoniker Id="4ab1190b-d8ff-4852-a3d2-04b7d5965a4a" LastKnownName="New Tab" />
+                <elementDefinition Id="3925892b-d9b2-46ef-926d-57ed5ac962b9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="4ab1190b-d8ff-4852-a3d2-04b7d5965a4a" name="New Tab" isLeaf="false">
+            <elementDefinition Id="5496ae8f-8f15-4702-b958-fe1316db60e1" />
+            <flowNodeTargets>
+              <controlFlow Id="724da949-84de-40ec-808d-30cd208b9320" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="5db671a1-f961-4067-99ef-4e5e334a2425" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d83c9d9e-0757-45f0-bdf4-4fe3e732db85" name="Reload Current Page" isLeaf="false">
+            <elementDefinition Id="1edffbef-ca4b-4549-8751-1127d354d367" />
+            <flowNodeTargets>
+              <controlFlow Id="12fe0976-aea0-401b-9cac-e59fec667cbd" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f88c1961-9284-4dfa-b9c6-51606a97f866" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cd88a6f1-5876-4f4f-af25-4562370357fc" name="Go to previous page" isLeaf="false">
+            <elementDefinition Id="c9e4eb54-b45a-4d27-b7c2-b41aba6b2a58" />
+            <flowNodeTargets>
+              <controlFlow Id="e0c12bd1-2bf9-4e3d-bd5c-982c807f5d62" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e0dcc6a7-1623-4d19-a512-5430ae720dc1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="e4420f99-d7df-4958-aba5-1cca9a2c3e02" name="Decision3" isLeaf="false">
+            <elementDefinition Id="3a4d6c5f-d110-406f-8c0c-6b5ae20bb152" />
+            <flowNodeTargets>
+              <controlFlow Id="6f0509d9-e51d-4f01-b814-5e77eafeb3d9" isLeaf="false">
+                <opaqueActionMoniker Id="5b629f39-34fe-4121-b3ee-2a550cc9956b" LastKnownName="Open New" />
+                <elementDefinition Id="5d5ae253-59e6-4a12-b4d5-4d01178280e2" />
+              </controlFlow>
+              <controlFlow Id="35198df1-91de-4cbf-8f9c-e1ab0dc0a4f2" isLeaf="false">
+                <decisionNodeMoniker Id="181a4ba7-8aaf-4405-9306-ce86bba3184c" LastKnownName="Decision4" />
+                <elementDefinition Id="b25c6794-22c3-44c1-acdb-271bc0a76137" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="181a4ba7-8aaf-4405-9306-ce86bba3184c" name="Decision4" isLeaf="false">
+            <elementDefinition Id="1f0f2846-a4ae-4db5-834d-1daa65e34755" />
+            <flowNodeTargets>
+              <controlFlow Id="e88564ca-d164-4057-ad58-c442c4a13c73" isLeaf="false">
+                <opaqueActionMoniker Id="d83c9d9e-0757-45f0-bdf4-4fe3e732db85" LastKnownName="Reload Current Page" />
+                <elementDefinition Id="1340409f-c0e1-4f15-a2f2-70a6a7fe9adb" />
+              </controlFlow>
+              <controlFlow Id="b8bcd72f-cf0a-40a4-8fd8-d0c4f6848063" isLeaf="false">
+                <decisionNodeMoniker Id="08ce319f-eafd-4ccf-9f8b-6bb6abb9f4d3" LastKnownName="Decision5" />
+                <elementDefinition Id="f4a84250-95a5-4f19-ace5-85009a164d2b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="08ce319f-eafd-4ccf-9f8b-6bb6abb9f4d3" name="Decision5" isLeaf="false">
+            <elementDefinition Id="7caa1e5b-7849-42f4-a93f-fa38245786a4" />
+            <flowNodeTargets>
+              <controlFlow Id="b63a7a20-08fd-449a-a025-e028866e231f" isLeaf="false">
+                <opaqueActionMoniker Id="cd88a6f1-5876-4f4f-af25-4562370357fc" LastKnownName="Go to previous page" />
+                <elementDefinition Id="17401af0-1fc8-4d06-aa08-a47a25dd7725" />
+              </controlFlow>
+              <controlFlow Id="f091ccd0-b109-4b08-8e13-3a0ee22bdc78" isLeaf="false">
+                <decisionNodeMoniker Id="0808f10c-7e23-4e4f-9555-23c63296629b" LastKnownName="Decision6" />
+                <elementDefinition Id="8f1624dd-94a3-4ad5-9f71-9ecaa9855041" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="3384b57f-d752-41cd-9228-2a2dd3322333" name="Bookmark Page" isLeaf="false">
+            <elementDefinition Id="489880b3-f8fc-4982-b86f-bf39cf935843" />
+            <flowNodeTargets>
+              <controlFlow Id="f34f26da-23f5-488b-b70a-0d4643558bdb" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9499bff0-8a24-4b76-b6a8-0f149eec7c3a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="0808f10c-7e23-4e4f-9555-23c63296629b" name="Decision6" isLeaf="false">
+            <elementDefinition Id="9a9f730b-ad60-41d8-8b5f-73f73a9493e1" />
+            <flowNodeTargets>
+              <controlFlow Id="5598a455-ba82-46e9-bd26-455e5cc1b4d2" isLeaf="false">
+                <opaqueActionMoniker Id="3384b57f-d752-41cd-9228-2a2dd3322333" LastKnownName="Bookmark Page" />
+                <elementDefinition Id="5d7da5b1-3dd8-45bc-bac8-888e24e38422" />
+              </controlFlow>
+              <controlFlow Id="ecca2471-6c9f-41c6-b717-d3ceb8b9b80c" isLeaf="false">
+                <decisionNodeMoniker Id="ca2f24d2-9e33-4459-aa91-6aec2bfc20c4" LastKnownName="Decision7" />
+                <elementDefinition Id="9664c794-ae77-4874-b209-ccdb5da8da32" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="e8128d30-a582-42cf-a233-d0ee01afc659" />
+          </activityFinalNode>
+          <decisionNode Id="ca2f24d2-9e33-4459-aa91-6aec2bfc20c4" name="Decision7" isLeaf="false">
+            <elementDefinition Id="951a7a67-b028-4273-aff5-3493701f054e" />
+            <flowNodeTargets>
+              <controlFlow Id="a65ced25-7712-4ce7-a23c-ba52fd923b41" guard="default" isLeaf="false">
+                <activityFinalNodeMoniker Id="2d2c43cb-df4c-4447-8dd4-58d30c47e0a3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e8df8749-fb0a-43a6-aaa8-0558f500cb4d" />
+              </controlFlow>
+              <controlFlow Id="2e66a607-b3e1-4fe1-a01a-a7dccf661bc8" isLeaf="false">
+                <opaqueActionMoniker Id="c49fc39f-fcfa-4cbc-9d27-9f79ed29bf72" LastKnownName="Select Web Browser Assitance" />
+                <elementDefinition Id="8b6ce7a3-a35d-4bdc-8eb8-bccb14be077c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9ef3b1c0-29ee-4574-9858-51aff26ba8f2" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</activityRootModel>

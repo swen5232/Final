@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9"
   name="Acolyte.AnalysisModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -604,6 +604,1381 @@ no outside access, only user may access</body>
           </include>
         </additions>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="354c850d-939d-4c00-b46b-303e188b4cdb"
+        name="ViewComputerStats"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="06944ddf-a926-42ff-914b-d60d07ef74bb"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1761071-5a59-4404-bed4-ee962924cf62"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="12d5e2f0-11cc-468b-9aec-78a0bd9b48d0"
+                  LastKnownName="Launch Application"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="9b4b2df5-a519-4ffd-8d8b-2aba474ffb5b"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="12d5e2f0-11cc-468b-9aec-78a0bd9b48d0"
+            name="Launch Application"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6ec8d62c-4104-451b-91e8-b189e1809605"
+                guard="Home"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d47f1cd6-6b5b-401f-b13a-69bc9163339e"
+                  LastKnownName="Select Computer Stats"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d47f1cd6-6b5b-401f-b13a-69bc9163339e"
+            name="Select Computer Stats"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="157e568c-c384-45e9-88cf-005b4fcfa2c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="46055369-1931-4c84-b184-fd0612a575ee"
+                  LastKnownName="Select stat"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="46055369-1931-4c84-b184-fd0612a575ee"
+            name="Select stat"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c916dab3-d5d6-4ac9-9c78-ffc5541990d5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9a67a3d4-9b59-44a7-8565-099c646e3163"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="9a67a3d4-9b59-44a7-8565-099c646e3163"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b90a71ce-e99d-4041-b8c6-5452ed25e75b"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c68178f0-5a6c-46e4-9566-2ccb0eceb7e6"
+                  LastKnownName="View CPU Utilization"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1a2cfedc-c6d1-4f94-8adb-3b9233813c41"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b6672297-9e31-4950-8416-49508e802eb3"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="c68178f0-5a6c-46e4-9566-2ccb0eceb7e6"
+            name="View CPU Utilization"
+            isLeaf="false" />
+          <decisionNode
+            Id="b6672297-9e31-4950-8416-49508e802eb3"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="187f6767-1dd4-457b-9ede-0e9a7e0af3dd"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2014de1d-0969-424c-8419-b842e882b7f4"
+                  LastKnownName="View RAM Availability"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="92b9fbb3-a2fa-4d14-8a90-53462e85b50b"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="17596b1c-9ce3-4ef8-a529-cb945edf648a"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="2014de1d-0969-424c-8419-b842e882b7f4"
+            name="View RAM Availability"
+            isLeaf="false" />
+          <opaqueAction
+            Id="be14fb48-8ca8-4788-b367-068e852aa845"
+            name="View Network Usage"
+            isLeaf="false" />
+          <decisionNode
+            Id="17596b1c-9ce3-4ef8-a529-cb945edf648a"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="42653829-9c0e-41a4-8281-47804bbeb251"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="be14fb48-8ca8-4788-b367-068e852aa845"
+                  LastKnownName="View Network Usage"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f7a3691e-882d-4ab0-96f7-a473d2860e25"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="306a44aa-c9e6-43cf-b611-ba3e7c184af6"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="306a44aa-c9e6-43cf-b611-ba3e7c184af6"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab311660-56fb-4dc8-8fc2-adaa4fefae48"
+                guard="default"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9b4b2df5-a519-4ffd-8d8b-2aba474ffb5b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c3b8f77c-2974-4f24-aae6-83f2140c5913"
+                guard="back"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="46055369-1931-4c84-b184-fd0612a575ee"
+                  LastKnownName="Select stat"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ddd9291e-5ea0-452c-adbe-53d5194195e0"
+        name="ApplicationAssistance"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="90a9c242-6cb1-4c3c-b8f0-2c6cd0a5d001"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="add8a2a2-c43f-4972-9385-b9dd29377cc0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="130ba5fb-1641-4b28-aa0b-56be32e93977"
+                  LastKnownName="Launch App"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="130ba5fb-1641-4b28-aa0b-56be32e93977"
+            name="Launch App"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d27de5cf-f01d-4285-b2da-591716913368"
+                guard="Home"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7750c544-ed82-46a8-9abf-71df748f36de"
+                  LastKnownName="Select App Help"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7750c544-ed82-46a8-9abf-71df748f36de"
+            name="Select App Help"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7b9e370e-28f5-41a5-90a0-13ac3aee43a2"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="0d49292f-898a-428c-aa24-332cb1ca4bc0"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9528fe0b-ef00-41d2-953a-99678dbd3e01"
+            name="Select Application"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="229ea185-8cd5-4a18-82af-9a532aa62937"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5b9e2a9a-4b78-48c6-a099-a8e752982ad6"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="09d6400a-f48c-472b-a021-c1ce3b52e4c6"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="62cefcba-bcef-462d-bdb8-069727c8400a"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b109bc2e-96ee-4516-9bb1-e331a38e53b9"
+                  LastKnownName="Open Application"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="40711f15-8d96-468f-8fb5-a9b7d9cc256b"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ab22df8d-d4b8-441d-967f-4feba3904ff6"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="5b9e2a9a-4b78-48c6-a099-a8e752982ad6"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="602a6fcf-3992-4605-ab54-f97485ae39bb"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2586f3e2-5b81-4538-b810-a35f16546c0d"
+                  LastKnownName="Close Application"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1835c46f-e451-4122-a90c-c3dd01c56ead"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="09d6400a-f48c-472b-a021-c1ce3b52e4c6"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="2586f3e2-5b81-4538-b810-a35f16546c0d"
+            name="Close Application"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cfaecb75-d1ea-40f0-afbe-9dcd9d73de7e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="21a44da8-f8ac-4fca-a25f-fbff943d2697"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b109bc2e-96ee-4516-9bb1-e331a38e53b9"
+            name="Open Application"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a6dd4e2f-861b-4152-93f2-e1f3e05c9e04"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="21a44da8-f8ac-4fca-a25f-fbff943d2697"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="0d49292f-898a-428c-aa24-332cb1ca4bc0"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c5c1be75-6d36-42d4-aed4-e5c26f98beac"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9528fe0b-ef00-41d2-953a-99678dbd3e01"
+                  LastKnownName="Select Application"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="11ad0a6b-8b83-46f1-8607-421814d90e59"
+                guard="Back"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7750c544-ed82-46a8-9abf-71df748f36de"
+                  LastKnownName="Select App Help"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="ab22df8d-d4b8-441d-967f-4feba3904ff6"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8f8cfce4-6980-418c-8564-75fb308e45b0"
+                guard="default"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="21a44da8-f8ac-4fca-a25f-fbff943d2697"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="67c08a7f-fe6b-490b-b4fd-7b57dfcaf355"
+                guard="false"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7750c544-ed82-46a8-9abf-71df748f36de"
+                  LastKnownName="Select App Help"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="21a44da8-f8ac-4fca-a25f-fbff943d2697"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ba55bc41-d7c2-4116-bcba-6215aa6697e3"
+        name="ManageBluetooth"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="96f54620-2083-4834-a774-3f22710b9c9c"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1f0254f6-b812-42b9-a8bd-6428aec288b6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4e37086e-25bb-44c1-83d8-8a0d63fb20f8"
+                  LastKnownName="Launch App"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="4e37086e-25bb-44c1-83d8-8a0d63fb20f8"
+            name="Launch App"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3ffbd5e2-1f44-4deb-9648-1d76618cf07e"
+                guard="Home"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="783dd072-519b-472d-a20c-9d5db2b5c16d"
+                  LastKnownName="Select Bluetooth"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="783dd072-519b-472d-a20c-9d5db2b5c16d"
+            name="Select Bluetooth"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c527e6d1-5b8a-4cc3-a0e9-cce5594a90c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="94de1e7f-c727-4c81-a913-7b005a9c390c"
+                  LastKnownName="View Paired Devices"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="e2578357-9373-4033-81f1-d9eec08b09cc"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5e5f1798-0bde-4590-b7fb-4080413ce535"
+                guard="Back"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="783dd072-519b-472d-a20c-9d5db2b5c16d"
+                  LastKnownName="Select Bluetooth"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="96554216-1bc2-41b7-b461-bbc2a82a5636"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3f202e2c-ce6b-4f83-8849-c3bdebdfb9d4"
+                  LastKnownName="Select Bluetooth Action"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="94de1e7f-c727-4c81-a913-7b005a9c390c"
+            name="View Paired Devices"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9ed5a1bc-49a1-4b8d-998a-0383495a01bc"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e2578357-9373-4033-81f1-d9eec08b09cc"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3f202e2c-ce6b-4f83-8849-c3bdebdfb9d4"
+            name="Select Bluetooth Action"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b3280339-31f9-45b6-9158-0591c4e6a0fd"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1ad3c8fb-e705-44f7-9312-d39f6e8913ee"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6f7df86e-6b91-4cb9-915c-8a15bbe9b53d"
+            name="Pair Device"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f899aad3-f3f9-47f8-a158-b8444e861661"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fd916613-3dc9-4c8d-a919-41cbe58c7ba5"
+                  LastKnownName="Search for Devices"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fd916613-3dc9-4c8d-a919-41cbe58c7ba5"
+            name="Search for Devices"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5cbe07bc-ff7f-4707-a1d1-8b3a7aeb93a9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="30593e18-67d3-492c-a43c-005775802847"
+                  LastKnownName="Select Device"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="30593e18-67d3-492c-a43c-005775802847"
+            name="Select Device"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5780f19-d146-44f1-9e20-1b1b72616011"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7239882a-bfc1-4cea-ae84-55f4d2aeb76d"
+                  LastKnownName="Connect to Bluetooh"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7239882a-bfc1-4cea-ae84-55f4d2aeb76d"
+            name="Connect to Bluetooh"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4642702a-c370-44c4-ba91-dae8bce23aef"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7568047d-d46b-433f-8f20-cf1ebd36384b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e976bcd6-d1c7-4356-86d5-5cd35cd3d5cd"
+            name="Forget Device"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="55ecc7e7-06a0-4c75-bf9a-ae18b25e0327"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3fd69160-557e-4760-9489-1591edfb4876"
+                  LastKnownName="Select Device"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3fd69160-557e-4760-9489-1591edfb4876"
+            name="Select Device"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="21b5ae64-9c07-4df3-82c8-d230f2978303"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7568047d-d46b-433f-8f20-cf1ebd36384b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="7568047d-d46b-433f-8f20-cf1ebd36384b"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="1ad3c8fb-e705-44f7-9312-d39f6e8913ee"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9ada0a90-cd59-4779-8708-71ba5d44bff3"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6f7df86e-6b91-4cb9-915c-8a15bbe9b53d"
+                  LastKnownName="Pair Device"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="caea11dd-17bf-49b1-a534-a09338d3957a"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e1a3ba5d-bc33-4387-8810-fc5285c8aae0"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="e1a3ba5d-bc33-4387-8810-fc5285c8aae0"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5cab0d9b-060c-4a20-9034-6116e7ab1f2b"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e976bcd6-d1c7-4356-86d5-5cd35cd3d5cd"
+                  LastKnownName="Forget Device"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="48969f49-1a92-44cf-87e1-dca13b79eea1"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2567c70b-c924-4a21-9560-829f6201dd15"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="2567c70b-c924-4a21-9560-829f6201dd15"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2ae15663-5596-4421-92b4-43d0fc24b127"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fc9c61c8-387e-4bbf-9a42-39142b3fc416"
+                  LastKnownName="Search for Devices"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f2fa3ece-b5a2-4b94-81ce-a9e27a3812a6"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="31a9a467-8ead-4cfe-b28d-ae3680b197db"
+                  LastKnownName="Decision7"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="02d35690-87b3-4920-8a19-8df0ea32bf9b"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d119856d-778c-4af5-ae8c-0d45e32a6222"
+                guard="default"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7568047d-d46b-433f-8f20-cf1ebd36384b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="07405fe9-e1f3-45af-bb0b-4b160ab7f41b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="94de1e7f-c727-4c81-a913-7b005a9c390c"
+                  LastKnownName="View Paired Devices"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="fc9c61c8-387e-4bbf-9a42-39142b3fc416"
+            name="Search for Devices"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="89a79503-12d7-47bb-b033-8e7a9c22642d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="cd3d9481-905a-41cd-b0b0-e017e0769dbd"
+                  LastKnownName="Decision6"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="cd3d9481-905a-41cd-b0b0-e017e0769dbd"
+            name="Decision6"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2cf2f9c7-dbd9-4ee6-97f6-bfe57ba57b62"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7568047d-d46b-433f-8f20-cf1ebd36384b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b48734e4-712f-432b-911a-46e9b8f9a3b3"
+                guard="Pair Device"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="30593e18-67d3-492c-a43c-005775802847"
+                  LastKnownName="Select Device"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e782b2bb-fbad-4eff-9c4f-5a1d4e048d17"
+            name="Enable Pairing Mode"
+            isLeaf="false" />
+          <decisionNode
+            Id="31a9a467-8ead-4cfe-b28d-ae3680b197db"
+            name="Decision7"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f8e30291-541c-487f-b466-8336d1deb668"
+                guard="false"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="02d35690-87b3-4920-8a19-8df0ea32bf9b"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f5d36d2f-00ff-4046-854f-a3a2efdac128"
+                guard="true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e782b2bb-fbad-4eff-9c4f-5a1d4e048d17"
+                  LastKnownName="Enable Pairing Mode"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="354dd1e5-70c5-477d-ae43-942a5e13ef51"
+        name="ManageWifi"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8105dbbf-fa17-4daf-8526-6c16f14814a1"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b8b1f504-11f7-4a12-b97b-07da96ae596d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dd80d876-b52f-4f91-bddf-d845e58db1d7"
+                  LastKnownName="Launch Application"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="dd80d876-b52f-4f91-bddf-d845e58db1d7"
+            name="Launch Application"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4c7bd193-e760-4b28-9447-6316ae5865f2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5ea64579-23f0-4369-bfe9-742ebc1c57f9"
+                  LastKnownName="Select Wifi Settings"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5ea64579-23f0-4369-bfe9-742ebc1c57f9"
+            name="Select Wifi Settings"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5c0d5854-7b5c-4a53-98c9-31f44b35cec6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d75e02f9-2e24-4c0c-88dc-3b6defdeb9d8"
+                  LastKnownName="View Network Status"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d75e02f9-2e24-4c0c-88dc-3b6defdeb9d8"
+            name="View Network Status"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="49b1d52d-9930-4b7c-98d8-933a27425c2f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a5618c2c-1cfb-4b6d-b83d-ab0032f08ecd"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a5618c2c-1cfb-4b6d-b83d-ab0032f08ecd"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8f4c2dac-ead9-4abd-bd79-15dadf8aedba"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="81d903d5-4930-428b-bde1-6e5cb36ff3ef"
+                  LastKnownName="View Available Networks"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b39de293-028c-4ca3-8448-9bc3967154a9"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="4068f8b0-e7e3-44bb-aca2-0ae0bf69990c"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="81d903d5-4930-428b-bde1-6e5cb36ff3ef"
+            name="View Available Networks"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="31c1846e-3a9e-45db-974d-f780d09b7c36"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="13b68dce-378a-481a-8848-c1409d770a48"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="4068f8b0-e7e3-44bb-aca2-0ae0bf69990c"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3537b71a-ece6-467c-875e-cd41fdd3c8d3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22063b6e-da6c-44e7-a0f0-ba4e865fc90f"
+                  LastKnownName="Connect to Wifi"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="078fc6d0-3972-4759-ad88-003f074e8618"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="889af8d8-2358-4d71-ad42-3c3b99f38d8a"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="13b68dce-378a-481a-8848-c1409d770a48"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="85522c56-e6a4-47e1-9ff8-767680f76e73"
+                guard="Connect to Network"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="22063b6e-da6c-44e7-a0f0-ba4e865fc90f"
+                  LastKnownName="Connect to Wifi"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2c384256-27e5-46b5-aeee-c8c87af7a1ca"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a91ba21c-0b62-4673-8936-4026f07175d6"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="22063b6e-da6c-44e7-a0f0-ba4e865fc90f"
+            name="Connect to Wifi"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fef3bfd6-eb4d-4f0c-9f86-8ad473e1278c"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a91ba21c-0b62-4673-8936-4026f07175d6"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="889af8d8-2358-4d71-ad42-3c3b99f38d8a"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38390fb2-9930-494c-9670-f3149c7a601f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d22f88f4-e265-4739-be52-e2d82ae58dcc"
+                  LastKnownName="Disconnect Wifi"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5c97f433-feb1-4085-b215-5eabba9fd961"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="8df3df9c-eacc-4198-b50e-c9da98e42c7a"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="d22f88f4-e265-4739-be52-e2d82ae58dcc"
+            name="Disconnect Wifi"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e04fe52d-08b5-48c0-9bb7-3d37b2988e51"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a91ba21c-0b62-4673-8936-4026f07175d6"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="8df3df9c-eacc-4198-b50e-c9da98e42c7a"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9665afa8-7068-4f71-9c62-a2137e64a96d"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a91ba21c-0b62-4673-8936-4026f07175d6"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a0335707-a41a-4097-b6ca-8b73b408f399"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5ea64579-23f0-4369-bfe9-742ebc1c57f9"
+                  LastKnownName="Select Wifi Settings"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="a91ba21c-0b62-4673-8936-4026f07175d6"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ad1e26ab-fb83-4a23-b399-3ace33fd2883"
+        name="Enable Pairing Mode"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3ae8ce69-84ec-4fbc-9395-2d42c9be9886">
+            <useCaseMoniker
+              Id="16905054-8431-49da-8b33-0dd7c32323a3"
+              LastKnownName="Bluetooth Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="0d0c97ec-8513-4dd6-b1a0-91d045435906"
+        name="WebBrowserAssistance"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="064a92b5-cb7c-44e7-b301-5b5e695785c8"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f45f61b3-125e-4380-a92c-95fa9eab0a62"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fcb45cb7-0a8a-403a-a2c5-ca0d32818bc9"
+                  LastKnownName="Launch Application"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="fcb45cb7-0a8a-403a-a2c5-ca0d32818bc9"
+            name="Launch Application"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ffaf2c8d-f7b2-470d-af87-33cb356d5b9e"
+                guard="Home"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1d453bef-c833-41c2-87dc-87d1c099dc4c"
+                  LastKnownName="Select Web Browser Assitance"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1d453bef-c833-41c2-87dc-87d1c099dc4c"
+            name="Select Web Browser Assitance"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6c3a1ef0-403c-4cc9-bd04-41c24932e430"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c09c1bb7-2966-40d7-8acc-cab7261a95ec"
+                  LastKnownName="Select Browser"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c09c1bb7-2966-40d7-8acc-cab7261a95ec"
+            name="Select Browser"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="554d7c2f-1060-44c4-8c28-6fe693d224ba"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b6071cf1-cd65-4712-830c-3bbde758d7a7"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b6071cf1-cd65-4712-830c-3bbde758d7a7"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="86f41239-7c81-4d4e-b97d-da81fe93f22b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e8215961-c3eb-408f-bf87-1ba738f63eb2"
+                  LastKnownName="View Browser History"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f10005cc-fd01-4b2e-9d0b-e5c77e6f6df6"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3a4d6c5f-d110-406f-8c0c-6b5ae20bb152"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e8215961-c3eb-408f-bf87-1ba738f63eb2"
+            name="View Browser History"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="047d142b-d4c1-4ac3-a0a7-b299b5df7f27"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6480161d-4af1-490c-a296-9f81421f8fba"
+            name="Browser Window"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e24b0287-8733-4b22-9e63-7500c807e025"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="55ee473d-b15b-492a-96f2-a07503456308"
+            name="Open New"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="82600efa-b3a4-4f8d-b71f-0f1f1178f029"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5cec928e-d73c-46d9-ae78-52b04a30d289"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="5cec928e-d73c-46d9-ae78-52b04a30d289"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9ffb0b92-5e00-40a8-9188-1da31a0eb585"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6480161d-4af1-490c-a296-9f81421f8fba"
+                  LastKnownName="Browser Window"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3925892b-d9b2-46ef-926d-57ed5ac962b9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5496ae8f-8f15-4702-b958-fe1316db60e1"
+                  LastKnownName="New Tab"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="5496ae8f-8f15-4702-b958-fe1316db60e1"
+            name="New Tab"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5db671a1-f961-4067-99ef-4e5e334a2425"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1edffbef-ca4b-4549-8751-1127d354d367"
+            name="Reload Current Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f88c1961-9284-4dfa-b9c6-51606a97f866"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c9e4eb54-b45a-4d27-b7c2-b41aba6b2a58"
+            name="Go to previous page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e0dcc6a7-1623-4d19-a512-5430ae720dc1"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="3a4d6c5f-d110-406f-8c0c-6b5ae20bb152"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5d5ae253-59e6-4a12-b4d5-4d01178280e2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="55ee473d-b15b-492a-96f2-a07503456308"
+                  LastKnownName="Open New"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b25c6794-22c3-44c1-acdb-271bc0a76137"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1f0f2846-a4ae-4db5-834d-1daa65e34755"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="1f0f2846-a4ae-4db5-834d-1daa65e34755"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1340409f-c0e1-4f15-a2f2-70a6a7fe9adb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1edffbef-ca4b-4549-8751-1127d354d367"
+                  LastKnownName="Reload Current Page"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f4a84250-95a5-4f19-ace5-85009a164d2b"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7caa1e5b-7849-42f4-a93f-fa38245786a4"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="7caa1e5b-7849-42f4-a93f-fa38245786a4"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="17401af0-1fc8-4d06-aa08-a47a25dd7725"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9e4eb54-b45a-4d27-b7c2-b41aba6b2a58"
+                  LastKnownName="Go to previous page"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8f1624dd-94a3-4ad5-9f71-9ecaa9855041"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9a9f730b-ad60-41d8-8b5f-73f73a9493e1"
+                  LastKnownName="Decision6"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="489880b3-f8fc-4982-b86f-bf39cf935843"
+            name="Bookmark Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9499bff0-8a24-4b76-b6a8-0f149eec7c3a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="9a9f730b-ad60-41d8-8b5f-73f73a9493e1"
+            name="Decision6"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5d7da5b1-3dd8-45bc-bac8-888e24e38422"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="489880b3-f8fc-4982-b86f-bf39cf935843"
+                  LastKnownName="Bookmark Page"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9664c794-ae77-4874-b209-ccdb5da8da32"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="951a7a67-b028-4273-aff5-3493701f054e"
+                  LastKnownName="Decision7"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="951a7a67-b028-4273-aff5-3493701f054e"
+            name="Decision7"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e8df8749-fb0a-43a6-aaa8-0558f500cb4d"
+                guard="default"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e8128d30-a582-42cf-a233-d0ee01afc659"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8b6ce7a3-a35d-4bdc-8eb8-bccb14be077c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1d453bef-c833-41c2-87dc-87d1c099dc4c"
+                  LastKnownName="Select Web Browser Assitance"
+                  LastKnownLocation="Acolyte.AnalysisModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2902b1f1-9988-4ac8-bbfa-61d8a95a36bb" name="ManageBluetooth" linkedPackageId="ebf398a4-25b8-47aa-a5ad-12c938bcaf76" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1a2babfe-fd35-49a4-a6e8-55d79de70030">
+      <profileInstance Id="a0d95192-95af-4d58-a18f-16b44f746bfb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a60d55b7-a5bb-48b6-8120-f12b2cc5ad07">
+      <profileInstance Id="e9d2a135-8fd9-4260-bf58-60c19698ba23" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1a9a7bed-47dd-48e6-bb80-6fe620579e75" name="ManageBluetooth" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ba55bc41-d7c2-4116-bcba-6215aa6697e3" />
+        <nodes>
+          <initialNode Id="544b1a57-6ac2-43d5-b703-13430179f713" name="Initial1" isLeaf="false">
+            <elementDefinition Id="96f54620-2083-4834-a774-3f22710b9c9c" />
+            <flowNodeTargets>
+              <controlFlow Id="9b19365c-3888-44f2-aa88-8701422e233f" isLeaf="false">
+                <opaqueActionMoniker Id="26be2969-73c8-4bf2-81cf-ce60153fe163" LastKnownName="Launch App" />
+                <elementDefinition Id="1f0254f6-b812-42b9-a8bd-6428aec288b6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="26be2969-73c8-4bf2-81cf-ce60153fe163" name="Launch App" isLeaf="false">
+            <elementDefinition Id="4e37086e-25bb-44c1-83d8-8a0d63fb20f8" />
+            <flowNodeTargets>
+              <controlFlow Id="6cbddfcb-1bbc-48e2-a68f-759f087375ee" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="bc394c7c-6ff0-4943-8398-361f00934b4e" LastKnownName="Select Bluetooth" />
+                <elementDefinition Id="3ffbd5e2-1f44-4deb-9648-1d76618cf07e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bc394c7c-6ff0-4943-8398-361f00934b4e" name="Select Bluetooth" isLeaf="false">
+            <elementDefinition Id="783dd072-519b-472d-a20c-9d5db2b5c16d" />
+            <flowNodeTargets>
+              <controlFlow Id="c73bf149-44af-4f7c-90a7-8303d5387579" isLeaf="false">
+                <opaqueActionMoniker Id="313ce3cf-c39e-4d0c-8e75-c83fc6890cbc" LastKnownName="View Paired Devices" />
+                <elementDefinition Id="c527e6d1-5b8a-4cc3-a0e9-cce5594a90c2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="910fb323-0922-4790-b045-364634dd7c58" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e2578357-9373-4033-81f1-d9eec08b09cc" />
+            <flowNodeTargets>
+              <controlFlow Id="2a9e90a0-07f3-49d4-900d-9f8a8bfea1b2" guard="Back" isLeaf="false">
+                <opaqueActionMoniker Id="bc394c7c-6ff0-4943-8398-361f00934b4e" LastKnownName="Select Bluetooth" />
+                <elementDefinition Id="5e5f1798-0bde-4590-b7fb-4080413ce535" />
+              </controlFlow>
+              <controlFlow Id="c9b00f2b-0c02-465a-80bb-a341ab6186c9" isLeaf="false">
+                <opaqueActionMoniker Id="75953af1-5412-4aa3-824c-e3ee31542dac" LastKnownName="Select Bluetooth Action" />
+                <elementDefinition Id="96554216-1bc2-41b7-b461-bbc2a82a5636" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="313ce3cf-c39e-4d0c-8e75-c83fc6890cbc" name="View Paired Devices" isLeaf="false">
+            <elementDefinition Id="94de1e7f-c727-4c81-a913-7b005a9c390c" />
+            <flowNodeTargets>
+              <controlFlow Id="4cafe3be-8dae-42fd-8a39-726341f69249" isLeaf="false">
+                <decisionNodeMoniker Id="910fb323-0922-4790-b045-364634dd7c58" LastKnownName="Decision1" />
+                <elementDefinition Id="9ed5a1bc-49a1-4b8d-998a-0383495a01bc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="75953af1-5412-4aa3-824c-e3ee31542dac" name="Select Bluetooth Action" isLeaf="false">
+            <elementDefinition Id="3f202e2c-ce6b-4f83-8849-c3bdebdfb9d4" />
+            <flowNodeTargets>
+              <controlFlow Id="52d6d7ac-8a2c-4a9f-9dba-bf1ee99a2c4b" isLeaf="false">
+                <decisionNodeMoniker Id="bbd8d4af-bf4e-4dc7-81e4-ea1b5a3dd1a2" LastKnownName="Decision2" />
+                <elementDefinition Id="b3280339-31f9-45b6-9158-0591c4e6a0fd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c189be29-539d-4ed2-b82e-95fbf8c1ce30" name="Pair Device" isLeaf="false">
+            <elementDefinition Id="6f7df86e-6b91-4cb9-915c-8a15bbe9b53d" />
+            <flowNodeTargets>
+              <controlFlow Id="71573812-fb5b-4502-a83a-8d6a85ec919a" isLeaf="false">
+                <opaqueActionMoniker Id="749955a6-cdba-4a4d-812a-19a2b15a93b8" LastKnownName="Search for Devices" />
+                <elementDefinition Id="f899aad3-f3f9-47f8-a158-b8444e861661" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="749955a6-cdba-4a4d-812a-19a2b15a93b8" name="Search for Devices" isLeaf="false">
+            <elementDefinition Id="fd916613-3dc9-4c8d-a919-41cbe58c7ba5" />
+            <flowNodeTargets>
+              <controlFlow Id="093d3259-a24b-4c91-ab7f-7f48e4a2b0cb" isLeaf="false">
+                <opaqueActionMoniker Id="d3628d10-2243-4455-9d2d-479a525d5982" LastKnownName="Select Device" />
+                <elementDefinition Id="5cbe07bc-ff7f-4707-a1d1-8b3a7aeb93a9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d3628d10-2243-4455-9d2d-479a525d5982" name="Select Device" isLeaf="false">
+            <elementDefinition Id="30593e18-67d3-492c-a43c-005775802847" />
+            <flowNodeTargets>
+              <controlFlow Id="0ec90c64-5580-4479-b549-75ade5b93321" isLeaf="false">
+                <opaqueActionMoniker Id="5b9b1023-450c-4121-bbf8-561a16b2562c" LastKnownName="Connect to Bluetooh" />
+                <elementDefinition Id="f5780f19-d146-44f1-9e20-1b1b72616011" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5b9b1023-450c-4121-bbf8-561a16b2562c" name="Connect to Bluetooh" isLeaf="false">
+            <elementDefinition Id="7239882a-bfc1-4cea-ae84-55f4d2aeb76d" />
+            <flowNodeTargets>
+              <controlFlow Id="10c6c697-bb01-49f7-a8bd-105c5401584c" isLeaf="false">
+                <activityFinalNodeMoniker Id="c308ad0b-20dc-4886-b3cd-d73e3946799c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4642702a-c370-44c4-ba91-dae8bce23aef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6688b1c3-79e6-4202-a5c8-1126ced8cb91" name="Forget Device" isLeaf="false">
+            <elementDefinition Id="e976bcd6-d1c7-4356-86d5-5cd35cd3d5cd" />
+            <flowNodeTargets>
+              <controlFlow Id="e8bfdc53-9311-4d29-9e6d-81561516b9ec" isLeaf="false">
+                <opaqueActionMoniker Id="68f2e27f-e2fc-4f0f-89b1-e9c94b3ce553" LastKnownName="Select Device" />
+                <elementDefinition Id="55ecc7e7-06a0-4c75-bf9a-ae18b25e0327" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="68f2e27f-e2fc-4f0f-89b1-e9c94b3ce553" name="Select Device" isLeaf="false">
+            <elementDefinition Id="3fd69160-557e-4760-9489-1591edfb4876" />
+            <flowNodeTargets>
+              <controlFlow Id="2b306372-8bc8-4019-8a76-864539464206" isLeaf="false">
+                <activityFinalNodeMoniker Id="c308ad0b-20dc-4886-b3cd-d73e3946799c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="21b5ae64-9c07-4df3-82c8-d230f2978303" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="c308ad0b-20dc-4886-b3cd-d73e3946799c" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="7568047d-d46b-433f-8f20-cf1ebd36384b" />
+          </activityFinalNode>
+          <decisionNode Id="bbd8d4af-bf4e-4dc7-81e4-ea1b5a3dd1a2" name="Decision2" isLeaf="false">
+            <elementDefinition Id="1ad3c8fb-e705-44f7-9312-d39f6e8913ee" />
+            <flowNodeTargets>
+              <controlFlow Id="790e8e3c-5f27-4301-9526-fa88852e9fb4" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="c189be29-539d-4ed2-b82e-95fbf8c1ce30" LastKnownName="Pair Device" />
+                <elementDefinition Id="9ada0a90-cd59-4779-8708-71ba5d44bff3" />
+              </controlFlow>
+              <controlFlow Id="323f5084-7bf2-449d-b7b8-78b586fce364" guard="false" isLeaf="false">
+                <decisionNodeMoniker Id="e0bd9574-3453-4276-a242-c40cb31cfa5a" LastKnownName="Decision3" />
+                <elementDefinition Id="caea11dd-17bf-49b1-a534-a09338d3957a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="e0bd9574-3453-4276-a242-c40cb31cfa5a" name="Decision3" isLeaf="false">
+            <elementDefinition Id="e1a3ba5d-bc33-4387-8810-fc5285c8aae0" />
+            <flowNodeTargets>
+              <controlFlow Id="b82df8c0-34f9-4aba-94a8-f3146165cae9" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="6688b1c3-79e6-4202-a5c8-1126ced8cb91" LastKnownName="Forget Device" />
+                <elementDefinition Id="5cab0d9b-060c-4a20-9034-6116e7ab1f2b" />
+              </controlFlow>
+              <controlFlow Id="56145683-bc66-4d9c-a7fe-1252aca08046" guard="false" isLeaf="false">
+                <decisionNodeMoniker Id="b99d3266-98ab-4bcb-9e49-db3dfb7e1a12" LastKnownName="Decision4" />
+                <elementDefinition Id="48969f49-1a92-44cf-87e1-dca13b79eea1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="b99d3266-98ab-4bcb-9e49-db3dfb7e1a12" name="Decision4" isLeaf="false">
+            <elementDefinition Id="2567c70b-c924-4a21-9560-829f6201dd15" />
+            <flowNodeTargets>
+              <controlFlow Id="e55ed171-febe-44e7-917a-3a7a37b831a0" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="f9055b88-ed52-4cb1-961c-056e3ccaef6c" LastKnownName="Search for Devices" />
+                <elementDefinition Id="2ae15663-5596-4421-92b4-43d0fc24b127" />
+              </controlFlow>
+              <controlFlow Id="ad6383e9-9c41-444f-8317-fa2604d200f5" isLeaf="false">
+                <decisionNodeMoniker Id="b255ecf6-4b8e-4851-a6bb-4b67723185ea" LastKnownName="Decision7" />
+                <elementDefinition Id="f2fa3ece-b5a2-4b94-81ce-a9e27a3812a6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="a1f87478-c977-4861-b439-2346ad69877f" name="Decision5" isLeaf="false">
+            <elementDefinition Id="02d35690-87b3-4920-8a19-8df0ea32bf9b" />
+            <flowNodeTargets>
+              <controlFlow Id="e1b43c94-353b-4ad8-8c67-749a844cf7d5" guard="default" isLeaf="false">
+                <activityFinalNodeMoniker Id="c308ad0b-20dc-4886-b3cd-d73e3946799c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="d119856d-778c-4af5-ae8c-0d45e32a6222" />
+              </controlFlow>
+              <controlFlow Id="934945b6-d319-4a99-b694-50428c7359ab" isLeaf="false">
+                <opaqueActionMoniker Id="313ce3cf-c39e-4d0c-8e75-c83fc6890cbc" LastKnownName="View Paired Devices" />
+                <elementDefinition Id="07405fe9-e1f3-45af-bb0b-4b160ab7f41b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f9055b88-ed52-4cb1-961c-056e3ccaef6c" name="Search for Devices" isLeaf="false">
+            <elementDefinition Id="fc9c61c8-387e-4bbf-9a42-39142b3fc416" />
+            <flowNodeTargets>
+              <controlFlow Id="94dc21e4-2c0c-46c6-bac2-748860823bba" isLeaf="false">
+                <decisionNodeMoniker Id="d1db2ebe-3f1e-4952-a524-e4f65dcf4996" LastKnownName="Decision6" />
+                <elementDefinition Id="89a79503-12d7-47bb-b033-8e7a9c22642d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="d1db2ebe-3f1e-4952-a524-e4f65dcf4996" name="Decision6" isLeaf="false">
+            <elementDefinition Id="cd3d9481-905a-41cd-b0b0-e017e0769dbd" />
+            <flowNodeTargets>
+              <controlFlow Id="7eccacc4-04bb-484d-b3df-898f02473110" isLeaf="false">
+                <activityFinalNodeMoniker Id="c308ad0b-20dc-4886-b3cd-d73e3946799c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="2cf2f9c7-dbd9-4ee6-97f6-bfe57ba57b62" />
+              </controlFlow>
+              <controlFlow Id="92f0533c-9b92-490a-a40d-952ffea52d64" guard="Pair Device" isLeaf="false">
+                <opaqueActionMoniker Id="d3628d10-2243-4455-9d2d-479a525d5982" LastKnownName="Select Device" />
+                <elementDefinition Id="b48734e4-712f-432b-911a-46e9b8f9a3b3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="15e11095-5d14-46ad-8f29-4edad3265fdf" name="Enable Pairing Mode" isLeaf="false">
+            <elementDefinition Id="e782b2bb-fbad-4eff-9c4f-5a1d4e048d17" />
+          </opaqueAction>
+          <decisionNode Id="b255ecf6-4b8e-4851-a6bb-4b67723185ea" name="Decision7" isLeaf="false">
+            <elementDefinition Id="31a9a467-8ead-4cfe-b28d-ae3680b197db" />
+            <flowNodeTargets>
+              <controlFlow Id="10a73b46-f429-4470-99e4-4129b8e87f6d" guard="false" isLeaf="false">
+                <decisionNodeMoniker Id="a1f87478-c977-4861-b439-2346ad69877f" LastKnownName="Decision5" />
+                <elementDefinition Id="f8e30291-541c-487f-b466-8336d1deb668" />
+              </controlFlow>
+              <controlFlow Id="ae3cd2e9-f018-412f-9163-0d723cdaf94b" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="15e11095-5d14-46ad-8f29-4edad3265fdf" LastKnownName="Enable Pairing Mode" />
+                <elementDefinition Id="f5d36d2f-00ff-4046-854f-a3a2efdac128" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ebf398a4-25b8-47aa-a5ad-12c938bcaf76" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</activityRootModel>

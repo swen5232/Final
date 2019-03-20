@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="ba98263e-c359-4476-b764-7b39f772fc24" name="ManageWifi" linkedPackageId="68d0ec84-b33c-4db6-bd1b-635aabd64251" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f9b5282d-7697-410c-969b-d8e3ee95e248">
+      <profileInstance Id="7fa97dbd-67c8-4fa3-94c7-b7841986f985" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="354a139b-f0e9-48f1-a998-a29fe176294b">
+      <profileInstance Id="d863423c-e6da-4282-80da-129ece1006e1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="63465baf-d03d-436d-b790-d4bb1ebd3576" name="ManageWifi" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="354dd1e5-70c5-477d-ae43-942a5e13ef51" />
+        <nodes>
+          <initialNode Id="06780d5f-5ad6-41bd-88cb-b64f89b9ab09" name="Initial1" isLeaf="false">
+            <elementDefinition Id="8105dbbf-fa17-4daf-8526-6c16f14814a1" />
+            <flowNodeTargets>
+              <controlFlow Id="342bb759-9e7f-4e39-b645-9a8287d70a34" isLeaf="false">
+                <opaqueActionMoniker Id="aa3efa28-1460-466d-a434-21811a1c1fd1" LastKnownName="Launch Application" />
+                <elementDefinition Id="b8b1f504-11f7-4a12-b97b-07da96ae596d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="aa3efa28-1460-466d-a434-21811a1c1fd1" name="Launch Application" isLeaf="false">
+            <elementDefinition Id="dd80d876-b52f-4f91-bddf-d845e58db1d7" />
+            <flowNodeTargets>
+              <controlFlow Id="d236123b-a6f6-49bc-bcd1-04c8c096d707" isLeaf="false">
+                <opaqueActionMoniker Id="02c0deca-e3fe-4b36-9585-8ea105bb1072" LastKnownName="Select Wifi Settings" />
+                <elementDefinition Id="4c7bd193-e760-4b28-9447-6316ae5865f2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="02c0deca-e3fe-4b36-9585-8ea105bb1072" name="Select Wifi Settings" isLeaf="false">
+            <elementDefinition Id="5ea64579-23f0-4369-bfe9-742ebc1c57f9" />
+            <flowNodeTargets>
+              <controlFlow Id="0e835689-fbc1-4e57-8267-9568963bb646" isLeaf="false">
+                <opaqueActionMoniker Id="c498c3eb-2cc1-4864-a4d1-df23c27af015" LastKnownName="View Network Status" />
+                <elementDefinition Id="5c0d5854-7b5c-4a53-98c9-31f44b35cec6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c498c3eb-2cc1-4864-a4d1-df23c27af015" name="View Network Status" isLeaf="false">
+            <elementDefinition Id="d75e02f9-2e24-4c0c-88dc-3b6defdeb9d8" />
+            <flowNodeTargets>
+              <controlFlow Id="7d5b80ef-bad9-4160-a7bb-1e70189c9b6c" isLeaf="false">
+                <decisionNodeMoniker Id="82503196-d290-429b-97c6-31643903f19e" LastKnownName="Decision1" />
+                <elementDefinition Id="49b1d52d-9930-4b7c-98d8-933a27425c2f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="82503196-d290-429b-97c6-31643903f19e" name="Decision1" isLeaf="false">
+            <elementDefinition Id="a5618c2c-1cfb-4b6d-b83d-ab0032f08ecd" />
+            <flowNodeTargets>
+              <controlFlow Id="370f93b9-1caa-4aa1-85b6-552cd48cb831" isLeaf="false">
+                <opaqueActionMoniker Id="7858ed50-35d0-41f8-9254-6bc7d173bb78" LastKnownName="View Available Networks" />
+                <elementDefinition Id="8f4c2dac-ead9-4abd-bd79-15dadf8aedba" />
+              </controlFlow>
+              <controlFlow Id="cb7fe7c3-4681-4379-8911-c7c4288cc4b0" isLeaf="false">
+                <decisionNodeMoniker Id="8c758fea-080e-4eb1-a9bc-f3a4593ac134" LastKnownName="Decision2" />
+                <elementDefinition Id="b39de293-028c-4ca3-8448-9bc3967154a9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="7858ed50-35d0-41f8-9254-6bc7d173bb78" name="View Available Networks" isLeaf="false">
+            <elementDefinition Id="81d903d5-4930-428b-bde1-6e5cb36ff3ef" />
+            <flowNodeTargets>
+              <controlFlow Id="f4287c1e-416a-4f8b-b98e-77620b12dde9" isLeaf="false">
+                <decisionNodeMoniker Id="cc658366-1e09-4eec-8d88-313e6ac946bc" LastKnownName="Decision3" />
+                <elementDefinition Id="31c1846e-3a9e-45db-974d-f780d09b7c36" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8c758fea-080e-4eb1-a9bc-f3a4593ac134" name="Decision2" isLeaf="false">
+            <elementDefinition Id="4068f8b0-e7e3-44bb-aca2-0ae0bf69990c" />
+            <flowNodeTargets>
+              <controlFlow Id="2b988380-3ef5-4fa0-a512-09a7ce2e9953" isLeaf="false">
+                <opaqueActionMoniker Id="61977b30-4b25-44c8-9c15-d92af24f8c7f" LastKnownName="Connect to Wifi" />
+                <elementDefinition Id="3537b71a-ece6-467c-875e-cd41fdd3c8d3" />
+              </controlFlow>
+              <controlFlow Id="450d05fd-745c-41fa-b369-c76460a0218b" isLeaf="false">
+                <decisionNodeMoniker Id="142fa999-7759-4ba3-8a07-9887df1bf946" LastKnownName="Decision5" />
+                <elementDefinition Id="078fc6d0-3972-4759-ad88-003f074e8618" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="cc658366-1e09-4eec-8d88-313e6ac946bc" name="Decision3" isLeaf="false">
+            <elementDefinition Id="13b68dce-378a-481a-8848-c1409d770a48" />
+            <flowNodeTargets>
+              <controlFlow Id="5a02caac-6559-42fe-9264-33f7fca88381" guard="Connect to Network" isLeaf="false">
+                <opaqueActionMoniker Id="61977b30-4b25-44c8-9c15-d92af24f8c7f" LastKnownName="Connect to Wifi" />
+                <elementDefinition Id="85522c56-e6a4-47e1-9ff8-767680f76e73" />
+              </controlFlow>
+              <controlFlow Id="4117cb24-2460-4e7c-84c2-1b83abb71e4a" isLeaf="false">
+                <activityFinalNodeMoniker Id="fc4f9faf-5841-4c86-baa4-095324505d55" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="2c384256-27e5-46b5-aeee-c8c87af7a1ca" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="61977b30-4b25-44c8-9c15-d92af24f8c7f" name="Connect to Wifi" isLeaf="false">
+            <elementDefinition Id="22063b6e-da6c-44e7-a0f0-ba4e865fc90f" />
+            <flowNodeTargets>
+              <controlFlow Id="9214cb4a-87d2-4d83-b631-82909e5ff6d4" isLeaf="false">
+                <activityFinalNodeMoniker Id="fc4f9faf-5841-4c86-baa4-095324505d55" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="fef3bfd6-eb4d-4f0c-9f86-8ad473e1278c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="142fa999-7759-4ba3-8a07-9887df1bf946" name="Decision5" isLeaf="false">
+            <elementDefinition Id="889af8d8-2358-4d71-ad42-3c3b99f38d8a" />
+            <flowNodeTargets>
+              <controlFlow Id="6975b902-4f0e-4255-896b-fd06b93f85bf" isLeaf="false">
+                <opaqueActionMoniker Id="2cfc3fd8-7ad5-4c7b-99d7-fbffa327ad91" LastKnownName="Disconnect Wifi" />
+                <elementDefinition Id="38390fb2-9930-494c-9670-f3149c7a601f" />
+              </controlFlow>
+              <controlFlow Id="f4253009-1fb1-4545-bdbb-01bbc5315e61" isLeaf="false">
+                <decisionNodeMoniker Id="d476135d-27c7-4dd5-a453-4d7a1e392ccc" LastKnownName="Decision4" />
+                <elementDefinition Id="5c97f433-feb1-4085-b215-5eabba9fd961" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="2cfc3fd8-7ad5-4c7b-99d7-fbffa327ad91" name="Disconnect Wifi" isLeaf="false">
+            <elementDefinition Id="d22f88f4-e265-4739-be52-e2d82ae58dcc" />
+            <flowNodeTargets>
+              <controlFlow Id="dc0a26e7-30f2-4f56-96c8-e5db04a88a59" isLeaf="false">
+                <activityFinalNodeMoniker Id="fc4f9faf-5841-4c86-baa4-095324505d55" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e04fe52d-08b5-48c0-9bb7-3d37b2988e51" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="d476135d-27c7-4dd5-a453-4d7a1e392ccc" name="Decision4" isLeaf="false">
+            <elementDefinition Id="8df3df9c-eacc-4198-b50e-c9da98e42c7a" />
+            <flowNodeTargets>
+              <controlFlow Id="63ad8135-ff14-4f46-a8fc-523bd903f257" isLeaf="false">
+                <activityFinalNodeMoniker Id="fc4f9faf-5841-4c86-baa4-095324505d55" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9665afa8-7068-4f71-9c62-a2137e64a96d" />
+              </controlFlow>
+              <controlFlow Id="fc05deaf-c24d-44b0-add9-3a09021d2696" isLeaf="false">
+                <opaqueActionMoniker Id="02c0deca-e3fe-4b36-9585-8ea105bb1072" LastKnownName="Select Wifi Settings" />
+                <elementDefinition Id="a0335707-a41a-4097-b6ca-8b73b408f399" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="fc4f9faf-5841-4c86-baa4-095324505d55" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a91ba21c-0b62-4673-8936-4026f07175d6" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="68d0ec84-b33c-4db6-bd1b-635aabd64251" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="21309cd7-c56e-40aa-9ffb-1a4d7b1f0782" name="ApplicationAssistance" linkedPackageId="688b4f08-b23e-4f03-8994-d525b911b79d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5b62e373-a1e6-48ac-9a69-cdaf92708c0e">
+      <profileInstance Id="677050e6-dee7-4fa5-92b3-1cde10f67278" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e0a7f7f8-697e-4d13-aecb-484221992f85">
+      <profileInstance Id="b09949be-fe7c-4b7d-8b52-7c3f7975938b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="7c893083-b95c-49c4-983a-9694a3c5fc82" name="ApplicationAssistance" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ddd9291e-5ea0-452c-adbe-53d5194195e0" />
+        <nodes>
+          <initialNode Id="c13f8261-3d77-432c-8fd4-29b54560b75a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="90a9c242-6cb1-4c3c-b8f0-2c6cd0a5d001" />
+            <flowNodeTargets>
+              <controlFlow Id="92505fba-2f65-49e2-9e62-93f7531d6947" isLeaf="false">
+                <opaqueActionMoniker Id="62b03eab-1e29-4351-a135-ff7f4b43ae49" LastKnownName="Launch App" />
+                <elementDefinition Id="add8a2a2-c43f-4972-9385-b9dd29377cc0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="62b03eab-1e29-4351-a135-ff7f4b43ae49" name="Launch App" isLeaf="false">
+            <elementDefinition Id="130ba5fb-1641-4b28-aa0b-56be32e93977" />
+            <flowNodeTargets>
+              <controlFlow Id="e89326c2-611a-4317-9070-6219239beadd" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="80422973-0a7e-40e0-ba30-8bf28d1aba0a" LastKnownName="Select App Help" />
+                <elementDefinition Id="d27de5cf-f01d-4285-b2da-591716913368" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="80422973-0a7e-40e0-ba30-8bf28d1aba0a" name="Select App Help" isLeaf="false">
+            <elementDefinition Id="7750c544-ed82-46a8-9abf-71df748f36de" />
+            <flowNodeTargets>
+              <controlFlow Id="8ab4cded-456f-49cc-88a3-1d0a64e00730" isLeaf="false">
+                <decisionNodeMoniker Id="b745e598-8b54-4e4e-90e7-e6d2da453fab" LastKnownName="Decision3" />
+                <elementDefinition Id="7b9e370e-28f5-41a5-90a0-13ac3aee43a2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b03b8bc4-7b5c-403b-bdc2-5710b7f37d62" name="Select Application" isLeaf="false">
+            <elementDefinition Id="9528fe0b-ef00-41d2-953a-99678dbd3e01" />
+            <flowNodeTargets>
+              <controlFlow Id="c75e5356-639e-4057-a6a6-0f3216abd161" isLeaf="false">
+                <decisionNodeMoniker Id="fdb687ac-b0a0-4cd9-a0cd-3bd4089daed7" LastKnownName="Decision2" />
+                <elementDefinition Id="229ea185-8cd5-4a18-82af-9a532aa62937" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="78651a85-7bb4-4b12-93ca-ecf029a61d93" name="Decision1" isLeaf="false">
+            <elementDefinition Id="09d6400a-f48c-472b-a021-c1ce3b52e4c6" />
+            <flowNodeTargets>
+              <controlFlow Id="007f0264-2df7-4e8a-b03f-2cded4e1a497" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="9a2a6746-d1af-4454-80f2-41a843c3223e" LastKnownName="Open Application" />
+                <elementDefinition Id="62cefcba-bcef-462d-bdb8-069727c8400a" />
+              </controlFlow>
+              <controlFlow Id="577483af-4a2d-462e-8308-6ffd954551a7" guard="false" isLeaf="false">
+                <decisionNodeMoniker Id="6a2987cd-e860-4d30-9435-98b0d31bfab1" LastKnownName="Decision4" />
+                <elementDefinition Id="40711f15-8d96-468f-8fb5-a9b7d9cc256b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="fdb687ac-b0a0-4cd9-a0cd-3bd4089daed7" name="Decision2" isLeaf="false">
+            <elementDefinition Id="5b9e2a9a-4b78-48c6-a099-a8e752982ad6" />
+            <flowNodeTargets>
+              <controlFlow Id="60d25e38-92b0-4fce-8f8c-75bedc59340b" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="32d5f834-4ed1-4a6a-9ce6-ca96f8259b5d" LastKnownName="Close Application" />
+                <elementDefinition Id="602a6fcf-3992-4605-ab54-f97485ae39bb" />
+              </controlFlow>
+              <controlFlow Id="f6fbb9c4-aa00-4a36-affd-f0e4e5d7903b" guard="false" isLeaf="false">
+                <decisionNodeMoniker Id="78651a85-7bb4-4b12-93ca-ecf029a61d93" LastKnownName="Decision1" />
+                <elementDefinition Id="1835c46f-e451-4122-a90c-c3dd01c56ead" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="32d5f834-4ed1-4a6a-9ce6-ca96f8259b5d" name="Close Application" isLeaf="false">
+            <elementDefinition Id="2586f3e2-5b81-4538-b810-a35f16546c0d" />
+            <flowNodeTargets>
+              <controlFlow Id="502c9bab-e363-4dfb-a17c-090c9a433c0c" isLeaf="false">
+                <activityFinalNodeMoniker Id="7024f906-412a-4994-b43f-d76947993efe" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="cfaecb75-d1ea-40f0-afbe-9dcd9d73de7e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9a2a6746-d1af-4454-80f2-41a843c3223e" name="Open Application" isLeaf="false">
+            <elementDefinition Id="b109bc2e-96ee-4516-9bb1-e331a38e53b9" />
+            <flowNodeTargets>
+              <controlFlow Id="030ee4c3-e011-4980-b333-d1b0d8398a9f" isLeaf="false">
+                <activityFinalNodeMoniker Id="7024f906-412a-4994-b43f-d76947993efe" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a6dd4e2f-861b-4152-93f2-e1f3e05c9e04" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b745e598-8b54-4e4e-90e7-e6d2da453fab" name="Decision3" isLeaf="false">
+            <elementDefinition Id="0d49292f-898a-428c-aa24-332cb1ca4bc0" />
+            <flowNodeTargets>
+              <controlFlow Id="a9513f36-a56b-446c-a58e-c32fb9788973" isLeaf="false">
+                <opaqueActionMoniker Id="b03b8bc4-7b5c-403b-bdc2-5710b7f37d62" LastKnownName="Select Application" />
+                <elementDefinition Id="c5c1be75-6d36-42d4-aed4-e5c26f98beac" />
+              </controlFlow>
+              <controlFlow Id="bf72d966-9193-41ca-8537-0795d9a146a2" guard="Back" isLeaf="false">
+                <opaqueActionMoniker Id="80422973-0a7e-40e0-ba30-8bf28d1aba0a" LastKnownName="Select App Help" />
+                <elementDefinition Id="11ad0a6b-8b83-46f1-8607-421814d90e59" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="6a2987cd-e860-4d30-9435-98b0d31bfab1" name="Decision4" isLeaf="false">
+            <elementDefinition Id="ab22df8d-d4b8-441d-967f-4feba3904ff6" />
+            <flowNodeTargets>
+              <controlFlow Id="7bcce6d6-8c83-4d6d-9392-6dc8c3f8f1e3" guard="default" isLeaf="false">
+                <activityFinalNodeMoniker Id="7024f906-412a-4994-b43f-d76947993efe" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8f8cfce4-6980-418c-8564-75fb308e45b0" />
+              </controlFlow>
+              <controlFlow Id="46a9f2be-2f4d-4445-a1ce-47527ad9d853" guard="false" isLeaf="false">
+                <opaqueActionMoniker Id="80422973-0a7e-40e0-ba30-8bf28d1aba0a" LastKnownName="Select App Help" />
+                <elementDefinition Id="67c08a7f-fe6b-490b-b4fd-7b57dfcaf355" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="7024f906-412a-4994-b43f-d76947993efe" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="21a44da8-f8ac-4fca-a25f-fbff943d2697" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="688b4f08-b23e-4f03-8994-d525b911b79d" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</activityRootModel>

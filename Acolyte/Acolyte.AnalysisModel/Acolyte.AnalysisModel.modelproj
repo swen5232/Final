@@ -66,6 +66,41 @@
       <SubType>Content</SubType>
       <DependentUpon>10-UseCases\WebBrowserAssistance.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="20-ActivityDiagrams\ApplicationAssistance.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ApplicationAssistance.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>20-ActivityDiagrams\ApplicationAssistance.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ManageBluetooth.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ManageBluetooth.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>20-ActivityDiagrams\ManageBluetooth.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ManageWifi.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ManageWifi.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>20-ActivityDiagrams\ManageWifi.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ViewComputerStats.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20-ActivityDiagrams\ViewComputerStats.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>20-ActivityDiagrams\ViewComputerStats.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="20-ActivityDiagrams\WebBrowserAssistance.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20-ActivityDiagrams\WebBrowserAssistance.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>20-ActivityDiagrams\WebBrowserAssistance.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="AcolyteBrainstorm.usecasediagram">
       <SubType>Content</SubType>
     </Content>

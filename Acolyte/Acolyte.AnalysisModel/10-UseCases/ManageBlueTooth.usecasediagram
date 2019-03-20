@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c9fbc878-253a-4f84-81b3-9b33c5c6f567" name="ManageComputerSettings" linkedPackageId="76e7c90b-6188-4b29-9064-65dbd65dc6d8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="0680c774-d472-45b2-8ef2-00193afe20f2">
-      <profileInstance Id="26677b95-764f-482c-898a-a2a1484d9bd9" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="2e8c3517-0738-4c8c-8e28-9e4074b10cdd">
-      <profileInstance Id="7c0d4378-24a0-454f-81cf-fa0d07ba0a5c" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="c9fbc878-253a-4f84-81b3-9b33c5c6f567" name="ManageComputerSettings" linkedPackageId="76e7c90b-6188-4b29-9064-65dbd65dc6d8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="a22439b3-1efe-4675-9239-6d52b635a963" name="Computer User" isAbstract="false" isLeaf="false">
@@ -98,8 +84,33 @@
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b97971e-a1da-4de1-9605-b6e804315fff" name="Enable Pairing Mode" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad1e26ab-fb83-4a23-b399-3ace33fd2883" />
+        <extendedCases>
+          <extend Id="bf276e8b-7af3-451e-a5e2-87f3627374e0">
+            <useCaseMoniker Id="49a68e5d-1c51-4040-a4c5-b8fb2fa03cd5" LastKnownName="Bluetooth Settings" />
+            <elementDefinition Id="3ae8ce69-84ec-4fbc-9395-2d42c9be9886" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="76e7c90b-6188-4b29-9064-65dbd65dc6d8" name="Acolyte.AnalysisModel">
     <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0680c774-d472-45b2-8ef2-00193afe20f2">
+        <profileInstance Id="26677b95-764f-482c-898a-a2a1484d9bd9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2e8c3517-0738-4c8c-8e28-9e4074b10cdd">
+        <profileInstance Id="7c0d4378-24a0-454f-81cf-fa0d07ba0a5c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
