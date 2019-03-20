@@ -87,6 +87,13 @@
       <SubType>Content</SubType>
       <DependentUpon>10-UseCases\WebBrowserAssistance.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="20-DomainModel\AcolyteDomainModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="20-DomainModel\AcolyteDomainModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>20-DomainModel\AcolyteDomainModel.classdiagram</DependentUpon>
+    </Content>
     <Content Include="30-ActivityDiagrams\ApplicationAssistance.activitydiagram">
       <SubType>Content</SubType>
     </Content>
