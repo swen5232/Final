@@ -319,6 +319,20 @@ no outside access, only user may access</body>
               LastKnownName="Wifi Settings"
               LastKnownLocation="Acolyte.AnalysisModel.uml" />
           </include>
+          <include
+            Id="60b827c7-bbb7-4006-9473-cc9aef993ea8">
+            <useCaseMoniker
+              Id="8c40d188-6378-4269-bbc8-75e3a86bdcf1"
+              LastKnownName="Display Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+          <include
+            Id="28dc68a8-1d31-4ba7-b427-c7d5ff90131b">
+            <useCaseMoniker
+              Id="400ee319-9d0e-4a80-9c11-0ed18e96d36b"
+              LastKnownName="Audio Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
         </additions>
       </useCase>
     </packageHasNamedElement>
@@ -1979,6 +1993,122 @@ no outside access, only user may access</body>
           </decisionNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c40d188-6378-4269-bbc8-75e3a86bdcf1"
+        name="Display Settings"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3cbde831-7629-44b6-9b11-5b5e40ea7914">
+            <useCaseMoniker
+              Id="af1c2929-b47d-40fe-b436-c8a1554d95d0"
+              LastKnownName="Brightness Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="400ee319-9d0e-4a80-9c11-0ed18e96d36b"
+        name="Audio Settings"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="749d0e48-f123-4343-99d8-11550e8a903b"
+        name="Mute"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4c4c4f88-1708-4cf9-9995-86b40e523f40">
+            <useCaseMoniker
+              Id="400ee319-9d0e-4a80-9c11-0ed18e96d36b"
+              LastKnownName="Audio Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="87ba5dc8-ab2f-41a4-b38d-386a4713e8d0"
+        name="Change Volume"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="82b0450a-67c9-4bfe-aef8-ed277e519479">
+            <useCaseMoniker
+              Id="400ee319-9d0e-4a80-9c11-0ed18e96d36b"
+              LastKnownName="Audio Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="af1c2929-b47d-40fe-b436-c8a1554d95d0"
+        name="Brightness Settings"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="61f1371a-0190-435c-befb-6aa48afc396e"
+        name="Increase Brightness"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="621fe3e3-3e83-4477-a746-c27fd67f3457">
+            <useCaseMoniker
+              Id="af1c2929-b47d-40fe-b436-c8a1554d95d0"
+              LastKnownName="Brightness Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="786ca18b-15b8-42b5-9f34-1397c58d146d"
+        name="Decrease Brightness"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f84a8d34-829e-41ed-b5e3-b8c8bbd921bc">
+            <useCaseMoniker
+              Id="af1c2929-b47d-40fe-b436-c8a1554d95d0"
+              LastKnownName="Brightness Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fdcd3da1-2550-449b-8983-b202e251ca49"
+        name="Change Resolution"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="68a1f2d1-759d-4b52-87af-ad1e2b3768e1">
+            <useCaseMoniker
+              Id="8c40d188-6378-4269-bbc8-75e3a86bdcf1"
+              LastKnownName="Display Settings"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

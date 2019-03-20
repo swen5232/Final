@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ManageComputerSettings">
+  <useCaseModelRootMoniker Id="c9b1558a-ef4a-4006-b2ac-fd746fe32bfb" />
+  <nestedChildShapes>
+    <actorShape Id="4269b24f-1595-4cb0-9a28-26ef05e07d6b" absoluteBounds="2, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="b6d066f6-1a05-485a-b1c0-edb4315e10d2" LastKnownName="Computer User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="0c347ab5-9912-402d-b864-eb32e9761ac8" absoluteBounds="3.375, 2.5, 1.375, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ac9a945f-f0e7-4bae-a14f-3c79ede8578f" LastKnownName="Manage Computer Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.5 : 2.875); (3.375 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="422b6213-2414-4a6a-a854-3fe5e8925644" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4269b24f-1595-4cb0-9a28-26ef05e07d6b" />
+        <useCaseShapeMoniker Id="0c347ab5-9912-402d-b864-eb32e9761ac8" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="7aedd4d0-d2df-432d-8d30-30a6b3b6f403" absoluteBounds="5.375, 1.375, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a130ebf5-9727-4a5b-a482-35c7a005a493" LastKnownName="Display Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(4.51114941051511 : 2.59085537334043); (5.56656622720167 : 1.92242472277227)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="fbe16c33-61e7-48b7-a309-759373ad3816" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0c347ab5-9912-402d-b864-eb32e9761ac8" />
+        <useCaseShapeMoniker Id="7aedd4d0-d2df-432d-8d30-30a6b3b6f403" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="e5f3ea35-941d-453f-9883-ecc9e34191d3" absoluteBounds="5.375, 3.625, 1.125, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e1f1e6cc-1fb0-4210-8283-f8bf92ed89cb" LastKnownName="Audio Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(4.52496254587246 : 3.15247752752348); (5.51939704273597 : 3.74913822564158)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="3449d764-6e01-4414-9007-da7c6bf60d34" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0c347ab5-9912-402d-b864-eb32e9761ac8" />
+        <useCaseShapeMoniker Id="e5f3ea35-941d-453f-9883-ecc9e34191d3" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="714c0112-63d2-43df-825a-b65500e10c16" absoluteBounds="5.375, 2.125, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="405387c7-32ff-4dc4-8183-15f95d12812d" LastKnownName="Bluetooth Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(4.69459370213344 : 2.7275114695022); (5.41888506559586 : 2.55851015136097)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="bd41003b-b40f-487a-b5b3-777164504fc8" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0c347ab5-9912-402d-b864-eb32e9761ac8" />
+        <useCaseShapeMoniker Id="714c0112-63d2-43df-825a-b65500e10c16" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="e7f3b915-6a80-4e82-b7dd-8543a69b6af6" absoluteBounds="5.375, 2.875, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="87774046-4d50-4902-a622-4b2f22c457f3" LastKnownName="Wifi Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(4.71999170509779 : 2.98458195084963); (5.3987227145631 : 3.09770378576052)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="4a5acb0d-6dda-4203-9c96-c00866ef0f95" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0c347ab5-9912-402d-b864-eb32e9761ac8" />
+        <useCaseShapeMoniker Id="e7f3b915-6a80-4e82-b7dd-8543a69b6af6" />
+      </nodes>
+    </includeConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

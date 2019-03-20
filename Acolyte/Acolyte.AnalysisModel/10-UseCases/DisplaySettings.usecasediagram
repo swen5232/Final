@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="7f983186-c3af-4e11-903e-b2d5798673e4" name="DisplaySettings" linkedPackageId="7a0693c3-2099-4817-9a25-70d29c7b59f4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="9431fff8-8d46-4ac3-aae5-0fb425d79537">
+      <profileInstance Id="2b5938a9-c45e-4e41-b605-6848fcbd3ca4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0e4c5e2c-6b1e-4cb2-87c6-430ae2bc02f6">
+      <profileInstance Id="a57656ed-c7c7-438d-b465-f9aee3be0446" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="061a73a4-ebf2-4993-a3f2-ab5c0b124910" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="6021ba97-f10b-42e2-955f-2de5e976cb38" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Manage Computer Settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="20f4f0f1-ba2d-4211-97e2-592c94f1ae21" LastKnownName="Manage Computer Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36a32861-569d-4b61-b8ce-5ec13583f46d" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37edc0ec-0dc7-489d-88e1-380d6835d666" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e044a861-58eb-4555-99e3-8d9f860e4f64" name="Manage Computer Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f261471-8401-4ee9-9398-18e352074eb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="250d01d3-0486-4d03-a01d-64e488d26a21" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="20f4f0f1-ba2d-4211-97e2-592c94f1ae21" name="Manage Computer Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97553236-c79b-4807-a4c2-90a8da42d921" />
+        <additions>
+          <include Id="f86a32a2-4449-4ea1-9773-0c7301db7388">
+            <useCaseMoniker Id="3ef8108e-9f10-4f2c-b526-cd9eaa2ebe66" LastKnownName="Display Settings" />
+            <elementDefinition Id="60b827c7-bbb7-4006-9473-cc9aef993ea8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3ef8108e-9f10-4f2c-b526-cd9eaa2ebe66" name="Display Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c40d188-6378-4269-bbc8-75e3a86bdcf1" />
+        <additions>
+          <include Id="e4a5ec5b-e3ed-41f7-9aca-cde88dbf8541">
+            <useCaseMoniker Id="36c97979-c7b6-4a0f-92d1-3fc631c79109" LastKnownName="Brightness Settings" />
+            <elementDefinition Id="3cbde831-7629-44b6-9b11-5b5e40ea7914" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="36c97979-c7b6-4a0f-92d1-3fc631c79109" name="Brightness Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af1c2929-b47d-40fe-b436-c8a1554d95d0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ecc0447-59a0-442f-8cee-f26e6d92890b" name="Increase Brightness" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61f1371a-0190-435c-befb-6aa48afc396e" />
+        <extendedCases>
+          <extend Id="1e891165-2d94-48b4-8791-28aa8b76d859">
+            <useCaseMoniker Id="36c97979-c7b6-4a0f-92d1-3fc631c79109" LastKnownName="Brightness Settings" />
+            <elementDefinition Id="621fe3e3-3e83-4477-a746-c27fd67f3457" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fbfb4c32-e2d2-4c90-a136-4119343a6c40" name="Decrease Brightness" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="786ca18b-15b8-42b5-9f34-1397c58d146d" />
+        <extendedCases>
+          <extend Id="c5623465-bcf9-41d8-8a48-60653db4e22a">
+            <useCaseMoniker Id="36c97979-c7b6-4a0f-92d1-3fc631c79109" LastKnownName="Brightness Settings" />
+            <elementDefinition Id="f84a8d34-829e-41ed-b5e3-b8c8bbd921bc" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b12a10ec-0971-4637-9156-2c3a4179f617" name="Change Resolution" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fdcd3da1-2550-449b-8983-b202e251ca49" />
+        <extendedCases>
+          <extend Id="c74fa7c2-ceeb-4ec9-bc46-40b742396ea7">
+            <useCaseMoniker Id="3ef8108e-9f10-4f2c-b526-cd9eaa2ebe66" LastKnownName="Display Settings" />
+            <elementDefinition Id="68a1f2d1-759d-4b52-87af-ad1e2b3768e1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="7a0693c3-2099-4817-9a25-70d29c7b59f4" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

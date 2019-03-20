@@ -38,12 +38,33 @@
       <SubType>Content</SubType>
       <DependentUpon>10-UseCases\ApplicationAssistance.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="10-UseCases\AudioSettings.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\AudioSettings.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\AudioSettings.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\DisplaySettings.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\DisplaySettings.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\DisplaySettings.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="10-UseCases\ManageBlueTooth.usecasediagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="10-UseCases\ManageBlueTooth.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>10-UseCases\ManageBlueTooth.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="10-UseCases\ManageComputerSettings.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="10-UseCases\ManageComputerSettings.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>10-UseCases\ManageComputerSettings.usecasediagram</DependentUpon>
     </Content>
     <Content Include="10-UseCases\ManageWiFi.usecasediagram">
       <SubType>Content</SubType>

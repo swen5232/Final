@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="a927e208-c4dd-4388-9c3a-17cc6bd5535c" name="AudioSettings" linkedPackageId="73f93c1b-0a8c-49cc-bd2c-046aaa0077d2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="62ee3b54-46a7-4de4-8837-f6a207d5297f">
+      <profileInstance Id="cda6fa2a-18d9-45c7-9df6-ffbb8384f131" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="46cba82b-6750-4e70-bf8b-24779f0b3efb">
+      <profileInstance Id="a40288d6-4095-4083-aa98-08e207ae0cef" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="5a21ccbb-a052-4675-b212-02f6f0b3de8a" name="Computer User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c83cab82-7e76-4afa-b096-122b0a8a9636" />
+        <targetEnds>
+          <association Id="fa7389ea-cccd-453a-a2be-6d825f91bd7c" isDerived="false" sourceEndRoleName="Computer User" targetEndRoleName="Manage Computer Settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="be44197f-e71d-48cb-a8a8-573445be204a" LastKnownName="Manage Computer Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5471027-521a-4b01-810f-3436c65c3f01" name="Computer User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37edc0ec-0dc7-489d-88e1-380d6835d666" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90cd62b8-af8d-4808-8788-157b6c34e649" name="Manage Computer Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f261471-8401-4ee9-9398-18e352074eb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="250d01d3-0486-4d03-a01d-64e488d26a21" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55d2ed1f-63eb-43ea-9103-199f4d522aca" name="Audio Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="400ee319-9d0e-4a80-9c11-0ed18e96d36b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e5cfc3fb-cb57-4092-8fa4-6065559f1eab" name="Mute" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="749d0e48-f123-4343-99d8-11550e8a903b" />
+        <extendedCases>
+          <extend Id="58ab1f5e-f8db-4145-ad8d-41f7cc7b398e">
+            <useCaseMoniker Id="55d2ed1f-63eb-43ea-9103-199f4d522aca" LastKnownName="Audio Settings" />
+            <elementDefinition Id="4c4c4f88-1708-4cf9-9995-86b40e523f40" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24979682-c1cb-4516-8c0e-9dc7bded3e69" name="Change Volume" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87ba5dc8-ab2f-41a4-b38d-386a4713e8d0" />
+        <extendedCases>
+          <extend Id="42d0b76f-e54d-49d4-bf47-1555d318d876">
+            <useCaseMoniker Id="55d2ed1f-63eb-43ea-9103-199f4d522aca" LastKnownName="Audio Settings" />
+            <elementDefinition Id="82b0450a-67c9-4bfe-aef8-ed277e519479" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be44197f-e71d-48cb-a8a8-573445be204a" name="Manage Computer Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97553236-c79b-4807-a4c2-90a8da42d921" />
+        <additions>
+          <include Id="99a7bc85-cbed-4dd8-97eb-5d7ea1e8ff36">
+            <useCaseMoniker Id="55d2ed1f-63eb-43ea-9103-199f4d522aca" LastKnownName="Audio Settings" />
+            <elementDefinition Id="28dc68a8-1d31-4ba7-b427-c7d5ff90131b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="73f93c1b-0a8c-49cc-bd2c-046aaa0077d2" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</useCaseModelRoot>

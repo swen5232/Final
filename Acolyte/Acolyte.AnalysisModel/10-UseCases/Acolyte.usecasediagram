@@ -118,6 +118,14 @@
             <useCaseMoniker Id="0a797678-57a4-4cf7-9d68-392d38fd3308" LastKnownName="Wifi Settings" />
             <elementDefinition Id="951f4d2c-45e4-4c93-b729-dce75bb098c1" />
           </include>
+          <include Id="8ba3e535-df77-4fca-ad32-3198a2ca6baf">
+            <useCaseMoniker Id="9444cf37-22fb-48c1-9e0a-b845ff1fb2cc" LastKnownName="Display Settings" />
+            <elementDefinition Id="60b827c7-bbb7-4006-9473-cc9aef993ea8" />
+          </include>
+          <include Id="f0fcdb26-81a7-409d-bde2-3cc00619e5ae">
+            <useCaseMoniker Id="5d8a436b-9eae-4fd4-b307-d63e0000c44a" LastKnownName="Audio Settings" />
+            <elementDefinition Id="28dc68a8-1d31-4ba7-b427-c7d5ff90131b" />
+          </include>
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -313,6 +321,82 @@
           <extend Id="7a6d3df8-2666-4e93-8307-c0a89beda8e1">
             <useCaseMoniker Id="0c069baa-5600-4a39-b053-66ac99974695" LastKnownName="Bluetooth Settings" />
             <elementDefinition Id="3ae8ce69-84ec-4fbc-9395-2d42c9be9886" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9444cf37-22fb-48c1-9e0a-b845ff1fb2cc" name="Display Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c40d188-6378-4269-bbc8-75e3a86bdcf1" />
+        <additions>
+          <include Id="7614e9f5-c2d9-49a7-b081-e15c04fb42d1">
+            <useCaseMoniker Id="175ff820-b84d-41af-aec4-9d2d35614615" LastKnownName="Brightness Settings" />
+            <elementDefinition Id="3cbde831-7629-44b6-9b11-5b5e40ea7914" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5d8a436b-9eae-4fd4-b307-d63e0000c44a" name="Audio Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="400ee319-9d0e-4a80-9c11-0ed18e96d36b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="99152ac6-bf96-4b16-96ee-29528d343354" name="Change Volume" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87ba5dc8-ab2f-41a4-b38d-386a4713e8d0" />
+        <extendedCases>
+          <extend Id="225a0ab7-d8a8-46d1-9005-1bd8e7c4f756">
+            <useCaseMoniker Id="5d8a436b-9eae-4fd4-b307-d63e0000c44a" LastKnownName="Audio Settings" />
+            <elementDefinition Id="82b0450a-67c9-4bfe-aef8-ed277e519479" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d9ed242e-f393-4643-90e6-38bb54085ff4" name="Mute" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="749d0e48-f123-4343-99d8-11550e8a903b" />
+        <extendedCases>
+          <extend Id="c8592a18-421f-4e21-b2a3-e79fb9c5db98">
+            <useCaseMoniker Id="5d8a436b-9eae-4fd4-b307-d63e0000c44a" LastKnownName="Audio Settings" />
+            <elementDefinition Id="4c4c4f88-1708-4cf9-9995-86b40e523f40" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="524cb983-a55c-4a23-9728-296bef5086a3" name="Change Resolution" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fdcd3da1-2550-449b-8983-b202e251ca49" />
+        <extendedCases>
+          <extend Id="e7b00b79-4811-40d1-8b43-b5ca0f260e65">
+            <useCaseMoniker Id="9444cf37-22fb-48c1-9e0a-b845ff1fb2cc" LastKnownName="Display Settings" />
+            <elementDefinition Id="68a1f2d1-759d-4b52-87af-ad1e2b3768e1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="175ff820-b84d-41af-aec4-9d2d35614615" name="Brightness Settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af1c2929-b47d-40fe-b436-c8a1554d95d0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7abfeec4-0106-47aa-bbd2-884072555d8c" name="Increase Brightness" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61f1371a-0190-435c-befb-6aa48afc396e" />
+        <extendedCases>
+          <extend Id="2c5ef593-3b23-436f-8df4-fb77cbf7522b">
+            <useCaseMoniker Id="175ff820-b84d-41af-aec4-9d2d35614615" LastKnownName="Brightness Settings" />
+            <elementDefinition Id="621fe3e3-3e83-4477-a746-c27fd67f3457" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3dd6f46c-a1bb-4511-a72c-b944416c6128" name="Decrease Brightness" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="786ca18b-15b8-42b5-9f34-1397c58d146d" />
+        <extendedCases>
+          <extend Id="ea3b23a8-2e1e-43aa-b9d4-ca5e277e285d">
+            <useCaseMoniker Id="175ff820-b84d-41af-aec4-9d2d35614615" LastKnownName="Brightness Settings" />
+            <elementDefinition Id="f84a8d34-829e-41ed-b5e3-b8c8bbd921bc" />
           </extend>
         </extendedCases>
       </useCase>
