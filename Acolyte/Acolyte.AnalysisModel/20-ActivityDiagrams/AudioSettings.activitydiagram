@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2c6379f2-d624-4668-9699-3c10bb7dc9d3" name="AudioSettings" linkedPackageId="ecb27137-d2f9-4c3c-8ad0-1cc889dc7335" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e5cc646f-6439-4cb8-b5d7-a335a72bfff0">
+      <profileInstance Id="bd757859-25f0-4c5f-8aa5-55065c0481d5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b5aea3da-c116-46af-b434-00f050b41242">
+      <profileInstance Id="e4691383-0e11-4a97-af67-3ae56b1ba812" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="711844f1-eb9f-4ab1-bea8-ad0f61b2d974" name="AudioSettings" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="7b424db4-53ee-438a-9041-dcd3a535f864" />
+        <nodes>
+          <initialNode Id="b4e9bcb2-6a13-49f6-9da6-2149d131d5f2" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7270baec-d0a3-4970-a3da-67a4c047d965" />
+            <flowNodeTargets>
+              <controlFlow Id="cf8177e0-711a-44d3-95a3-4f85857f9415" isLeaf="false">
+                <opaqueActionMoniker Id="830b3b24-ab68-462d-86ff-3f3ce6a261b3" LastKnownName="Launch App" />
+                <elementDefinition Id="050c71a1-b3ee-4f5a-b6a7-e097824c71b2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="830b3b24-ab68-462d-86ff-3f3ce6a261b3" name="Launch App" isLeaf="false">
+            <elementDefinition Id="768845e1-54d4-4f47-a6e0-1a3bd8377492" />
+            <flowNodeTargets>
+              <controlFlow Id="a4962a38-94a7-4197-af5f-a031e4380d5f" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="a8c59ae2-c8fe-4d97-a1f5-42b682b547de" LastKnownName="Select Computer Settings" />
+                <elementDefinition Id="c3feff67-a561-4f57-a82e-4a01d17968c2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a8c59ae2-c8fe-4d97-a1f5-42b682b547de" name="Select Computer Settings" isLeaf="false">
+            <elementDefinition Id="0ae6f14c-edf4-4275-a840-10fffcdd8fdb" />
+            <flowNodeTargets>
+              <controlFlow Id="11b77bfa-643e-439a-9d40-dc5a8543be87" isLeaf="false">
+                <opaqueActionMoniker Id="d4f2523c-dc0b-4943-b568-3c767d754848" LastKnownName="Select Audio Settings" />
+                <elementDefinition Id="9fec8dc9-5378-468b-bbee-b69a83ee7676" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d4f2523c-dc0b-4943-b568-3c767d754848" name="Select Audio Settings" isLeaf="false">
+            <elementDefinition Id="dbc5daa8-cab9-4330-ace1-bad195f7ec48" />
+            <flowNodeTargets>
+              <controlFlow Id="c70a1d71-d7ed-4aa0-9eb8-26036f476394" isLeaf="false">
+                <opaqueActionMoniker Id="d08c6a20-99ff-451a-b300-2b76244bbe58" LastKnownName="View Current Audio Settings" />
+                <elementDefinition Id="c2461835-3edc-47b0-8783-c5b07943e05f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d08c6a20-99ff-451a-b300-2b76244bbe58" name="View Current Audio Settings" isLeaf="false">
+            <elementDefinition Id="f782ee7f-4002-46fd-bb2e-b784664d0b6f" />
+            <flowNodeTargets>
+              <controlFlow Id="a1c2a866-378d-49a7-981f-468d7620482f" isLeaf="false">
+                <decisionNodeMoniker Id="f337529a-3588-4f1c-aef6-97f6b721a375" LastKnownName="Decision1" />
+                <elementDefinition Id="7f287ed9-a81a-4e09-b2b6-74f3c3172292" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="f337529a-3588-4f1c-aef6-97f6b721a375" name="Decision1" isLeaf="false">
+            <elementDefinition Id="37d9ed1b-c9b7-4006-b779-ba73697680fd" />
+            <flowNodeTargets>
+              <controlFlow Id="6e3febc6-7a4e-4290-b78d-102509155eca" isLeaf="false">
+                <opaqueActionMoniker Id="fb8bdeec-589c-4a80-b5ee-6b4acac46119" LastKnownName="Change Volume" />
+                <elementDefinition Id="e4f6d896-728c-4504-9851-17f87e8095dc" />
+              </controlFlow>
+              <controlFlow Id="147757c6-f892-4476-939b-311ed097c983" isLeaf="false">
+                <decisionNodeMoniker Id="be63ac80-1774-4606-9925-f1989067f55f" LastKnownName="Decision2" />
+                <elementDefinition Id="08f8d10e-68d1-4639-9116-35427e6b781f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="fb8bdeec-589c-4a80-b5ee-6b4acac46119" name="Change Volume" isLeaf="false">
+            <elementDefinition Id="09d06ddf-cbfd-436f-b961-596afa85d09b" />
+            <flowNodeTargets>
+              <controlFlow Id="3a5da215-d379-4619-83f0-a03faf6409c6" isLeaf="false">
+                <activityFinalNodeMoniker Id="77099618-cad6-4e20-a5b5-6586e6c89df5" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9e625b3b-1e08-4e35-b6b9-a2771670d570" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="be63ac80-1774-4606-9925-f1989067f55f" name="Decision2" isLeaf="false">
+            <elementDefinition Id="352a996c-28de-402f-8b19-747dd5ffc793" />
+            <flowNodeTargets>
+              <controlFlow Id="0344be26-9ceb-4adf-b46f-dc52a9bb1139" isLeaf="false">
+                <opaqueActionMoniker Id="05c3f96a-c58b-4cb1-bc1b-ae4703c73f40" LastKnownName="Mute" />
+                <elementDefinition Id="c811b14c-7437-4066-982b-ef2109eb01a2" />
+              </controlFlow>
+              <controlFlow Id="834ea26e-4682-432a-a58c-7b80ebb5e326" isLeaf="false">
+                <decisionNodeMoniker Id="707ec149-8d4c-403c-9a33-f4a902b16054" LastKnownName="Decision3" />
+                <elementDefinition Id="9186beb8-4674-4deb-9433-2b4fce27f1fe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="05c3f96a-c58b-4cb1-bc1b-ae4703c73f40" name="Mute" isLeaf="false">
+            <elementDefinition Id="c73a4e61-1e5e-4ae6-b898-e61a8d03df04" />
+            <flowNodeTargets>
+              <controlFlow Id="5c3da78b-445e-4b58-aad8-c0560877d3d0" isLeaf="false">
+                <activityFinalNodeMoniker Id="77099618-cad6-4e20-a5b5-6586e6c89df5" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c47348f8-c81a-4cb4-8d81-a4138213a51e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="77099618-cad6-4e20-a5b5-6586e6c89df5" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="0916d924-9a30-4fd0-ba89-ae3253659889" />
+          </activityFinalNode>
+          <decisionNode Id="707ec149-8d4c-403c-9a33-f4a902b16054" name="Decision3" isLeaf="false">
+            <elementDefinition Id="5399c5cc-fb60-4f9b-83a0-0dc95dd82356" />
+            <flowNodeTargets>
+              <controlFlow Id="f19a8055-ebd9-479b-a71c-81dee8185592" isLeaf="false">
+                <opaqueActionMoniker Id="d08c6a20-99ff-451a-b300-2b76244bbe58" LastKnownName="View Current Audio Settings" />
+                <elementDefinition Id="a75239dd-52ea-46b8-88e9-ac83cb436de2" />
+              </controlFlow>
+              <controlFlow Id="04fad67f-3d4a-4c97-855a-5a93db6e7665" isLeaf="false">
+                <activityFinalNodeMoniker Id="77099618-cad6-4e20-a5b5-6586e6c89df5" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f2fb45b5-5c7f-405f-a285-efdc430ca5c8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ecb27137-d2f9-4c3c-8ad0-1cc889dc7335" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</activityRootModel>

@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2902b1f1-9988-4ac8-bbfa-61d8a95a36bb" name="ManageBluetooth" linkedPackageId="ebf398a4-25b8-47aa-a5ad-12c938bcaf76" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="1a2babfe-fd35-49a4-a6e8-55d79de70030">
-      <profileInstance Id="a0d95192-95af-4d58-a18f-16b44f746bfb" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a60d55b7-a5bb-48b6-8120-f12b2cc5ad07">
-      <profileInstance Id="e9d2a135-8fd9-4260-bf58-60c19698ba23" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="1a9a7bed-47dd-48e6-bb80-6fe620579e75" name="ManageBluetooth" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -31,9 +17,9 @@
           <opaqueAction Id="26be2969-73c8-4bf2-81cf-ce60153fe163" name="Launch App" isLeaf="false">
             <elementDefinition Id="4e37086e-25bb-44c1-83d8-8a0d63fb20f8" />
             <flowNodeTargets>
-              <controlFlow Id="6cbddfcb-1bbc-48e2-a68f-759f087375ee" guard="Home" isLeaf="false">
-                <opaqueActionMoniker Id="bc394c7c-6ff0-4943-8398-361f00934b4e" LastKnownName="Select Bluetooth" />
-                <elementDefinition Id="3ffbd5e2-1f44-4deb-9648-1d76618cf07e" />
+              <controlFlow Id="caa6e5dc-771a-4117-a747-a52c42267852" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="472b97d5-10cd-47dc-9776-8aae088fb37d" LastKnownName="Select Computer Settings" />
+                <elementDefinition Id="8865e381-b36e-474e-a137-eee19435f6e2" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -224,11 +210,34 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
+          <opaqueAction Id="472b97d5-10cd-47dc-9776-8aae088fb37d" name="Select Computer Settings" isLeaf="false">
+            <elementDefinition Id="4b055560-5493-4195-8b61-46503aaeb894" />
+            <flowNodeTargets>
+              <controlFlow Id="0e6c60ff-644d-4292-a097-6356754a1b90" isLeaf="false">
+                <opaqueActionMoniker Id="bc394c7c-6ff0-4943-8398-361f00934b4e" LastKnownName="Select Bluetooth" />
+                <elementDefinition Id="a2d6ab57-a66c-484a-830b-e87738af1aa6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="ebf398a4-25b8-47aa-a5ad-12c938bcaf76" name="Acolyte.AnalysisModel">
     <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1a2babfe-fd35-49a4-a6e8-55d79de70030">
+        <profileInstance Id="a0d95192-95af-4d58-a18f-16b44f746bfb" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a60d55b7-a5bb-48b6-8120-f12b2cc5ad07">
+        <profileInstance Id="e9d2a135-8fd9-4260-bf58-60c19698ba23" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

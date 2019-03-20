@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="ba98263e-c359-4476-b764-7b39f772fc24" name="ManageWifi" linkedPackageId="68d0ec84-b33c-4db6-bd1b-635aabd64251" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="f9b5282d-7697-410c-969b-d8e3ee95e248">
-      <profileInstance Id="7fa97dbd-67c8-4fa3-94c7-b7841986f985" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="354a139b-f0e9-48f1-a998-a29fe176294b">
-      <profileInstance Id="d863423c-e6da-4282-80da-129ece1006e1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="63465baf-d03d-436d-b790-d4bb1ebd3576" name="ManageWifi" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -31,9 +17,9 @@
           <opaqueAction Id="aa3efa28-1460-466d-a434-21811a1c1fd1" name="Launch Application" isLeaf="false">
             <elementDefinition Id="dd80d876-b52f-4f91-bddf-d845e58db1d7" />
             <flowNodeTargets>
-              <controlFlow Id="d236123b-a6f6-49bc-bcd1-04c8c096d707" isLeaf="false">
-                <opaqueActionMoniker Id="02c0deca-e3fe-4b36-9585-8ea105bb1072" LastKnownName="Select Wifi Settings" />
-                <elementDefinition Id="4c7bd193-e760-4b28-9447-6316ae5865f2" />
+              <controlFlow Id="6c00bf37-c58e-4991-80cb-7184f21e1494" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="b4cda6a4-688b-455c-8144-a82fa088a93b" LastKnownName="Select Computer Settings" />
+                <elementDefinition Id="7120e4f9-e31f-4d44-84eb-f6e409e6ca11" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -106,9 +92,9 @@
           <opaqueAction Id="61977b30-4b25-44c8-9c15-d92af24f8c7f" name="Connect to Wifi" isLeaf="false">
             <elementDefinition Id="22063b6e-da6c-44e7-a0f0-ba4e865fc90f" />
             <flowNodeTargets>
-              <controlFlow Id="9214cb4a-87d2-4d83-b631-82909e5ff6d4" isLeaf="false">
+              <controlFlow Id="d16f8a5c-2766-4d54-9798-3663edb976c7" isLeaf="false">
                 <activityFinalNodeMoniker Id="fc4f9faf-5841-4c86-baa4-095324505d55" LastKnownName="ActivityFinal1" />
-                <elementDefinition Id="fef3bfd6-eb4d-4f0c-9f86-8ad473e1278c" />
+                <elementDefinition Id="fcb2c32a-d263-4dfb-bd6f-47a587d152b8" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -150,11 +136,34 @@
           <activityFinalNode Id="fc4f9faf-5841-4c86-baa4-095324505d55" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="a91ba21c-0b62-4673-8936-4026f07175d6" />
           </activityFinalNode>
+          <opaqueAction Id="b4cda6a4-688b-455c-8144-a82fa088a93b" name="Select Computer Settings" isLeaf="false">
+            <elementDefinition Id="f3b7fcdb-7432-4fa9-b629-32180f8a7a72" />
+            <flowNodeTargets>
+              <controlFlow Id="cd13f16d-2dc1-4a56-83f6-03816cdaeef3" isLeaf="false">
+                <opaqueActionMoniker Id="02c0deca-e3fe-4b36-9585-8ea105bb1072" LastKnownName="Select Wifi Settings" />
+                <elementDefinition Id="8fc5ca2f-3a43-4c16-9b49-f6e36a3f4eb0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="68d0ec84-b33c-4db6-bd1b-635aabd64251" name="Acolyte.AnalysisModel">
     <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f9b5282d-7697-410c-969b-d8e3ee95e248">
+        <profileInstance Id="7fa97dbd-67c8-4fa3-94c7-b7841986f985" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="354a139b-f0e9-48f1-a998-a29fe176294b">
+        <profileInstance Id="d863423c-e6da-4282-80da-129ece1006e1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

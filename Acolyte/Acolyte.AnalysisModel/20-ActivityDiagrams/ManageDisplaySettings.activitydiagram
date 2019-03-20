@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="810c0b47-01ab-4906-b1e2-266654ebf31e" name="ManageDisplaySettings" linkedPackageId="3d55a17b-ea88-48c8-b0db-728c42b153f1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="cc5fd29d-543a-41ee-baa0-7dd84dcde33d">
+      <profileInstance Id="c6d6bcd3-ce92-4755-810c-faf04370962a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="adca5310-8779-438a-ae9d-e4d68b4132d6">
+      <profileInstance Id="f69c5b31-820c-46e0-a8ec-1075cd74cc95" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="882cfe72-97d5-4e7e-b19d-737d627f3c01" name="ManageDisplaySettings" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c3b86cb0-3932-42da-a620-c31b7706c21f" />
+        <nodes>
+          <initialNode Id="91cc59a4-03cc-4ae6-b157-a02f79328662" name="Initial1" isLeaf="false">
+            <elementDefinition Id="3c903f1c-3e12-4ff9-90fc-057223969ad3" />
+            <flowNodeTargets>
+              <controlFlow Id="bbb00659-c3e8-497d-a9f8-b51c7a8a310c" isLeaf="false">
+                <opaqueActionMoniker Id="8918e294-de70-4d24-9d9c-07a96aa2fad9" LastKnownName="Launch App" />
+                <elementDefinition Id="53518c95-b2ad-48bf-8d0a-9abb0bb41d10" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="8918e294-de70-4d24-9d9c-07a96aa2fad9" name="Launch App" isLeaf="false">
+            <elementDefinition Id="1e6730a3-ef05-4b27-8771-1fe0f6a4c89c" />
+            <flowNodeTargets>
+              <controlFlow Id="7d403320-a275-4064-a366-39e653b942d8" guard="Home" isLeaf="false">
+                <opaqueActionMoniker Id="af2edb76-0cf0-4087-9b64-b5823b2d3fdd" LastKnownName="Click on Computer Settings" />
+                <elementDefinition Id="2014c88e-180e-406a-9034-c43110bba2a7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="af2edb76-0cf0-4087-9b64-b5823b2d3fdd" name="Click on Computer Settings" isLeaf="false">
+            <elementDefinition Id="346d8205-be05-4151-81bf-9e7b615ea299" />
+            <flowNodeTargets>
+              <controlFlow Id="5ff8a4ab-0b46-4601-92ba-f3093c48bd56" isLeaf="false">
+                <opaqueActionMoniker Id="9dedfbe0-c050-4362-b1fd-f2d2dc081f00" LastKnownName="Click on Display Settings" />
+                <elementDefinition Id="f5af8c4f-320d-4473-9104-9ddf412bbfc8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9dedfbe0-c050-4362-b1fd-f2d2dc081f00" name="Click on Display Settings" isLeaf="false">
+            <elementDefinition Id="0eab45a9-84d6-4649-b311-33d6ecf04684" />
+            <flowNodeTargets>
+              <controlFlow Id="dea2905b-1fd6-4eed-a7e6-073a36cc3d90" isLeaf="false">
+                <opaqueActionMoniker Id="def7caba-2b5d-46c4-8605-5b71e89842ad" LastKnownName="View Current Display Settings" />
+                <elementDefinition Id="ba5289f3-e964-4936-a183-7b7895f2b02f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="def7caba-2b5d-46c4-8605-5b71e89842ad" name="View Current Display Settings" isLeaf="false">
+            <elementDefinition Id="93d55f75-2d2c-49b2-86a9-83af9cb4c5af" />
+            <flowNodeTargets>
+              <controlFlow Id="df8cbea0-ea32-43ad-8940-ff1397fb0446" isLeaf="false">
+                <decisionNodeMoniker Id="fe45368e-9b25-4918-ac98-5dee2763cca0" LastKnownName="Decision1" />
+                <elementDefinition Id="d56691e3-6e90-4f4b-85b5-3a721b0ba9cf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="fe45368e-9b25-4918-ac98-5dee2763cca0" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e845cd1a-b2ed-4837-bf4e-0a94b6027b87" />
+            <flowNodeTargets>
+              <controlFlow Id="c1e76eee-3c62-483a-9743-e0ec30bdb777" isLeaf="false">
+                <opaqueActionMoniker Id="59fdeb5e-5288-4918-9046-4d5ce14f1458" LastKnownName="Select Brightness Settings" />
+                <elementDefinition Id="027a38cb-27d2-4992-ab7c-d5b0fd39ecdb" />
+              </controlFlow>
+              <controlFlow Id="c15f773f-c68d-4f54-b20a-27b93af76e7c" isLeaf="false">
+                <decisionNodeMoniker Id="388d424a-e64a-4c8b-bfe6-7b8ed0e2accd" LastKnownName="Decision2" />
+                <elementDefinition Id="6e88948f-66fe-4980-b7ba-2fd41bfe1b72" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="59fdeb5e-5288-4918-9046-4d5ce14f1458" name="Select Brightness Settings" isLeaf="false">
+            <elementDefinition Id="d934e37e-170d-4ff8-ad45-3d9266d990c3" />
+            <flowNodeTargets>
+              <controlFlow Id="09895d52-2c5d-491c-be5c-23397caf2bad" isLeaf="false">
+                <decisionNodeMoniker Id="046cd03a-dbb2-47b1-80f9-2cf03a93d735" LastKnownName="Decision3" />
+                <elementDefinition Id="1dd13bf3-6f77-441e-94e4-b46798c4d38b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="560d9be9-48c3-4117-a28e-e2c7f42183b8" name="Select new Display Resolution" isLeaf="false">
+            <elementDefinition Id="0dbe8be2-7968-487d-92f1-59095b33afe9" />
+            <flowNodeTargets>
+              <controlFlow Id="64fd9189-2997-4096-a445-6bef7e001096" isLeaf="false">
+                <opaqueActionMoniker Id="2b980860-9cd3-4d17-952f-f45e394daf38" LastKnownName="Save and Apply" />
+                <elementDefinition Id="0b9e186b-5de9-4ad7-8971-3b3925b56d69" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="388d424a-e64a-4c8b-bfe6-7b8ed0e2accd" name="Decision2" isLeaf="false">
+            <elementDefinition Id="90a32b7e-3359-4236-8b1e-e6827199396d" />
+            <flowNodeTargets>
+              <controlFlow Id="55ba2027-51ad-4d50-856f-ffc66c475a65" isLeaf="false">
+                <opaqueActionMoniker Id="560d9be9-48c3-4117-a28e-e2c7f42183b8" LastKnownName="Select new Display Resolution" />
+                <elementDefinition Id="ca0bdeb4-11c0-412a-9fff-f01050062b2a" />
+              </controlFlow>
+              <controlFlow Id="ed0b5330-5325-400f-b219-694c5f7f33cd" isLeaf="false">
+                <decisionNodeMoniker Id="9d85c514-f6e5-4772-92d3-76fcd8558925" LastKnownName="Decision5" />
+                <elementDefinition Id="2a0eb218-2315-4172-9f43-e79ad6820874" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="046cd03a-dbb2-47b1-80f9-2cf03a93d735" name="Decision3" isLeaf="false">
+            <elementDefinition Id="7a17cfd4-37c1-4c2b-97e3-a24ac8123221" />
+            <flowNodeTargets>
+              <controlFlow Id="e3d9969e-2cf3-427b-ab70-1c7be0aa641e" isLeaf="false">
+                <opaqueActionMoniker Id="f3a9e2b8-8673-4a8d-b419-8d9a2e8a1e09" LastKnownName="Increase/Decrease Brightness" />
+                <elementDefinition Id="29165840-4937-4c07-aff3-d95900ef334c" />
+              </controlFlow>
+              <controlFlow Id="acc89522-7452-4317-8426-b45c2def6051" isLeaf="false">
+                <opaqueActionMoniker Id="def7caba-2b5d-46c4-8605-5b71e89842ad" LastKnownName="View Current Display Settings" />
+                <elementDefinition Id="d980b010-7602-4055-af73-67416f47a163" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f3a9e2b8-8673-4a8d-b419-8d9a2e8a1e09" name="Increase/Decrease Brightness" isLeaf="false">
+            <elementDefinition Id="086c37f1-85a9-405d-8b49-f6dd971dd845" />
+            <flowNodeTargets>
+              <controlFlow Id="1c4d38c9-ec59-495e-bd2f-ffff87ea813f" isLeaf="false">
+                <opaqueActionMoniker Id="2b980860-9cd3-4d17-952f-f45e394daf38" LastKnownName="Save and Apply" />
+                <elementDefinition Id="7ec8e553-77a8-42a7-9633-ed9477df50c9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2b980860-9cd3-4d17-952f-f45e394daf38" name="Save and Apply" isLeaf="false">
+            <elementDefinition Id="9390ab9a-32b8-442d-b39f-410b7aa7f2b0" />
+            <flowNodeTargets>
+              <controlFlow Id="5309ef8b-f011-4f89-b962-2448a383ebb3" isLeaf="false">
+                <activityFinalNodeMoniker Id="88d75118-061d-47f5-846e-df91e6e5c9e1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8d90fe2c-b888-4cb4-b361-4231cda5ec30" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="9d85c514-f6e5-4772-92d3-76fcd8558925" name="Decision5" isLeaf="false">
+            <elementDefinition Id="d5785b62-0981-40a8-a867-ef01f274015c" />
+            <flowNodeTargets>
+              <controlFlow Id="23b425f2-c240-43e2-b0a8-6f398f08f283" guard="Default" isLeaf="false">
+                <activityFinalNodeMoniker Id="88d75118-061d-47f5-846e-df91e6e5c9e1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="883dcae2-83f1-440d-954c-a37ba48c7435" />
+              </controlFlow>
+              <controlFlow Id="4a19b8e9-1a34-4a70-afa2-9a93173992c7" isLeaf="false">
+                <opaqueActionMoniker Id="def7caba-2b5d-46c4-8605-5b71e89842ad" LastKnownName="View Current Display Settings" />
+                <elementDefinition Id="2a5c9153-4aad-4d53-aacb-4a89431cf58b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="88d75118-061d-47f5-846e-df91e6e5c9e1" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="7dcdd81f-974b-4d82-8c8b-ba6948b11d87" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="3d55a17b-ea88-48c8-b0db-728c42b153f1" name="Acolyte.AnalysisModel">
+    <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+  </package>
+</activityRootModel>
