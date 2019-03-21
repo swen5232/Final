@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="ad123a20-3dd6-489b-9b95-c76a4853cd3b" name="AcolyteDomainModel" linkedPackageId="f1aa1d85-fb53-41f3-878a-76a0ee39ab23" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="4ddead84-7b63-494a-9ee2-2eccef3c1793">
-      <profileInstance Id="1c8de4ba-66ed-433c-9f36-ad8f88701300" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="0ae885c6-81df-470a-9f03-a7fec5b29245">
-      <profileInstance Id="8f993a31-f33f-4b6f-832f-e341115bfc86" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="6c275fa4-dfab-463a-b862-ebe7216ba593" name="Computer" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -321,8 +307,104 @@
         <elementDefinition Id="641a2e3a-f4f4-4153-83f9-f72e937ff504" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="55eec56e-03a4-4060-aa9d-db6668a1ce9c" name="Statistics" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8e8f372e-5851-4f5f-998a-df5d930097fb" />
+        <targetEnds>
+          <association Id="6658c42c-38f0-420b-9862-6859320da2f4" isDerived="false" sourceEndRoleName="Statistics" targetEndRoleName="Computer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6c275fa4-dfab-463a-b862-ebe7216ba593" LastKnownName="Computer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c39d3161-27be-4319-97e6-e38fc829b963" name="Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true" isNavigableOwned="false">
+                  <elementDefinition Id="4d84742c-1347-48e6-ac0e-bd273a60b0ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="342af455-fa3f-48b9-a461-b725caf73574" name="Computer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
+                  <elementDefinition Id="d9eb8597-e2e0-4d81-be01-b7cd07ab025c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a61da86b-7c54-4b74-812c-3e2d077eb54c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7b59315c-c54d-4834-8885-923f1ae96337" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2bf080a0-a639-459a-b7bf-46636d531dc2" />
+          </property>
+          <property Id="7f65b419-54c3-47b1-a569-7c7039817ed1" name="Attribute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="536d0888-2335-43f2-a35d-3af3c2960ca9" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9c34f04e-6e97-4335-adff-36edce79cb50" name="Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="05c44e9e-1342-4328-b4a8-e2d16008244d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="c0e7787b-170e-43d3-96b7-b983dcecb7b9" name="StatisticNames" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0790a867-d2ca-42fe-87c1-f76f5b1c1851" />
+        <targetEnds>
+          <association Id="b0069a44-aaf8-44ae-9424-0c471bd331c3" isDerived="false" sourceEndRoleName="StatisticNames" targetEndRoleName="Statistics" isLeaf="false" isAbstract="false">
+            <classMoniker Id="55eec56e-03a4-4060-aa9d-db6668a1ce9c" LastKnownName="Statistics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be636f79-cd04-413a-835a-40e477b700bf" name="StatisticNames" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a978760-7e53-42d6-a4dd-c59946d26e8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="46b49a30-082a-4253-81fa-0c16aa89ca3f" name="Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3045f2ec-412a-4f92-9d14-87785539088d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3a6e740e-78e5-49be-b79f-199cb29934f0" />
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral Id="495021a7-9a44-4eb5-aaed-98c537eafb27" name="CPU">
+            <elementDefinition Id="daec61a6-87eb-495e-bb8e-e665d5c2adb7" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="508430e0-2d2b-4c35-b76f-24990e368d07" name="MEMORY">
+            <elementDefinition Id="61123380-89b9-4e6a-8d70-012265d87ae5" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="dda98d2b-3830-4651-b0ef-d9807c96b1fb" name="DISK">
+            <elementDefinition Id="de21374f-a8a9-45ee-a9b9-14116d92ecb7" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="f2dd1e16-6805-40a1-ad1f-c24dbaaef2a4" name="ETHERNET">
+            <elementDefinition Id="192e3ba3-47ba-4e90-8d3d-b4b00d1b1e02" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="3545cec8-d23b-436f-b0f3-ae68a7b3b687" name="WiFI">
+            <elementDefinition Id="2c756d91-f355-451b-8d61-6ef0eddb7f74" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="79c85073-2794-446c-8c23-e15a50f27554" name="BLUETOOTH">
+            <elementDefinition Id="e2b680e4-e9df-44ba-9585-bafb8a4d9749" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="e538737d-1102-49e1-bc8f-89697205a548" name="GPU">
+            <elementDefinition Id="442d68a9-644a-4ca4-be3e-f48287242835" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="f1aa1d85-fb53-41f3-878a-76a0ee39ab23" name="Acolyte.AnalysisModel">
     <elementDefinition Id="284386ca-2d57-4e1a-a4e2-d8f009902ef9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4ddead84-7b63-494a-9ee2-2eccef3c1793">
+        <profileInstance Id="1c8de4ba-66ed-433c-9f36-ad8f88701300" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0ae885c6-81df-470a-9f03-a7fec5b29245">
+        <profileInstance Id="8f993a31-f33f-4b6f-832f-e341115bfc86" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

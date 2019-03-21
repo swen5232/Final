@@ -3253,6 +3253,162 @@ no outside access, only user may access</body>
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8e8f372e-5851-4f5f-998a-df5d930097fb"
+        name="Statistics"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a61da86b-7c54-4b74-812c-3e2d077eb54c"
+            isDerived="false"
+            sourceEndRoleName="Statistics"
+            targetEndRoleName="Computer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="aa1bb636-4279-49c8-8691-94378e0043ef"
+              LastKnownName="Computer"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d84742c-1347-48e6-ac0e-bd273a60b0ea"
+                  name="Statistics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9eb8597-e2e0-4d81-be01-b7cd07ab025c"
+                  name="Computer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2bf080a0-a639-459a-b7bf-46636d531dc2"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="536d0888-2335-43f2-a35d-3af3c2960ca9"
+            name="Attribute"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="05c44e9e-1342-4328-b4a8-e2d16008244d"
+            name="Show"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="0790a867-d2ca-42fe-87c1-f76f5b1c1851"
+        name="StatisticNames"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3a6e740e-78e5-49be-b79f-199cb29934f0"
+            isDerived="false"
+            sourceEndRoleName="StatisticNames"
+            targetEndRoleName="Statistics"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8e8f372e-5851-4f5f-998a-df5d930097fb"
+              LastKnownName="Statistics"
+              LastKnownLocation="Acolyte.AnalysisModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a978760-7e53-42d6-a4dd-c59946d26e8b"
+                  name="StatisticNames"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3045f2ec-412a-4f92-9d14-87785539088d"
+                  name="Statistics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="daec61a6-87eb-495e-bb8e-e665d5c2adb7"
+            name="CPU" />
+          <enumerationLiteral
+            Id="61123380-89b9-4e6a-8d70-012265d87ae5"
+            name="MEMORY" />
+          <enumerationLiteral
+            Id="de21374f-a8a9-45ee-a9b9-14116d92ecb7"
+            name="DISK" />
+          <enumerationLiteral
+            Id="192e3ba3-47ba-4e90-8d3d-b4b00d1b1e02"
+            name="ETHERNET" />
+          <enumerationLiteral
+            Id="2c756d91-f355-451b-8d61-6ef0eddb7f74"
+            name="WiFI" />
+          <enumerationLiteral
+            Id="e2b680e4-e9df-44ba-9585-bafb8a4d9749"
+            name="BLUETOOTH" />
+          <enumerationLiteral
+            Id="442d68a9-644a-4ca4-be3e-f48287242835"
+            name="GPU" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
