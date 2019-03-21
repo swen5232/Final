@@ -143,6 +143,9 @@
       <SubType>Content</SubType>
       <DependentUpon>30-ActivityDiagrams\WebBrowserAssistance.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="40-StateDiagrams\HighLevelState.vsdx">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="AcolyteBrainstorm.usecasediagram">
       <SubType>Content</SubType>
     </Content>
