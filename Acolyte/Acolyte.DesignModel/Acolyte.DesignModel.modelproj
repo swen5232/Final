@@ -31,4 +31,17 @@
     <Folder Include="80-ClassDiagrams" />
     <Folder Include="70-SequenceDiagram" />
   </ItemGroup>
+  <ItemGroup>
+    <Validate Include="50-LayerDiagram\Acolyte.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="50-LayerDiagram\Acolyte.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>50-LayerDiagram\Acolyte.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="50-LayerDiagram\Acolyte.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>50-LayerDiagram\Acolyte.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
 </Project>

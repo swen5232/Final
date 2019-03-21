@@ -316,11 +316,21 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c39d3161-27be-4319-97e6-e38fc829b963" name="Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="d1ac7a15-185f-418b-a59e-733808f99d1e" name="Lower" value="*">
+                      <elementDefinition Id="a705f8b9-ac16-4ef1-8814-2d490df34433" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ab52e970-f97c-4ba2-82bb-f0fe57f1bb23" name="Upper" value="*">
+                      <elementDefinition Id="215e0403-edfa-4559-ad92-2dac3b5911a9" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="4d84742c-1347-48e6-ac0e-bd273a60b0ea" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="342af455-fa3f-48b9-a461-b725caf73574" name="Computer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
+                <memberEnd Id="342af455-fa3f-48b9-a461-b725caf73574" name="Computer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="d9eb8597-e2e0-4d81-be01-b7cd07ab025c" />
                 </memberEnd>
               </associationHasOwnedEnds>

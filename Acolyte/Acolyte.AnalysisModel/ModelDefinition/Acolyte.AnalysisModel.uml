@@ -3284,7 +3284,20 @@ no outside access, only user may access</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="true"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a705f8b9-ac16-4ef1-8814-2d490df34433"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="215e0403-edfa-4559-ad92-2dac3b5911a9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -3296,7 +3309,8 @@ no outside access, only user may access</body>
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="Composite"
-                  isComposite="false" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
