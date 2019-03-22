@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="815f249d-d582-4170-92fb-fa7cfac45088" name="BrowserClassDiagram" linkedPackageId="16b481ea-806e-4583-ba99-70bd1edee373" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="9b0d151c-6f06-4dd6-97e0-8d26dee18305">
+      <elementDefinition Id="ea563d9b-790e-4ac7-8f4c-20ab03016e38" />
+      <body>e.g., Chrome, Firefox, IE, etc.</body>
+      <annotatedElements>
+        <classMoniker Id="c1cf8c0c-1344-450d-ad42-f63395bdcc5c" LastKnownName="BrowserType" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c1c98286-9f12-44ab-8925-eb73c8c6de50">
+      <profileInstance Id="d39dd7a1-9688-44ba-8e91-07c6f94a14aa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6d6b136d-fae9-43b6-8e90-985150aa4f58">
+      <profileInstance Id="1465337e-ece3-41b9-9671-080892357114" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1cf8c0c-1344-450d-ad42-f63395bdcc5c" name="BrowserType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9d5890eb-a7a5-40f0-93cc-5edbab63ae78" />
+        <ownedAttributesInternal>
+          <property Id="7b0dd6ec-2ce5-4240-820c-9b55c326b9fc" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="03888fb0-3182-4024-945d-5b5e8d1de665" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6257f49d-3260-4b76-b470-61e490c5f4c8" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="ff8d196b-986e-4417-8822-20a7395353fa" name="DefaultBrowser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9aa378d-2ea9-4c9a-b8a0-0d1bef25abc9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b0e7de18-ad8d-4502-b815-8ac522fb055e" LastKnownName="boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0a5e6b7e-149a-4092-9d39-205b601d9650" name="isDefault" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64f0af47-4e74-484f-9065-4311c3c251e2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a0b84013-78b4-4ba8-ba0e-d4784f2eac94" direction="Return" isUnique="false">
+                  <elementDefinition Id="8c9e92e0-d1da-45ac-9f7e-7f2374df8ae7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b0e7de18-ad8d-4502-b815-8ac522fb055e" LastKnownName="boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bd7c83af-aab9-4379-a0c9-e5e8a4ae16d4" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="50b8bc44-c2ae-45b0-b5ac-720a1b50030f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e52776d6-381d-4108-8562-eb13cd5bec51" direction="Return" isUnique="false">
+                  <elementDefinition Id="b55989be-c011-412b-9224-858c2f321de3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6257f49d-3260-4b76-b470-61e490c5f4c8" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6257f49d-3260-4b76-b470-61e490c5f4c8" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b0e7de18-ad8d-4502-b815-8ac522fb055e" name="boolean" isAbstract="false" isLeaf="false" cachedFullName="boolean">
+        <elementDefinition Id="365ea1ce-4752-4675-af8e-e32d3a3a3b95" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ca9d192-024c-4d06-8cc4-8416fbf79db0" name="Browser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f718ac1-4c9e-4984-a3c8-aa9bd440a715" />
+        <targetEnds>
+          <association Id="c51f610a-b285-44f1-bdef-9cea599f6a50" isDerived="false" sourceEndRoleName="Browser" targetEndRoleName="BrowserType" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c1cf8c0c-1344-450d-ad42-f63395bdcc5c" LastKnownName="BrowserType" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb57dccc-5b33-4f32-a042-699b4a6883af" name="Browser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a42edae1-7438-433b-800d-02bf8dac8166" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cd7869a-e4b2-41e8-82d9-d158fc900895" name="BrowserType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="72007a70-6d1a-4994-a378-2c922174689a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="31f17d4e-e2b0-4c7d-b6b5-13c1c2a75d80" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2da26854-f866-40e9-9e3d-b8bdef453cff" name="BrowserType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="498003be-653a-4229-8c3e-ceddccd8f7a3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6fce573d-2ad9-41c2-8fe3-1d989cdd0d7c" LastKnownName="BrowserType" />
+            </type_NamedElement>
+          </property>
+          <property Id="cb0a9115-7095-4e92-8725-6c692090b299" name="ActiveWindows" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b3fc2372-b067-4d3b-917a-5190b292e2b3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fc476474-39ed-493a-9b6d-e4396abb69a3" LastKnownName="List&lt;BrowserWindow&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c5d15953-777d-4dc7-b2f8-f2f6c8e42091" name="openNewWindow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a975e93c-024c-4b3b-91f3-4c793c7cbbd7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b457d5f5-e482-45c2-b7a5-7f06d15755a4" direction="Return" isUnique="false">
+                  <elementDefinition Id="85fd5645-1d9f-4047-81af-4f40fee40d74" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="06985c33-f510-4ed3-91e9-88b2357d1c36" name="closeWindow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5705a499-461f-4afa-8e61-5a2797e6f818" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="05a3c44e-f4ef-4ea9-b739-a837a4093ed0" direction="Return" isUnique="false">
+                  <elementDefinition Id="fc9bb3c7-98ed-4d3a-8244-94dc84883896" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="afe282b1-c188-48b0-9295-5edd16ae739e" name="getHistory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1242a8aa-aa90-42b6-9e58-013f2da1f3f8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a231fed3-b1e8-410f-814a-0266a1534dbf" name="dateRange" direction="In" isUnique="false">
+                  <elementDefinition Id="b1cf2c9e-c905-4c67-8dbc-a2402c0ca576" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b06c302-6644-4b6b-a403-111bfe027eef" LastKnownName="DateTime" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f7a1305c-1135-446d-8b61-030417f1d872" direction="Return" isUnique="false">
+                  <elementDefinition Id="fadac8d7-b17c-473e-bcaf-e73424a9b280" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6fce573d-2ad9-41c2-8fe3-1d989cdd0d7c" name="BrowserType" isAbstract="false" isLeaf="false" cachedFullName="Acolyte.DesignModel::BrowserType">
+        <elementDefinition Id="9d5890eb-a7a5-40f0-93cc-5edbab63ae78" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="49295ccf-3729-4582-8398-5fe33b440610" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="79fb331f-0701-4b54-81d1-fcc0e2851e93" name="BrowserWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99e18cb5-59ff-49e2-a6ff-3eca3dba0706" />
+        <targetEnds>
+          <association Id="b13c50cc-77ad-4627-ba2f-3b98e3d6d0bb" isDerived="false" sourceEndRoleName="BrowserWindow" targetEndRoleName="Browser" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9ca9d192-024c-4d06-8cc4-8416fbf79db0" LastKnownName="Browser" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2da1492f-360a-42cb-92a5-98fa537accb5" name="BrowserWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6dc81dd9-ff28-4859-a6a6-7a353c7921aa" name="Lower" value="*">
+                      <elementDefinition Id="f31546de-0019-4faa-b2a3-d696256d38ea" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4aec45a8-a768-46ef-a915-3e40b93907d5" name="Upper" value="*">
+                      <elementDefinition Id="3ff40dcf-2dd0-4a81-b93d-0acaf04426d0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="94a58531-d5f3-43e7-b3c1-987e1ed38fc7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba028e21-9851-4ea5-9db4-f23206d5a84d" name="Browser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d7553b9-ccfa-4c47-b13d-9172ff4d8bff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f4341df7-fe15-464b-9205-8dbc7ed21324" />
+          </association>
+          <association Id="13a9cde9-c0ed-440e-82a7-b06e65a9abfc" isDerived="false" sourceEndRoleName="BrowserWindow" targetEndRoleName="BrowserTab" isLeaf="false" isAbstract="false">
+            <classMoniker Id="910db98f-906d-4668-b90b-cf34cc9cf94a" LastKnownName="BrowserTab" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="def5861a-1fee-403a-92e8-174d2e0fae03" name="BrowserWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8074cb89-2373-488a-9486-e8db931f7b9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7183f857-c004-4a8f-ad26-713a26df2db2" name="BrowserTab" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ee8f1213-c16b-4030-a8d4-3d748c91c6f9" name="Lower" value="*">
+                      <elementDefinition Id="addc426d-dac4-44e9-8672-6febe4d376ae" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="14b074b7-20c6-4350-a669-8e5e4a68c1bb" name="Upper" value="*">
+                      <elementDefinition Id="29e7d216-c900-463e-bbbc-71e66570e922" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2ea9b768-359e-4881-aa31-3f5c6e136b35" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="390bc856-2dd1-4033-b5f0-e7337c731938" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="5f9e1c58-365c-4adf-aff0-96009524daf5" name="Tabs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eaeb31c6-5df3-482a-af45-402fbf084619" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7eaca846-952e-4908-a11c-f00d13853cb0" LastKnownName="List&lt;BrowserTab&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="1abb2ce8-5d4a-4486-938b-5e97f618a813" name="ProcessId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="02458dae-2922-496e-acaa-fc14c890f6c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c338d0e1-59f9-4f7b-a3e4-ad83ce1d17f9" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="36ff9510-6375-4355-833f-77eafaf55f0c" name="close" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="62f3d1b2-8c77-4190-9322-ded036e7b2ba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aaafa226-60ac-4af8-8fdb-79eb0cdc2074" direction="Return" isUnique="false">
+                  <elementDefinition Id="56415a5a-b7a4-47f4-846f-a4d6437fccba" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1908bf7c-f6af-4600-add5-ddd1e5801619" name="newTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b44b98ca-611d-4f88-a108-976da1317f79" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ff02c8fe-db5d-4199-aa21-5471ade00168" direction="Return" isUnique="false">
+                  <elementDefinition Id="d18ac7df-4a54-490f-a9aa-b276677f881d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5b5dd32c-8df0-4586-ab27-8c8e32d42a53" name="closeTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d8e011a2-14f0-4ef4-9799-2ae8ea080541" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c132e38a-3889-4d59-bb5b-4ea11cbf97ac" direction="Return" isUnique="false">
+                  <elementDefinition Id="96902b10-3e9a-442a-9ef3-26c2487e94bc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7eaca846-952e-4908-a11c-f00d13853cb0" name="List&lt;BrowserTab&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;BrowserTab&gt;">
+        <elementDefinition Id="d9dec522-3bcb-48a9-a626-3c76d46306bd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fc476474-39ed-493a-9b6d-e4396abb69a3" name="List&lt;BrowserWindow&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;BrowserWindow&gt;">
+        <elementDefinition Id="72101f82-5278-4fd8-a5fa-8deb7d3246f6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c338d0e1-59f9-4f7b-a3e4-ad83ce1d17f9" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="910db98f-906d-4668-b90b-cf34cc9cf94a" name="BrowserTab" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="119b0d93-d54f-4c32-b7c4-b445558f5fe5" />
+        <ownedAttributesInternal>
+          <property Id="8296a031-6e29-4f3d-9507-6f567fbc3909" name="CurrentUrl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="155f3313-4e75-4716-8734-4bdbd3fb2071" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c338d0e1-59f9-4f7b-a3e4-ad83ce1d17f9" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="528adf98-8020-4eb2-9337-6abc93bfa4ea" name="SessionId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a28866dc-8623-43eb-b97d-117dff57de25" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c338d0e1-59f9-4f7b-a3e4-ad83ce1d17f9" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="117fb200-de0e-4d5d-a023-e341c67bef26" name="goBack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a19b228c-0b5a-4a21-a106-16f86db9f839" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dea311cc-dea9-4431-906f-ca94b4621f6f" direction="Return" isUnique="false">
+                  <elementDefinition Id="0fdc4ed5-710b-4eac-9ec0-ba1e8dca9317" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b2f86a66-e80e-4985-9ab6-417e17f41f6b" name="goForward" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="42a426a5-94a6-400e-8eb0-a18d76ee090d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc9b4025-aed1-478d-a914-a53dd2af6a89" direction="Return" isUnique="false">
+                  <elementDefinition Id="786f2e33-8672-4d9e-ab40-563c7d954ddd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b4ebc6ff-f101-4c1f-95fc-133a56939765" name="goToUrl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="382c7797-87a9-4247-a292-c6dc564b5a28" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="88415f4f-7486-4175-9095-c14c065b971c" name="Url" direction="In" isUnique="false">
+                  <elementDefinition Id="846925ff-52e0-4fce-9f56-2ce3ba87e2a3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c338d0e1-59f9-4f7b-a3e4-ad83ce1d17f9" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e6d1eb6f-9e18-4efd-93b2-7debed341d35" direction="Return" isUnique="false">
+                  <elementDefinition Id="de6cc653-a9d1-4bb9-9867-f2c740fd63ba" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0234c606-2f02-429f-adf6-33208ee483a2" name="reload" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1df14ac8-203f-4c97-8809-1026cb149e77" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6ddeabb4-c8fc-4b5a-af01-4dab4416b809" direction="Return" isUnique="false">
+                  <elementDefinition Id="da04aeec-d80a-4501-8c0e-ad90e99b9416" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bf6d6c2-431c-44fe-80a9-3cb117b4ee23" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4b06c302-6644-4b6b-a403-111bfe027eef" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="bfbf33f3-4888-4ba7-b3aa-5aa3e5613adf" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="16b481ea-806e-4583-ba99-70bd1edee373" name="Acolyte.DesignModel">
+    <elementDefinition Id="ee440c85-e4db-4a7d-92d3-a59a6ee71a91" />
+  </package>
+</logicalClassDesignerModel>

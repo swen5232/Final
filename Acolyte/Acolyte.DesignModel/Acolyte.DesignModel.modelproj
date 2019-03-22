@@ -30,6 +30,13 @@
       <SubType>Content</SubType>
       <DependentUpon>60-ComponentDiagram\AcolyteComponentDiagram.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="80-ClassDiagrams\BrowserClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="80-ClassDiagrams\BrowserClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>80-ClassDiagrams\BrowserClassDiagram.classdiagram</DependentUpon>
+    </Content>
     <Content Include="80-ClassDiagrams\DevicesClassDiagram.classdiagram">
       <SubType>Content</SubType>
     </Content>
