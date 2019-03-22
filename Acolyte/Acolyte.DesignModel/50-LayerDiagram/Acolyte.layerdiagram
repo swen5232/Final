@@ -1,1 +1,74 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0414e88e-41cb-4eda-a187-a55667e6f7df" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="f15b8a77-6fab-41a6-bcc6-b94de85512f4" name="Comment1">
+      <body>External</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="b0ca7569-3334-4637-b9f0-8a74b607ad0b" />
+        </linkFromCommentToLayerElement>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="293fa6e7-7369-431e-bb52-49407486ae52" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="469e7e74-3dec-4b32-b410-a61871ed884b" name="View Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ed7b704e-dc9b-4045-a280-f4447d750ef4" direction="Bidirectional">
+          <layerMoniker Id="9030f53f-a14b-4e29-9137-b2007df0735c" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="0763a44c-3c6b-4c15-946e-b6d78246ae59" direction="Bidirectional">
+          <layerMoniker Id="c785f068-4054-4cb4-9fcb-e8387ed49da3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="23fcd63a-d9ef-460c-8f1d-9e733c692c4f" name="UI Components" />
+      </childLayers>
+    </layer>
+    <layer Id="9030f53f-a14b-4e29-9137-b2007df0735c" name="Controller Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c12b5b51-46af-418a-acd7-f0df9fdd877d" direction="Bidirectional">
+          <layerMoniker Id="1b46454a-74f6-4348-9632-cfd14678786d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="94e1fa9f-10db-4273-83f5-2d0b2528b2ab" direction="Bidirectional">
+          <layerMoniker Id="c785f068-4054-4cb4-9fcb-e8387ed49da3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="1e39bdbb-38d3-4491-a981-7173af196387" name="Application Controller" />
+        <layer Id="368b0ded-3185-4004-996c-bdb9271c71ba" name="Computer Workflows" />
+        <layer Id="77e7ccd4-560b-4df4-aefb-41ee1a480977" name="Computer Components" />
+      </childLayers>
+    </layer>
+    <layer Id="1b46454a-74f6-4348-9632-cfd14678786d" name="Hardware Abstraction Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4e156860-89fc-4b9e-8c25-47c87f225ebf" direction="Bidirectional">
+          <layerMoniker Id="b0ca7569-3334-4637-b9f0-8a74b607ad0b" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="b57ecb15-3fd1-4446-806b-b4e6c86be678" direction="Bidirectional">
+          <layerMoniker Id="c785f068-4054-4cb4-9fcb-e8387ed49da3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="5563a2c2-72ff-4914-b6ac-a5b089d1fe47" name="Hardware Components" />
+        <layer Id="5a9aa0f3-ecbb-41a3-b899-b4426dead075" name="Hardware Services" />
+      </childLayers>
+    </layer>
+    <layer Id="c785f068-4054-4cb4-9fcb-e8387ed49da3" name="Common">
+      <childLayers>
+        <layer Id="9a4d65dd-333a-4983-b230-f1be0aeb0c0e" name="Security" />
+        <layer Id="2717cd25-2828-47ba-b74e-58859df62dea" name="Communication" />
+      </childLayers>
+    </layer>
+    <layer Id="b0ca7569-3334-4637-b9f0-8a74b607ad0b" name="Drivers">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2ba2ebbb-43dc-4de1-b6f9-d0b5650518a7" direction="Bidirectional">
+          <layerMoniker Id="293fa6e7-7369-431e-bb52-49407486ae52" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="293fa6e7-7369-431e-bb52-49407486ae52" name="Hardware" />
+  </layers>
+</layerModel>
