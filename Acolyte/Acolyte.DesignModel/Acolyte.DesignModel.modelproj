@@ -23,6 +23,20 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="60-ComponentDiagram\AcolyteComponentDiagram.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="60-ComponentDiagram\AcolyteComponentDiagram.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>60-ComponentDiagram\AcolyteComponentDiagram.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="80-ClassDiagrams\ComputerStatisticsClasses.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="80-ClassDiagrams\ComputerStatisticsClasses.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>80-ClassDiagrams\ComputerStatisticsClasses.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Acolyte.DesignModel.uml">
       <SubType>Content</SubType>
     </Content>

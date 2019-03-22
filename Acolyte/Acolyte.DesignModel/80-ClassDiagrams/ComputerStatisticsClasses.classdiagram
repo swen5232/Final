@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="c30d1c33-3d19-481d-92c2-bfa48493fb43" name="ComputerStatisticsClasses" linkedPackageId="859b90d4-beb4-4094-812a-79ae9acab588" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="5ef18cea-6cec-4305-8b0a-6904af0b1439">
+      <elementDefinition Id="9edd82f9-9217-47c9-ad8c-798d952263e4" />
+      <body>Componet and Statistic Example:
+
+Memory is a component
+"In Use," "Committted," and "Paged pool" are examples of Memory statistics.
+
+Disk is a component
+"Active Time," "Average Response Time" and "Read speed" are examples of Disk statistics.
+</body>
+      <annotatedElements>
+        <classMoniker Id="9276f18c-b360-42d4-85a3-34a2e248bac2" LastKnownName="SystemComponent" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="fdd2b2c0-af19-4013-83e9-394505a2f06b">
+      <profileInstance Id="f9a9ff43-21c1-4da0-92b0-50daf893a5f5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2945d40b-cf3b-4bc2-ae32-e1c95315d89d">
+      <profileInstance Id="b7eda4e8-5758-4aed-adef-53f1fc468cca" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="47baafb3-828a-4222-92af-a1963d5f6201" name="SystemStatistic" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9eca08bf-8a14-4ff6-949b-4a8d7cd6d053" />
+        <ownedAttributesInternal>
+          <property Id="89261002-c89c-4627-9ed3-9bbbe7734a66" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c326fbc0-3171-4961-a9c4-684434259371" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8a988130-7b6a-4f51-aff9-c505ea738126" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="4323044a-b9e6-4f6f-8aae-1e33e80dcec8" name="value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="578b271d-18c7-4587-83b2-0b1a3c69bb0d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8a988130-7b6a-4f51-aff9-c505ea738126" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="24185cc1-a6d1-47d2-919f-0445fc510743" name="getStatistic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dff18e0f-e96c-4fcc-b44b-ce24f147c1c4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d6c044f9-005c-4e1a-ae9c-5c0d1dddfdaf" direction="Return" isUnique="false">
+                  <elementDefinition Id="82a8df70-af87-43ce-a7fe-a64e40205faa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8a988130-7b6a-4f51-aff9-c505ea738126" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8a988130-7b6a-4f51-aff9-c505ea738126" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9276f18c-b360-42d4-85a3-34a2e248bac2" name="SystemComponent" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="af930222-0ce4-47f8-9a87-6cc4b0124a0f" />
+        <targetEnds>
+          <association Id="effd0354-7d59-4182-bab0-f33d57af852b" isDerived="false" sourceEndRoleName="SystemComponent" targetEndRoleName="SystemStatistic" isLeaf="false" isAbstract="false">
+            <classMoniker Id="47baafb3-828a-4222-92af-a1963d5f6201" LastKnownName="SystemStatistic" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92120fe2-9fc7-400a-b22d-5283ef17cf03" name="SystemComponent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="abcc7f7c-bea1-4625-9fa8-dff495bdb6c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a26f34bc-c00a-48c9-8516-7a8a2526dd6e" name="SystemStatistic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="dbded426-4a19-47df-80d0-db00a3c6ecf9" name="Lower" value="*">
+                      <elementDefinition Id="0349a980-856d-44ea-81a8-1cf4743dbfa0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="17727464-0543-40c3-84f7-b0fd3d818713" name="Upper" value="*">
+                      <elementDefinition Id="e7fd903f-b322-4175-b7fb-fbb96f0921b3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2ef9deec-8730-4a87-892e-5f3134eeb976" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7809ff32-52c3-4c90-a1ae-5ea9f730f6de" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7c96b6cd-fed3-43f5-9724-7826cb297b1b" name="ComponentName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9070bcdf-3e39-4362-985a-bb992d7e9c4d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f902b270-4350-4aa9-98c9-240679e270e3" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="58d5af6e-8a53-4b9f-aab3-1bee4572fd35" name="Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="62d60577-dc1b-4474-9394-e8ec065aa781" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dc418c5e-6690-4472-8245-5c820d4209c7" LastKnownName="List&lt;SystemStatistic&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b502599e-8c74-4156-978d-79169a225884" name="getStatistics" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e4f7e89-7d55-4074-8993-afe08b8cc4ab" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7aedb6c6-e0d5-4d61-8056-7319e8bb88f3" direction="Return" isUnique="false">
+                  <elementDefinition Id="14f1d81c-4ba8-4efd-81f7-d16b9f65f0b4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dc418c5e-6690-4472-8245-5c820d4209c7" LastKnownName="List&lt;SystemStatistic&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dc418c5e-6690-4472-8245-5c820d4209c7" name="List&lt;SystemStatistic&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;SystemStatistic&gt;">
+        <elementDefinition Id="e74be8f0-c18a-4155-afa8-518f9922a81c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f902b270-4350-4aa9-98c9-240679e270e3" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="859b90d4-beb4-4094-812a-79ae9acab588" name="Acolyte.DesignModel">
+    <elementDefinition Id="ee440c85-e4db-4a7d-92d3-a59a6ee71a91" />
+  </package>
+</logicalClassDesignerModel>
