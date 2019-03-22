@@ -1,1 +1,253 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="e844284d-62c8-45dc-8664-6a6938ddd9f6" name="AcolyteComponentDiagram" linkedPackageId="c268623d-5b51-4755-a473-118b63a137cf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="67470388-7cc1-4448-85f2-a6ffb25f189e">
+      <profileInstance Id="318f47b1-ade6-4eba-a13e-75fe0a68eac1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="49406e4c-e502-4232-b968-23c5b46e603c">
+      <profileInstance Id="191f65eb-65ae-46ac-8705-ff66e426e800" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="ca445799-b718-42fa-b23f-792a0843352e" name="Acolyte.SharedInfrastructure.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b7d3daaa-c336-49cc-8885-f93878e832c9" />
+        <ownedAttributesInternal>
+          <part Id="060f5ed9-7661-4557-9fde-5322fa33c644" name="Security" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="3c2d3b7d-6e05-46a3-a5a2-490444a042eb" />
+            <type_NamedElement>
+              <componentMoniker Id="0eb14ef8-ffad-409f-99ab-639ca07aa34a" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <part Id="24ec4df3-8db3-44ae-987e-84975ed0344b" name="Communication" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="923a021b-445d-44f3-a3f2-e4e934d857cb" />
+            <type_NamedElement>
+              <componentMoniker Id="ce1b0aca-7e4d-44f7-b2b5-f7e001bd523b" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0eb14ef8-ffad-409f-99ab-639ca07aa34a" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4f8fae4b-6ac4-4955-a3b6-f4bfb1a55a3d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ce1b0aca-7e4d-44f7-b2b5-f7e001bd523b" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9aaa9a9f-915e-4da9-b3c0-ccfcbfdcf26e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="6be45171-f984-43d3-a996-af23a1a514bc" name="Acolyte.HardwareRepository.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e58896c2-c872-4cd5-9d75-f8ed95e2dd86" />
+        <suppliersInternal>
+          <dependency Id="e4d2b888-9ec2-4258-a851-ee8b29412526">
+            <componentMoniker Id="ca445799-b718-42fa-b23f-792a0843352e" LastKnownName="Acolyte.SharedInfrastructure.dll" />
+            <elementDefinition Id="1a7ed7ff-9de7-49d4-97be-d5f845edd15d" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="4a4d024f-0253-40ab-b189-4623d015617a" name="NetworkEntities" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="47a25f0c-08f8-4c89-aed6-2d3451c33b74" />
+            <type_NamedElement>
+              <componentMoniker Id="e0322621-5c60-4979-8436-6db167b346fc" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+          <part Id="f89e33b1-f655-4979-963d-0a8c1a378f3b" name="BluetoothDeviceEntities" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="a85c5dc1-ee31-4c57-9a30-f85e301be2d9" />
+            <type_NamedElement>
+              <componentMoniker Id="cc49ba5c-3185-4453-b32f-d7dc9ef45123" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+          <part Id="ea1894f2-a2d4-4733-a2ee-21239242b56a" name="MonitorEntities" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="da198fe2-7800-4392-aafd-432d99cd0cac" />
+            <type_NamedElement>
+              <componentMoniker Id="97e039fd-8c12-4b0c-9092-50c2ec274700" LastKnownName="Component41" />
+            </type_NamedElement>
+          </part>
+          <part Id="ea967d36-b63e-400e-8310-bbf295092a5c" name="AudioEntities" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="25680221-05ab-4dbf-b566-a9bf5f9976bb" />
+            <type_NamedElement>
+              <componentMoniker Id="9a8839fe-ca80-40d1-9172-b3515446ad26" LastKnownName="Component5" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e0322621-5c60-4979-8436-6db167b346fc" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7764df15-254b-442d-b0f8-491b4fec678a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="cc49ba5c-3185-4453-b32f-d7dc9ef45123" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6185ad44-c0d9-4aad-82ad-43f213340fa8" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="97e039fd-8c12-4b0c-9092-50c2ec274700" name="Component41" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7776332f-a189-4ee0-bbf5-762e2cd5b4d4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="9a8839fe-ca80-40d1-9172-b3515446ad26" name="Component5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4d5c4dd1-5068-47df-beb1-68c9502bdd81" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ff9e2acc-f561-4049-80a9-d02026aa3fd4" name="Acolyte.HardwareInterface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ffe7990c-f9b5-43ef-9f8e-a9cae6d221fe" />
+        <suppliersInternal>
+          <dependency Id="d884601f-3f2b-438c-ba2d-e4f34da2634d">
+            <componentMoniker Id="6be45171-f984-43d3-a996-af23a1a514bc" LastKnownName="Acolyte.HardwareRepository.dll" />
+            <elementDefinition Id="1749035f-e9c6-40dc-9203-d230349e7c93" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="5c7688e6-6ccf-4895-85df-57d99eced367" name="Reporting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="4d8f13d5-fcd8-4e7c-a321-bc3f8ab3a70f" />
+            <type_NamedElement>
+              <componentMoniker Id="e582f7a2-ffb3-47b9-83d4-a1a9ffc2791c" LastKnownName="Component6" />
+            </type_NamedElement>
+          </part>
+          <part Id="47fbac82-0744-4851-a068-542dec560d10" name="Setting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="fdf683bc-01a9-447c-9b20-861ea2193628" />
+            <type_NamedElement>
+              <componentMoniker Id="d4325131-b2f2-44d9-aead-db39bc2291da" LastKnownName="Component61" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e582f7a2-ffb3-47b9-83d4-a1a9ffc2791c" name="Component6" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e8fcfd6-e4de-4f70-a87c-b35d24d1f31c" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d4325131-b2f2-44d9-aead-db39bc2291da" name="Component61" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99155420-aaa4-4ebc-99c9-b56dc340358a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c7d06861-3afb-4ca3-830a-be51c36ce4ee" name="Acolyte.SharedServices.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76bf924a-725b-49dc-a9ab-8742b26c4ec3" />
+        <ownedAttributesInternal>
+          <part Id="edad1f79-3aa4-4099-8024-4e88ba7889ae" name="NetworkingServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="7f8a2eb4-60a9-4bde-8321-bfb176a1eac4" />
+            <type_NamedElement>
+              <componentMoniker Id="87bcfcb9-ce5a-4edc-b0e6-1fec27ad4013" LastKnownName="Component7" />
+            </type_NamedElement>
+          </part>
+          <part Id="dccc8c2d-1815-4748-8200-2aad0534e347" name="BrowserServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="6986f3f5-ab3b-4cd6-989a-4186943da2b5" />
+            <type_NamedElement>
+              <componentMoniker Id="43bd4cbd-7622-4566-aef0-ec4c5aa08e03" LastKnownName="Component8" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="87bcfcb9-ce5a-4edc-b0e6-1fec27ad4013" name="Component7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="354315ab-98b8-49cd-bd1f-3db60260066e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="43bd4cbd-7622-4566-aef0-ec4c5aa08e03" name="Component8" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="18710cb2-9a8b-48c1-b09c-24c1d6b4a4f0" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="62e59ec4-88ff-47e2-b8ac-2e59ce3020c3" name="Acolyte.ServicesInterface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="126c490b-ad6a-444d-83d4-30be43020ce5" />
+        <suppliersInternal>
+          <dependency Id="85ec3743-82da-4180-ac70-572db0a0c754">
+            <componentMoniker Id="c7d06861-3afb-4ca3-830a-be51c36ce4ee" LastKnownName="Acolyte.SharedServices.dll" />
+            <elementDefinition Id="084a4c80-8951-45ea-b203-16d828bd149b" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="792ae0ed-3c8b-4f8c-9209-4fd78f2cdb89" name="Acolyte.UserInputHandling" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7a4d3755-643b-4767-8fa8-661d20dd0e52" />
+        <ownedAttributesInternal>
+          <part Id="13b1c518-1a94-4fe5-b9e9-27e9d0056108" name="KeyboardHandling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="0d77d590-2dde-45e4-8da1-190b8bd89072" />
+            <type_NamedElement>
+              <componentMoniker Id="3a9fc7db-3c8c-4421-a357-0e9f64c6e0cb" LastKnownName="Component9" />
+            </type_NamedElement>
+          </part>
+          <part Id="17bef77f-521a-4bd8-a9b6-8941163beebb" name="MouseHandling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="552c8139-c63a-4432-bc1d-cfc202ce761f" />
+            <type_NamedElement>
+              <componentMoniker Id="4e4ba808-f746-4402-9f46-d3bf1eccb0f2" LastKnownName="Component10" />
+            </type_NamedElement>
+          </part>
+          <part Id="e8d2962c-9960-471f-ac7f-40a90bcc14ca" name="VoiceHandling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="a7107d18-a5eb-4a0c-8be8-d5f1f63cdbb0" />
+            <type_NamedElement>
+              <componentMoniker Id="a49414e2-0565-4b00-80b9-e98cd7ad3c5a" LastKnownName="Component11" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3a9fc7db-3c8c-4421-a357-0e9f64c6e0cb" name="Component9" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58e99ca1-b178-4f50-9507-e91d67c4e004" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4e4ba808-f746-4402-9f46-d3bf1eccb0f2" name="Component10" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0d5ab1b-a008-4a80-a5ee-37a4ae1a789a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a49414e2-0565-4b00-80b9-e98cd7ad3c5a" name="Component11" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b1a3dde7-1b08-4446-b80e-b172d83b6a56" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e298e3ab-0806-44f2-a316-50fd5c3598ae" name="Acolyte.UserInputInterface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb882b49-5640-4f17-9efa-c8222ce9a8f9" />
+        <suppliersInternal>
+          <dependency Id="7f770436-6339-41b8-900a-49e6e2e53eee">
+            <componentMoniker Id="792ae0ed-3c8b-4f8c-9209-4fd78f2cdb89" LastKnownName="Acolyte.UserInputHandling" />
+            <elementDefinition Id="c5045c62-6cc5-4565-9fa6-ce4eab2a232c" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d072588f-bdbc-4a27-b25f-c2998ea2fe5e" name="Acolyte.Service.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2297503c-6403-4d91-ab2c-19726f006261" />
+        <suppliersInternal>
+          <dependency Id="50a07b8b-053e-463f-9871-e0f13ae31219">
+            <componentMoniker Id="e298e3ab-0806-44f2-a316-50fd5c3598ae" LastKnownName="Acolyte.UserInputInterface" />
+            <elementDefinition Id="a4213291-f0da-4fef-a8b3-f30d19129fde" />
+          </dependency>
+          <dependency Id="c067fba6-24c8-4618-89b5-da0231c731cd">
+            <componentMoniker Id="62e59ec4-88ff-47e2-b8ac-2e59ce3020c3" LastKnownName="Acolyte.ServicesInterface" />
+            <elementDefinition Id="3f50d336-f83f-4825-a7d0-7a3e8e39c667" />
+          </dependency>
+          <dependency Id="da8d5d52-82e9-4b04-8b98-fca7f4876f91">
+            <componentMoniker Id="ff9e2acc-f561-4049-80a9-d02026aa3fd4" LastKnownName="Acolyte.HardwareInterface" />
+            <elementDefinition Id="55bb8437-e72a-43dc-b30e-6891f33d06f3" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="c268623d-5b51-4755-a473-118b63a137cf" name="Acolyte.DesignModel">
+    <elementDefinition Id="ee440c85-e4db-4a7d-92d3-a59a6ee71a91" />
+  </package>
+</componentModel>
