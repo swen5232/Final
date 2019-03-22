@@ -143,7 +143,19 @@
       <SubType>Content</SubType>
       <DependentUpon>30-ActivityDiagrams\WebBrowserAssistance.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="40-StateDiagrams\ConnectingToWiFi.vsdx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="40-StateDiagrams\GetComputerStatistics.vsdx">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="40-StateDiagrams\HighLevelState.vsdx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="40-StateDiagrams\IncreaseDecreaseVolume.vsdx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="40-StateDiagrams\NavigateBrowser.vsdx">
       <SubType>Content</SubType>
     </Content>
     <Content Include="AcolyteBrainstorm.usecasediagram">
