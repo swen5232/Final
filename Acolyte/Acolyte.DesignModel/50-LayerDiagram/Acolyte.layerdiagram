@@ -37,9 +37,8 @@
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <childLayers>
-        <layer Id="1e39bdbb-38d3-4491-a981-7173af196387" name="Application Controller" />
+        <layer Id="1e39bdbb-38d3-4491-a981-7173af196387" name="Application View Models" />
         <layer Id="368b0ded-3185-4004-996c-bdb9271c71ba" name="Computer Workflows" />
-        <layer Id="77e7ccd4-560b-4df4-aefb-41ee1a480977" name="Computer Components" />
       </childLayers>
     </layer>
     <layer Id="1b46454a-74f6-4348-9632-cfd14678786d" name="Hardware Abstraction Layer">
@@ -56,10 +55,11 @@
         <layer Id="5a9aa0f3-ecbb-41a3-b899-b4426dead075" name="Hardware Services" />
       </childLayers>
     </layer>
-    <layer Id="c785f068-4054-4cb4-9fcb-e8387ed49da3" name="Common">
+    <layer Id="c785f068-4054-4cb4-9fcb-e8387ed49da3" name="Shared Infrastructure">
       <childLayers>
         <layer Id="9a4d65dd-333a-4983-b230-f1be0aeb0c0e" name="Security" />
         <layer Id="2717cd25-2828-47ba-b74e-58859df62dea" name="Communication" />
+        <layer Id="0180dd64-64ff-48a2-ad11-dce94338c596" name="Shared Services" />
       </childLayers>
     </layer>
     <layer Id="b0ca7569-3334-4637-b9f0-8a74b607ad0b" name="Drivers">
