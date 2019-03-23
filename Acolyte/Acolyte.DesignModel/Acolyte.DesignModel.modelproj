@@ -30,6 +30,13 @@
       <SubType>Content</SubType>
       <DependentUpon>60-ComponentDiagram\AcolyteComponentDiagram.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="80-ClassDiagrams\ApplicationClass.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="80-ClassDiagrams\ApplicationClass.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>80-ClassDiagrams\ApplicationClass.classdiagram</DependentUpon>
+    </Content>
     <Content Include="80-ClassDiagrams\BrowserClassDiagram.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -50,6 +57,13 @@
     <Content Include="80-ClassDiagrams\ComputerStatisticsClasses.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>80-ClassDiagrams\ComputerStatisticsClasses.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="80-ClassDiagrams\MonitorClass.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="80-ClassDiagrams\MonitorClass.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>80-ClassDiagrams\MonitorClass.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Acolyte.DesignModel.uml">
       <SubType>Content</SubType>

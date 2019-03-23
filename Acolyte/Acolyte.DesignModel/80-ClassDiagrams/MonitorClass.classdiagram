@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="79818b3d-3e8d-42d4-8582-d729b5e10f04" name="MonitorClass" linkedPackageId="a6def7ea-f93d-432d-bd2c-e62ec14d522b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="596f6d31-ab85-4dbf-b200-e306618def66">
+      <profileInstance Id="964cddb9-0a5c-4a37-8ef7-0b433b646c52" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aaf5aa78-aff0-48e7-8263-514d6da4efa2">
+      <profileInstance Id="c0c0fb89-efad-4513-a045-511bfa8a0aa5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8b0b4fbb-f5a5-4cf3-8cbd-15658c57ae9d" name="Monitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a8421c44-e860-444d-96cb-e5eec0eb8988" />
+        <ownedAttributesInternal>
+          <property Id="07f0bba1-7861-477a-bdff-6f11537bb4d5" name="Manufacturer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d8b9df95-8817-42e5-83f4-74402c993918" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0472c1cb-0419-4887-ab4b-ff357d655ec5" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="c6753162-1a3c-44af-93c7-dcbec708c129" name="SequenceNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b3e830e-4aa0-44cb-aa24-2c313bfc12f8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="84f61ad9-e311-44f5-b07d-624dc4571084" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="bdfffdc5-94c9-4e48-beb8-b79d5b9a1efc" name="Brightness" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9074141b-45dd-4e4e-8f78-f2cb4b340f6e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cff8ec5c-96cd-48ac-8ef1-7d78a43c04dd" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="131dffff-112b-4724-a99f-9a1f8535223e" name="Contrast" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3967e95b-110d-4868-ae31-edfcae251a23" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cff8ec5c-96cd-48ac-8ef1-7d78a43c04dd" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="7c9b6d17-dd94-46ae-8757-1ab6caab325d" name="Hue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="daddc484-b74c-480b-bbd0-5fbf911ca60e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cff8ec5c-96cd-48ac-8ef1-7d78a43c04dd" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="cd098a50-369c-4bbc-9c08-5f5921f18a83" name="adjustBrightness" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c9f81615-ddea-41f5-b04e-1ea9c1d4e624" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="730e414a-08cb-44ce-bb7b-0fe0ecc23403" name="double" direction="In" isUnique="false">
+                  <elementDefinition Id="20c47745-6650-47ba-8a2d-63e3db6c5afc" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b4ce78c6-efc9-417b-83ce-0f4b0aae7605" direction="Return" isUnique="false">
+                  <elementDefinition Id="31a2575e-aeaf-4789-ba13-d633e84d8044" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f2910815-9840-46ea-93ba-7969e00ba358" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ac09a4d8-0ee6-45c2-82a3-96d677b607af" name="adjustContrast" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4962017d-7456-42fd-827b-4b302f541bc9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc272ff8-aa78-4a30-9fb7-857bd71191e3" name="double" direction="In" isUnique="false">
+                  <elementDefinition Id="c84c7e87-ea30-464c-9d88-c340c2dcdbc1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2e1f5241-946e-469b-be79-e6ab6ce11973" direction="Return" isUnique="false">
+                  <elementDefinition Id="a901475b-df54-42e8-b4fe-22f00816c9a8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f2910815-9840-46ea-93ba-7969e00ba358" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0462efca-9b12-46cd-9562-19c0371e0bd2" name="adjustHue" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2c28e6c4-fb71-4f9f-ad34-9faea7f0e61a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="467144ad-97ed-4eb5-be5d-941eeb7d329c" name="double" direction="In" isUnique="false">
+                  <elementDefinition Id="cebba32e-b730-44cb-b64c-b2dfee42512e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b609f7e-e197-45c5-a676-db674b33ead0" direction="Return" isUnique="false">
+                  <elementDefinition Id="0d64e200-4b7e-44c7-883e-cc61abdc8b6c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f2910815-9840-46ea-93ba-7969e00ba358" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="893b90b5-8eee-4cd5-9de2-ac037ba81809" name="turnOff" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="10b8ff0c-1a13-4b24-9b82-3965f2762dbc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="42a8b50e-5eb0-42ab-8336-d9b62dfa4949" direction="Return" isUnique="false">
+                  <elementDefinition Id="554c3668-7f55-47f9-bf50-ff95c23ab25d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f2910815-9840-46ea-93ba-7969e00ba358" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="84f61ad9-e311-44f5-b07d-624dc4571084" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="51c2cf67-654a-45d7-8e79-0aa7132f9b7a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0472c1cb-0419-4887-ab4b-ff357d655ec5" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cff8ec5c-96cd-48ac-8ef1-7d78a43c04dd" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="3be31d98-3ba6-4268-8548-c529599bd70d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f2910815-9840-46ea-93ba-7969e00ba358" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="49295ccf-3729-4582-8398-5fe33b440610" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4025bc66-a36d-4569-9fd8-3bb4ecaccaa3" name="Monitors" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4f5f4e9-83f3-4293-af3d-dcefaa850b21" />
+        <targetEnds>
+          <association Id="1735cf66-edee-4c6d-bcc3-a80ed5c40137" isDerived="false" sourceEndRoleName="Monitors" targetEndRoleName="Monitor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8b0b4fbb-f5a5-4cf3-8cbd-15658c57ae9d" LastKnownName="Monitor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2df814cc-5eeb-4598-a003-1241cd704b40" name="Monitors" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a883e0c2-ca86-49bd-856f-507ad29fd03b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60c20369-cabf-4651-9346-459da4d8a83b" name="Monitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0a31f2bd-c2aa-423a-8d1a-e496b0e08c5f" name="Lower" value="*">
+                      <elementDefinition Id="46520e8e-0111-4025-99c3-b669998776ed" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e308b8b9-f7b3-41cc-93f9-c7ffcb739776" name="Upper" value="*">
+                      <elementDefinition Id="cbe78f99-19f9-403b-96ba-476014858b4b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2768c612-709e-47f1-bf59-8abea1a1fe46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40c7c5c8-144a-455a-a8a6-b7353087d189" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3d584ad3-97b6-4f0d-ad26-3f1d53023dc1" name="Monitors" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d0fab746-145a-40c6-b146-6e8864adac93" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="269e4b28-61db-47e4-8cf0-786943c4c5fa" LastKnownName="List&lt;Monitor&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="07ceb5e7-dd42-4c0b-a59f-f86f2ffe0daf" name="getMonitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="37b29f63-a12c-464c-b9ed-5fc00253da8c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c9f4afff-c162-4f46-9e7b-a2a399c7ccf8" name="long" direction="In" isUnique="false">
+                  <elementDefinition Id="7a8e3528-d20e-4341-8ff1-31c569a01320" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="718ca6c2-6661-4d40-808a-7e1c5c4da625" direction="Return" isUnique="false">
+                  <elementDefinition Id="0e85fd83-8c46-467d-ac17-a2b2a76eac81" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="79844a68-c74b-4270-9471-638167fe64fc" LastKnownName="Monitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="269e4b28-61db-47e4-8cf0-786943c4c5fa" name="List&lt;Monitor&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Monitor&gt;">
+        <elementDefinition Id="fd664e6d-36cd-45a7-b971-201d2ac8b356" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="79844a68-c74b-4270-9471-638167fe64fc" name="Monitor" isAbstract="false" isLeaf="false" cachedFullName="Acolyte.DesignModel::Monitor">
+        <elementDefinition Id="a8421c44-e860-444d-96cb-e5eec0eb8988" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a6def7ea-f93d-432d-bd2c-e62ec14d522b" name="Acolyte.DesignModel">
+    <elementDefinition Id="ee440c85-e4db-4a7d-92d3-a59a6ee71a91" />
+  </package>
+</logicalClassDesignerModel>
