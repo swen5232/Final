@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44DE906C-EAA7-4892-A730-FBD0D85B2172}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{3D637CB0-8051-44B8-9A63-A2DE0E6233A6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entities</RootNamespace>
-    <AssemblyName>Entities</AssemblyName>
+    <RootNamespace>Prototype</RootNamespace>
+    <AssemblyName>Prototype</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,23 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="ApplicationDto.cs" />
-    <Compile Include="AvailableApplications.cs" />
-    <Compile Include="AvailableDevices.cs" />
-    <Compile Include="AvailableNetworks.cs" />
-    <Compile Include="BluetoothDevice.cs" />
-    <Compile Include="Browser.cs" />
-    <Compile Include="BrowserTab.cs" />
-    <Compile Include="BrowserType.cs" />
-    <Compile Include="BrowserWindow.cs" />
-    <Compile Include="Monitor.cs" />
-    <Compile Include="Monitors.cs" />
-    <Compile Include="Network.cs" />
-    <Compile Include="NetworkType.cs" />
-    <Compile Include="RunningApplications.cs" />
-    <Compile Include="SystemComponent.cs" />
-    <Compile Include="SystemStatistic.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{44de906c-eaa7-4892-a730-fbd0d85b2172}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

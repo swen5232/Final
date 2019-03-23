@@ -9,35 +9,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Application
+namespace Entities { 
+public class AvailableApplications
 {
-	public virtual string Name
+	public virtual List<ApplicationDto> AllApps
 	{
 		get;
 		set;
 	}
 
-	public virtual long ProcessId
+	public virtual IEnumerable<ApplicationDto> ApplicationDto
 	{
 		get;
 		set;
 	}
 
-	public virtual string Filepath
-	{
-		get;
-		set;
-	}
-
-	public virtual void open()
+	public virtual void getList()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void close()
+	public virtual void resync()
 	{
 		throw new System.NotImplementedException();
 	}
+
+	public virtual void addApplication(Application Application)
+	{
+		throw new System.NotImplementedException();
+	}
+
+    public virtual void addApplication(ApplicationDto applicationDto)
+    {
+        throw new System.NotImplementedException();
+    }
 
 }
-
+}

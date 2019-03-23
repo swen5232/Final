@@ -9,29 +9,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class RunningApplications
-{
-	public virtual List<Application> RunningApplication
-	{
-		get;
-		set;
-	}
+namespace Entities { 
+    public class AvailableNetworks
+    {
+	    public virtual List<Network> Networks
+	    {
+		    get;
+		    set;
+	    }
 
-	public virtual IEnumerable<Application> Application
-	{
-		get;
-		set;
-	}
+	    public virtual IEnumerable<Network> Network
+	    {
+		    get;
+		    set;
+	    }
 
-	public virtual void findUnresponsive()
-	{
-		throw new System.NotImplementedException();
-	}
+	    public virtual List<Network> get()
+	    {
+		    throw new System.NotImplementedException();
+	    }
 
-	public virtual void showRunningApps()
-	{
-		throw new System.NotImplementedException();
-	}
-
+    }
 }
-
