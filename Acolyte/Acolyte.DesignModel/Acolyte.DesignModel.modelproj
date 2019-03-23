@@ -30,6 +30,13 @@
       <SubType>Content</SubType>
       <DependentUpon>60-ComponentDiagram\AcolyteComponentDiagram.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="70-SequenceDiagram\GetBrowserHistorySequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="70-SequenceDiagram\GetBrowserHistorySequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>70-SequenceDiagram\GetBrowserHistorySequence.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="80-ClassDiagrams\Acolyte.classdiagram">
       <SubType>Content</SubType>
     </Content>

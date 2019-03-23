@@ -11718,6 +11718,761 @@ Disk is a component
         </lifelines>
       </interaction>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="e51ccad4-009f-43d1-aab3-935a44cfe948"
+        name="GetBrowserHistorySequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="51876866-058d-4399-b15b-8c6e340a4324"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e5879673-c753-4921-8b5e-e756b85d6f13"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8d9cc4fd-9744-42df-acf2-22bfcd430d93"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d7fe06b5-bdc7-4d1c-b764-71703c11ce7d"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1ce99e11-55cd-4c9f-aa86-20e0b371440c"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="678e21a6-ccd6-47fc-88e0-e53bfba37f38"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0bb2b577-d0ed-4027-a708-14e8b5b0dbfb"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7f61236c-0622-4048-b252-352e1b86e403"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2119be92-befb-42a9-b718-636e0c3da8d3"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5cefb6b3-c850-46fc-a6c3-5e38e9153a31"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="8d9cc4fd-9744-42df-acf2-22bfcd430d93"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9d58465b-d841-41aa-88e9-20dc3f48aa04"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8ea1df38-5dea-4958-9528-1b1779b172d9"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="975557f2-3569-42bc-a9ca-2a982ba0ad43"
+                LastKnownName="BrowserView.xaml"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d7fe06b5-bdc7-4d1c-b764-71703c11ce7d"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e723d149-83d3-4eee-b7f8-7ced50fec423"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="091d9adf-115e-4e1d-82a8-2b94d538619d"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="95a87cb3-976c-4d7e-b3c1-069117545296"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="23eba5b0-a839-4aa5-a018-060f4b4ab04f"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1168844b-dbd0-4f72-b24f-3d90b393fe84"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="40e2a5bd-b471-45f3-855f-1f9567ef1db2"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0071dc59-5c18-4563-9cc5-506dc6e49d40"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="95a87cb3-976c-4d7e-b3c1-069117545296"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a2e1fbe8-8393-44b1-90ed-34ae1432adc1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1ce99e11-55cd-4c9f-aa86-20e0b371440c"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="23eba5b0-a839-4aa5-a018-060f4b4ab04f"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4e067211-3746-4dea-b286-d55eb106115a"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="44034a91-be4a-40ff-81a5-786285e93c13"
+                LastKnownName="Browser"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a056218c-3663-4f9c-afb2-e8685654b8ea"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bbafaa4a-a3bb-48d5-a962-b9c2fbfe1454"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0396733e-b54e-49bc-bcfb-29e4b3ee510f"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7424f25b-1a3f-4072-a9a3-a70c8698835c"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bbafaa4a-a3bb-48d5-a962-b9c2fbfe1454"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2f011450-4bb3-4d69-ae07-25999b13ce89"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="44034a91-be4a-40ff-81a5-786285e93c13"
+                LastKnownName="Browser"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1168844b-dbd0-4f72-b24f-3d90b393fe84"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0396733e-b54e-49bc-bcfb-29e4b3ee510f"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="44034a91-be4a-40ff-81a5-786285e93c13"
+                LastKnownName="Browser"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="40e2a5bd-b471-45f3-855f-1f9567ef1db2"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7424f25b-1a3f-4072-a9a3-a70c8698835c"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="44034a91-be4a-40ff-81a5-786285e93c13"
+                LastKnownName="Browser"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a056218c-3663-4f9c-afb2-e8685654b8ea"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0c1f5382-ca35-4a52-ba89-135d769f71f4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="44034a91-be4a-40ff-81a5-786285e93c13"
+                LastKnownName="Browser"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="678e21a6-ccd6-47fc-88e0-e53bfba37f38"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0071dc59-5c18-4563-9cc5-506dc6e49d40"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="091d9adf-115e-4e1d-82a8-2b94d538619d"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="00b5ac09-e30b-489e-8f2e-d597f37847b4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0bb2b577-d0ed-4027-a708-14e8b5b0dbfb"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b941ff2a-d65f-4a07-bc44-2776fa27588c"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2119be92-befb-42a9-b718-636e0c3da8d3"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7f61236c-0622-4048-b252-352e1b86e403"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c51396c-ea0d-46b2-8d07-cc0aac7576e1"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7f61236c-0622-4048-b252-352e1b86e403"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="eddd2203-4dfc-4063-a4fd-b58367ac3838"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5c51396c-ea0d-46b2-8d07-cc0aac7576e1"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2119be92-befb-42a9-b718-636e0c3da8d3"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="374869d2-4a20-4a16-abad-b3776132059c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5cefb6b3-c850-46fc-a6c3-5e38e9153a31"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ea06a893-5de1-41e4-ac5a-3e6bf72d15ff"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="975557f2-3569-42bc-a9ca-2a982ba0ad43"
+                LastKnownName="BrowserView.xaml"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e5879673-c753-4921-8b5e-e756b85d6f13"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="27575c4e-bdf6-4243-b001-e3eb1b8d4bd9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Acolyte.DesignModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="975557f2-3569-42bc-a9ca-2a982ba0ad43"
+            name="BrowserView.xaml"
+            isActor="false"
+            lifelineDisplayName="BrowserView.xaml">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8ea1df38-5dea-4958-9528-1b1779b172d9"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ea06a893-5de1-41e4-ac5a-3e6bf72d15ff"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="15747896-8e02-4f08-bc79-e00bbdfc444b"
+            name="BrowserViewModel"
+            isActor="false"
+            lifelineDisplayName="BrowserViewModel">
+            <represents>
+              <propertyMoniker
+                Id="d05dde64-e479-4c02-8cc8-40f804c48855"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="8d9cc4fd-9744-42df-acf2-22bfcd430d93"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e5879673-c753-4921-8b5e-e756b85d6f13"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2686234c-9f46-4c48-a41c-970fe82ce2b7"
+            name="BrowserService"
+            isActor="false"
+            lifelineDisplayName="BrowserService">
+            <represents>
+              <propertyMoniker
+                Id="d8bd5b61-494d-4907-950c-ba9ef78df139"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="95a87cb3-976c-4d7e-b3c1-069117545296"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="091d9adf-115e-4e1d-82a8-2b94d538619d"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="44034a91-be4a-40ff-81a5-786285e93c13"
+            name="Browser"
+            isActor="false"
+            lifelineDisplayName="Browser">
+            <represents>
+              <propertyMoniker
+                Id="a16e93a8-5149-4b16-ac2e-3ab3b6ba9c9f"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="bbafaa4a-a3bb-48d5-a962-b9c2fbfe1454"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a056218c-3663-4f9c-afb2-e8685654b8ea"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="ced245c5-9fdb-482f-acfe-a4a35c4024f3"
+            name="Binding"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8ea1df38-5dea-4958-9528-1b1779b172d9"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d7fe06b5-bdc7-4d1c-b764-71703c11ce7d"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="73ee21ab-03cb-441c-b6d9-9237eae322be"
+            name="GetBrowserHistoryCommand()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1ce99e11-55cd-4c9f-aa86-20e0b371440c"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="23eba5b0-a839-4aa5-a018-060f4b4ab04f"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="159bed9d-a16d-4d44-ab04-ae2f70cc008b"
+            name="GetBrowserHistory(dateRange)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1168844b-dbd0-4f72-b24f-3d90b393fe84"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0396733e-b54e-49bc-bcfb-29e4b3ee510f"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="96086bf6-15f8-4c6c-8395-a5a8956563f8"
+            name="Dictionary&lt;DateTime,string&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7424f25b-1a3f-4072-a9a3-a70c8698835c"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="40e2a5bd-b471-45f3-855f-1f9567ef1db2"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e6a23563-1305-4ce8-90ff-f653a1dcc7ab"
+            name="browserHistory:Dictionary&lt;DateTime,string&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0071dc59-5c18-4563-9cc5-506dc6e49d40"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="678e21a6-ccd6-47fc-88e0-e53bfba37f38"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1028f15a-035f-4f51-a8c7-04d4df49910b"
+            name="this.BrowserHistory = browserHistory"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0bb2b577-d0ed-4027-a708-14e8b5b0dbfb"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c51396c-ea0d-46b2-8d07-cc0aac7576e1"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3ef64c0d-28f4-4df9-9f36-9ccc47c8d918"
+            name="Binding"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5cefb6b3-c850-46fc-a6c3-5e38e9153a31"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ea06a893-5de1-41e4-ac5a-3e6bf72d15ff"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="d05dde64-e479-4c02-8cc8-40f804c48855"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="8e27302f-7407-4388-807b-37af64845c73"
+                LastKnownName="BrowserViewModel"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d8bd5b61-494d-4907-950c-ba9ef78df139"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="08b6ae2f-c08d-4936-a04f-1689152b573f"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a16e93a8-5149-4b16-ac2e-3ab3b6ba9c9f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0f718ac1-4c9e-4984-a3c8-aa9bd440a715"
+                LastKnownName="Browser"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9d58465b-d841-41aa-88e9-20dc3f48aa04"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="27575c4e-bdf6-4243-b001-e3eb1b8d4bd9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a2e1fbe8-8393-44b1-90ed-34ae1432adc1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="00b5ac09-e30b-489e-8f2e-d597f37847b4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2f011450-4bb3-4d69-ae07-25999b13ce89"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0c1f5382-ca35-4a52-ba89-135d769f71f4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eddd2203-4dfc-4063-a4fd-b58367ac3838"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="374869d2-4a20-4a16-abad-b3776132059c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
