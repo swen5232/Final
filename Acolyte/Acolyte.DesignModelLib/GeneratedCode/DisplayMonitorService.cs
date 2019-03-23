@@ -21,7 +21,7 @@ public class DisplayMonitorService
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void AdjustHue(int level, monitor monitor)
+	public virtual void AdjustHue(int level, Monitor monitor)
 	{
 		throw new System.NotImplementedException();
 	}

@@ -23,7 +23,7 @@ public class BluetoothDevice
 		set;
 	}
 
-	public virtual boolean Paired
+	public virtual bool Paired
 	{
 		get;
 		set;

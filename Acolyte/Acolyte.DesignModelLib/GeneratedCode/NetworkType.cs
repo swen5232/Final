@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 
 /// <remarks>e.g., WiFi, DSL, T3, Cable, etc.</remarks>
-public enum NetworkType
+public enum NetworkType : int
 {
 	WIFI,
 	LAN,

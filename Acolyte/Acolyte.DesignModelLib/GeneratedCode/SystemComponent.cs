@@ -33,7 +33,7 @@ public class SystemComponent
 		set;
 	}
 
-	public virtual Statistics GetStatistics()
+	public virtual List<SystemStatistic> GetStatistics()
 	{
 		throw new System.NotImplementedException();
 	}

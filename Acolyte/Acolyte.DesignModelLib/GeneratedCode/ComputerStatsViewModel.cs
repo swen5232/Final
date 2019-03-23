@@ -9,27 +9,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/// <remarks>e.g., Chrome, Firefox, IE, etc.</remarks>
-public class BrowserType
+public class ComputerStatsViewModel
 {
-	public virtual string Name
+	public virtual ComputerSettingsService ComputerSettingsService
 	{
 		get;
 		set;
 	}
 
-	public virtual bool DefaultBrowser
-	{
-		get;
-		set;
-	}
-
-	public virtual bool isDefault()
+	public virtual void ViewNetworkStatsCommand()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public virtual string getName()
+	public virtual void ViewCPUUtilizationCommand()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void ViewRAMUsageCommand()
 	{
 		throw new System.NotImplementedException();
 	}

@@ -54,6 +54,8 @@
     <Compile Include="GeneratedCode\BrowserWindow.cs" />
     <Compile Include="GeneratedCode\ComputerSettingsService.cs" />
     <Compile Include="GeneratedCode\ComputerSettingsViewModel.cs" />
+    <Compile Include="GeneratedCode\ComputerStatsService.cs" />
+    <Compile Include="GeneratedCode\ComputerStatsViewModel.cs" />
     <Compile Include="GeneratedCode\DisplayMonitorService.cs" />
     <Compile Include="GeneratedCode\DisplayViewModel.cs" />
     <Compile Include="GeneratedCode\Monitor.cs" />

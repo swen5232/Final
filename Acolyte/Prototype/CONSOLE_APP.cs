@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace Prototype
 {
-    class Program
+    class CONSOLE_APP
     {
         static void Main(string[] args)
         {

@@ -17,13 +17,13 @@ public class BluetoothViewModel
 		set;
 	}
 
-	public virtual List<BluetoothDevices> PairedDevices
+	public virtual List<BluetoothDevice> PairedDevices
 	{
 		get;
 		set;
 	}
 
-	public virtual List<BluetoothDevices> AvailableDevices
+	public virtual List<BluetoothDevice> AvailableDevices
 	{
 		get;
 		set;
@@ -49,7 +49,7 @@ public class BluetoothViewModel
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void TogglePairingModeCommand(object boolean toggle)
+	public virtual void TogglePairingModeCommand(bool toggle)
 	{
 		throw new System.NotImplementedException();
 	}

@@ -11,7 +11,7 @@ using System.Text;
 
 public class BluetoothService
 {
-	public virtual List<BluetoothDevices> SearchForDevices()
+	public virtual List<BluetoothDevice> SearchForDevices()
 	{
 		throw new System.NotImplementedException();
 	}

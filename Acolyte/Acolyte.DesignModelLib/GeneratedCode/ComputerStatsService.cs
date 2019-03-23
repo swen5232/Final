@@ -9,8 +9,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public enum PairingMode : int
+public class ComputerStatsService
 {
-	PAIRING_ON,
-	PAIRING_OFF,
+	public virtual List<SystemStatistic> SystemStatistics
+	{
+		get;
+		set;
+	}
+
+	public virtual string GetStat(SystemStatistic stat)
+	{
+		throw new System.NotImplementedException();
+	}
+
 }
+

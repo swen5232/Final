@@ -23,13 +23,13 @@ public class Network
 		set;
 	}
 
-	public virtual boolean Connected
+	public virtual bool Connected
 	{
 		get;
 		set;
 	}
 
-	public virtual boolean PasswordProtected
+	public virtual bool PasswordProtected
 	{
 		get;
 		set;
@@ -51,7 +51,7 @@ public class Network
 		throw new System.NotImplementedException();
 	}
 
-	public virtual voi Disconnect()
+	public virtual void Disconnect()
 	{
 		throw new System.NotImplementedException();
 	}
