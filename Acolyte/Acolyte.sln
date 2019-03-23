@@ -7,6 +7,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Acolyte.AnalysisModel", "Ac
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Acolyte.DesignModel", "Acolyte.DesignModel\Acolyte.DesignModel.modelproj", "{145A361A-7C5B-42EC-9C7F-8E3ADA60B329}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{44DE906C-EAA7-4892-A730-FBD0D85B2172}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{145A361A-7C5B-42EC-9C7F-8E3ADA60B329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{145A361A-7C5B-42EC-9C7F-8E3ADA60B329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{145A361A-7C5B-42EC-9C7F-8E3ADA60B329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44DE906C-EAA7-4892-A730-FBD0D85B2172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DE906C-EAA7-4892-A730-FBD0D85B2172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DE906C-EAA7-4892-A730-FBD0D85B2172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DE906C-EAA7-4892-A730-FBD0D85B2172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
