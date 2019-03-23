@@ -22,11 +22,8 @@
     <componentShape Id="ca19b444-3684-4721-8ee4-f468ea678d20" absoluteBounds="1, 3.25, 4.2591315843614543, 2.1593751589457195" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
       <componentMoniker Id="e298e3ab-0806-44f2-a316-50fd5c3598ae" LastKnownName="Acolyte.ApplicationLogic.dll" />
       <nestedChildShapes>
-        <componentUseShape Id="9c7bcd2d-32d0-49e7-9f2b-dcd4bee0c9ed" absoluteBounds="1.125, 4, 1.8541666666666665, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+        <componentUseShape Id="9c7bcd2d-32d0-49e7-9f2b-dcd4bee0c9ed" absoluteBounds="2, 4.125, 1.8541666666666665, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
           <partMoniker Id="0a4dd36d-91d3-4b53-9b2d-774f36409f84" LastKnownName="ViewModels" />
-        </componentUseShape>
-        <componentUseShape Id="d7cfa818-5ef5-4458-b7dd-1caf28677b58" absoluteBounds="3.125, 4, 1.8541666666666661, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
-          <partMoniker Id="a3fdadcb-a1e8-4c74-9822-cdb982420f8c" LastKnownName="Workflows" />
         </componentUseShape>
       </nestedChildShapes>
     </componentShape>

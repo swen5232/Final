@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{3D637CB0-8051-44B8-9A63-A2DE0E6233A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acolyte.DesignModelLib", "Acolyte.DesignModelLib\Acolyte.DesignModelLib.csproj", "{E53D76EF-6F40-4E92-BC22-AC94720CBC2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3D637CB0-8051-44B8-9A63-A2DE0E6233A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D637CB0-8051-44B8-9A63-A2DE0E6233A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D637CB0-8051-44B8-9A63-A2DE0E6233A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53D76EF-6F40-4E92-BC22-AC94720CBC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53D76EF-6F40-4E92-BC22-AC94720CBC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53D76EF-6F40-4E92-BC22-AC94720CBC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53D76EF-6F40-4E92-BC22-AC94720CBC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

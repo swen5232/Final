@@ -143,12 +143,6 @@
               <componentMoniker Id="507ea883-7482-45cf-a4a2-022e228efe40" LastKnownName="Component2" />
             </type_NamedElement>
           </part>
-          <part Id="a3fdadcb-a1e8-4c74-9822-cdb982420f8c" name="Workflows" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
-            <elementDefinition Id="20cf9599-0233-48ef-aca9-6c7b645c2926" />
-            <type_NamedElement>
-              <componentMoniker Id="4bc1e941-a694-49a1-9595-57b8a77b746a" LastKnownName="Component3" />
-            </type_NamedElement>
-          </part>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
@@ -184,11 +178,6 @@
     <componentModelHasComponents>
       <component Id="507ea883-7482-45cf-a4a2-022e228efe40" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="15ef1dc5-07c6-4fbb-837a-21a2fc17744e" />
-      </component>
-    </componentModelHasComponents>
-    <componentModelHasComponents>
-      <component Id="4bc1e941-a694-49a1-9595-57b8a77b746a" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="2d2cc4c3-8f75-454d-a32f-383d57b8f689" />
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
