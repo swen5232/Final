@@ -88,20 +88,6 @@ Disk is a component
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="2d347563-ca1e-41ff-bb62-0197833d0ff3">
-      <profileInstance Id="ddd2bbd1-7756-4d02-8105-9d220787729b" name="CSharpProfile">
-        <elementDefinition Id="bfea2378-a3f0-4f18-a091-4e66abcf4a6c" />
-      </profileInstance>
-      <elementDefinition Id="98f85102-5325-4d17-981b-301817bd305a" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="5d233ca7-b071-4de1-a7c0-3568a0a8697f">
-      <profileInstance Id="19358164-75ae-4f0a-943a-2aae420a6837" name="TextTemplateBindings">
-        <elementDefinition Id="1c046ed1-b1d9-4e30-b466-1b4909c35789" />
-      </profileInstance>
-      <elementDefinition Id="485835f0-7a9f-4748-aaf4-d26d38ebadf6" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="47baafb3-828a-4222-92af-a1963d5f6201" name="SystemStatistic" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -143,8 +129,26 @@ Disk is a component
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="9eca08bf-8a14-4ff6-949b-4a8d7cd6d053" />
+        <targetEnds>
+          <association Id="e8bfc449-fea7-46ce-830e-528e97313a78" isDerived="false" sourceEndRoleName="SystemStatistic" targetEndRoleName="SystemComponent" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9276f18c-b360-42d4-85a3-34a2e248bac2" LastKnownName="SystemComponent" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="706c01f2-78f0-49c6-977e-0f993e554546" name="SystemStatistic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a4b00f1d-1731-4b38-b83c-b5626e8e664e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c15285ec-f8dd-4b22-baaf-82447974b6f7" name="SystemComponent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true" isNavigableOwned="false">
+                  <elementDefinition Id="c7d3e78a-20eb-404a-8d8a-ebd6798dfae3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e08b8532-1874-4832-b2f1-fe498da6b987" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
-          <property Id="89261002-c89c-4627-9ed3-9bbbe7734a66" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="89261002-c89c-4627-9ed3-9bbbe7734a66" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="5726f1d0-b527-4eda-9240-e027b4610f7b" name="property" profile="CSharpProfile">
                 <elementDefinition Id="9a20e3b8-5fc7-4537-b8b1-c62548402ddb" />
@@ -196,10 +200,10 @@ Disk is a component
             </appliedStereotypesInternal>
             <elementDefinition Id="c326fbc0-3171-4961-a9c4-684434259371" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="8a988130-7b6a-4f51-aff9-c505ea738126" LastKnownName="String" />
+              <referencedTypeMoniker Id="b33a31a9-111c-4819-b3be-00606ec11fb4" LastKnownName="string" />
             </type_NamedElement>
           </property>
-          <property Id="4323044a-b9e6-4f6f-8aae-1e33e80dcec8" name="value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4323044a-b9e6-4f6f-8aae-1e33e80dcec8" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="531b82c4-e40d-4fb2-b7af-7def752d222c" name="property" profile="CSharpProfile">
                 <elementDefinition Id="dbf0c280-df55-49aa-8ce0-df12ef6641e8" />
@@ -251,12 +255,12 @@ Disk is a component
             </appliedStereotypesInternal>
             <elementDefinition Id="578b271d-18c7-4587-83b2-0b1a3c69bb0d" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="8a988130-7b6a-4f51-aff9-c505ea738126" LastKnownName="String" />
+              <referencedTypeMoniker Id="b33a31a9-111c-4819-b3be-00606ec11fb4" LastKnownName="string" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="24185cc1-a6d1-47d2-919f-0445fc510743" name="getStatistic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="24185cc1-a6d1-47d2-919f-0445fc510743" name="GetStatistic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="0d666329-1ecb-43ee-a2b6-7a47315288f6" name="method" profile="CSharpProfile">
                 <elementDefinition Id="0172dce4-a767-47a0-bbc7-35460b398d47" />
@@ -303,10 +307,10 @@ Disk is a component
             <elementDefinition Id="dff18e0f-e96c-4fcc-b44b-ce24f147c1c4" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="d6c044f9-005c-4e1a-ae9c-5c0d1dddfdaf" direction="Return" isUnique="false">
-                  <elementDefinition Id="82a8df70-af87-43ce-a7fe-a64e40205faa" />
+                <parameter Id="62083cdf-0d2f-46c5-b09c-b996e7fda196" direction="Return" isUnique="false">
+                  <elementDefinition Id="278d8f6e-335b-44f4-8ea2-4ea2517c6124" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="8a988130-7b6a-4f51-aff9-c505ea738126" LastKnownName="String" />
+                    <referencedTypeMoniker Id="b33a31a9-111c-4819-b3be-00606ec11fb4" LastKnownName="string" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -315,11 +319,6 @@ Disk is a component
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="8a988130-7b6a-4f51-aff9-c505ea738126" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="9276f18c-b360-42d4-85a3-34a2e248bac2" name="SystemComponent" isAbstract="false" isLeaf="false" isActiveClass="false">
         <appliedStereotypesInternal>
@@ -360,34 +359,6 @@ Disk is a component
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="af930222-0ce4-47f8-9a87-6cc4b0124a0f" />
-        <targetEnds>
-          <association Id="effd0354-7d59-4182-bab0-f33d57af852b" isDerived="false" sourceEndRoleName="SystemComponent" targetEndRoleName="SystemStatistic" isLeaf="false" isAbstract="false">
-            <classMoniker Id="47baafb3-828a-4222-92af-a1963d5f6201" LastKnownName="SystemStatistic" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="92120fe2-9fc7-400a-b22d-5283ef17cf03" name="SystemComponent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="abcc7f7c-bea1-4625-9fa8-dff495bdb6c9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a26f34bc-c00a-48c9-8516-7a8a2526dd6e" name="SystemStatistic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="dbded426-4a19-47df-80d0-db00a3c6ecf9" name="Lower" value="*">
-                      <elementDefinition Id="0349a980-856d-44ea-81a8-1cf4743dbfa0" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="17727464-0543-40c3-84f7-b0fd3d818713" name="Upper" value="*">
-                      <elementDefinition Id="e7fd903f-b322-4175-b7fb-fbb96f0921b3" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="2ef9deec-8730-4a87-892e-5f3134eeb976" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="7809ff32-52c3-4c90-a1ae-5ea9f730f6de" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="7c96b6cd-fed3-43f5-9724-7826cb297b1b" name="ComponentName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
@@ -501,7 +472,7 @@ Disk is a component
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="b502599e-8c74-4156-978d-79169a225884" name="getStatistics" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="b502599e-8c74-4156-978d-79169a225884" name="GetStatistics" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="32f8eb4b-8937-4585-a94b-75a46e6d7c91" name="method" profile="CSharpProfile">
                 <elementDefinition Id="08259c7c-af11-4727-b50a-fea033acc9a6" />
@@ -551,7 +522,7 @@ Disk is a component
                 <parameter Id="7aedb6c6-e0d5-4d61-8056-7319e8bb88f3" direction="Return" isUnique="false">
                   <elementDefinition Id="14f1d81c-4ba8-4efd-81f7-d16b9f65f0b4" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="dc418c5e-6690-4472-8245-5c820d4209c7" LastKnownName="List&lt;SystemStatistic&gt;" />
+                    <referencedTypeMoniker Id="4b30a24c-ce80-4d1e-92db-fc73c487b632" LastKnownName="Statistics" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -570,6 +541,16 @@ Disk is a component
         <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b33a31a9-111c-4819-b3be-00606ec11fb4" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4b30a24c-ce80-4d1e-92db-fc73c487b632" name="Statistics" isAbstract="false" isLeaf="false" cachedFullName="Statistics">
+        <elementDefinition Id="070870d3-56a0-46ce-84c5-d18ecf9e84bb" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="859b90d4-beb4-4094-812a-79ae9acab588" name="Acolyte.DesignModel">
     <elementDefinition Id="ee440c85-e4db-4a7d-92d3-a59a6ee71a91" />
@@ -585,6 +566,18 @@ Disk is a component
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2d347563-ca1e-41ff-bb62-0197833d0ff3">
+        <profileInstance Id="ddd2bbd1-7756-4d02-8105-9d220787729b" name="CSharpProfile">
+          <elementDefinition Id="bfea2378-a3f0-4f18-a091-4e66abcf4a6c" />
+        </profileInstance>
+        <elementDefinition Id="98f85102-5325-4d17-981b-301817bd305a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5d233ca7-b071-4de1-a7c0-3568a0a8697f">
+        <profileInstance Id="19358164-75ae-4f0a-943a-2aae420a6837" name="TextTemplateBindings">
+          <elementDefinition Id="1c046ed1-b1d9-4e30-b466-1b4909c35789" />
+        </profileInstance>
+        <elementDefinition Id="485835f0-7a9f-4748-aaf4-d26d38ebadf6" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

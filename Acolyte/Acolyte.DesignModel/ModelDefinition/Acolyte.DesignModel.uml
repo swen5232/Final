@@ -25,8 +25,8 @@ Disk is a component
       Id="3443ff9f-cf80-42ba-a5ca-de01b569c105">
       <body>e.g., WiFi, DSL, T3, Cable, etc.</body>
       <annotatedElements>
-        <classMoniker
-          Id="f435d8ae-34fd-4ab1-9292-93bd98c84027"
+        <enumerationMoniker
+          Id="3e20610f-6c2f-4069-a6b2-afe17b17e881"
           LastKnownName="NetworkType"
           LastKnownLocation="Acolyte.DesignModel.uml" />
       </annotatedElements>
@@ -215,10 +215,52 @@ Disk is a component
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="e08b8532-1874-4832-b2f1-fe498da6b987"
+            isDerived="false"
+            sourceEndRoleName="SystemStatistic"
+            targetEndRoleName="SystemComponent"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="af930222-0ce4-47f8-9a87-6cc4b0124a0f"
+              LastKnownName="SystemComponent"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a4b00f1d-1731-4b38-b83c-b5626e8e664e"
+                  name="SystemStatistic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7d3e78a-20eb-404a-8d8a-ebd6798dfae3"
+                  name="SystemComponent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="c326fbc0-3171-4961-a9c4-684434259371"
-            name="name"
+            name="Name"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -285,15 +327,15 @@ Disk is a component
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
+              <undefinedTypeMoniker
+                Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b"
+                LastKnownName="string"
                 LastKnownLocation="Acolyte.DesignModel.uml" />
             </type_NamedElement>
           </property>
           <property
             Id="578b271d-18c7-4587-83b2-0b1a3c69bb0d"
-            name="value"
+            name="Value"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -360,9 +402,9 @@ Disk is a component
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
+              <undefinedTypeMoniker
+                Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b"
+                LastKnownName="string"
                 LastKnownLocation="Acolyte.DesignModel.uml" />
             </type_NamedElement>
           </property>
@@ -370,7 +412,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="dff18e0f-e96c-4fcc-b44b-ce24f147c1c4"
-            name="getStatistic"
+            name="GetStatistic"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -429,13 +471,13 @@ Disk is a component
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="82a8df70-af87-43ce-a7fe-a64e40205faa"
+                  Id="278d8f6e-335b-44f4-8ea2-4ea2517c6124"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
+                    <undefinedTypeMoniker
+                      Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b"
+                      LastKnownName="string"
                       LastKnownLocation="Acolyte.DesignModel.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -500,60 +542,6 @@ Disk is a component
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
-        <targetEnds>
-          <association
-            Id="7809ff32-52c3-4c90-a1ae-5ea9f730f6de"
-            isDerived="false"
-            sourceEndRoleName="SystemComponent"
-            targetEndRoleName="SystemStatistic"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="9eca08bf-8a14-4ff6-949b-4a8d7cd6d053"
-              LastKnownName="SystemStatistic"
-              LastKnownLocation="Acolyte.DesignModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="abcc7f7c-bea1-4625-9fa8-dff495bdb6c9"
-                  name="SystemComponent"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2ef9deec-8730-4a87-892e-5f3134eeb976"
-                  name="SystemStatistic"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="0349a980-856d-44ea-81a8-1cf4743dbfa0"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="e7fd903f-b322-4175-b7fb-fbb96f0921b3"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="9070bcdf-3e39-4362-985a-bb992d7e9c4d"
@@ -709,7 +697,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="0e4f7e89-7d55-4074-8993-afe08b8cc4ab"
-            name="getStatistics"
+            name="GetStatistics"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -773,8 +761,8 @@ Disk is a component
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="e74be8f0-c18a-4155-afa8-518f9922a81c"
-                      LastKnownName="List&lt;SystemStatistic&gt;"
+                      Id="070870d3-56a0-46ce-84c5-d18ecf9e84bb"
+                      LastKnownName="Statistics"
                       LastKnownLocation="Acolyte.DesignModel.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -839,6 +827,48 @@ Disk is a component
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ff839d4a-fdb1-45ee-a0bc-742a117bb77a"
+            isDerived="false"
+            sourceEndRoleName="BluetoothDevice"
+            targetEndRoleName="PAIRING_MODE"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="c58fb95b-2761-491d-8069-1a74856c29d0"
+              LastKnownName="PairingMode"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cee20e5c-a511-4d07-a15d-df2705f01bf5"
+                  name="BluetoothDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7237799a-a087-4df7-a9ed-aff844b32760"
+                  name="PAIRING_MODE"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="28fb38d4-420d-46cc-994b-053481771f13"
@@ -1062,6 +1092,24 @@ Disk is a component
               <undefinedTypeMoniker
                 Id="365ea1ce-4752-4675-af8e-e32d3a3a3b95"
                 LastKnownName="boolean"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7e935996-c7ef-455e-8805-9e96da876977"
+            name="Mode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="18fbbaaf-83d8-40de-b305-54cf9f9e3c18"
+                LastKnownName="PairingMode"
                 LastKnownLocation="Acolyte.DesignModel.uml" />
             </type_NamedElement>
           </property>
@@ -1612,33 +1660,86 @@ Disk is a component
         </appliedStereotypesInternal>
         <targetEnds>
           <association
-            Id="1f9c723e-477d-4128-82b7-4b7ce9d15352"
+            Id="e298cc8b-f69d-449c-b44f-6507edb82cd3"
             isDerived="false"
             sourceEndRoleName="Network"
-            targetEndRoleName="NetworkType"
+            targetEndRoleName="NetworkService"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="f435d8ae-34fd-4ab1-9292-93bd98c84027"
-              LastKnownName="NetworkType"
+              Id="f44f95f8-2603-4cf5-b601-9a8c040fc386"
+              LastKnownName="NetworkService"
               LastKnownLocation="Acolyte.DesignModel.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="40fc628e-353d-4638-a247-af6d78d250e2"
+                  Id="212b0473-e794-48c1-b4c3-b5d1a524e111"
                   name="Network"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="49f83d68-0e1e-4441-8b3a-0c05e0f815f3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0dcd176e-f583-4c92-af08-2c6fff6cf29a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f2f7530-ae8a-4526-a9b5-3fdec156699f"
+                  name="NetworkService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ca56017e-a5d9-4417-bed4-b59a6644a293"
+            isDerived="false"
+            sourceEndRoleName="Network"
+            targetEndRoleName="NetworkType"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="3e20610f-6c2f-4069-a6b2-afe17b17e881"
+              LastKnownName="NetworkType"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="992d15c7-0748-4358-8678-882031a1c35f"
+                  name="Network"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a45bb024-7e60-4d01-afd8-8a97687c1b38"
+                  Id="822c86f7-e6a7-485a-bafd-052c59de082e"
                   name="NetworkType"
                   isLeaf="false"
                   isStatic="false"
@@ -1646,7 +1747,8 @@ Disk is a component
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1796,8 +1898,8 @@ Disk is a component
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <classMoniker
-                Id="f435d8ae-34fd-4ab1-9292-93bd98c84027"
+              <enumerationMoniker
+                Id="3e20610f-6c2f-4069-a6b2-afe17b17e881"
                 LastKnownName="NetworkType"
                 LastKnownLocation="Acolyte.DesignModel.uml" />
             </type_NamedElement>
@@ -2031,7 +2133,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="aae0dcd6-e7d0-4bf4-9b30-efc0763142d3"
-            name="connect"
+            name="Connect"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2104,82 +2206,8 @@ Disk is a component
             </ownedParameters>
           </operation>
           <operation
-            Id="95090f80-2d40-490a-9a09-54b67f3b7358"
-            name="displayLoginDialog"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="7bbb264c-150e-4fe8-bbb4-8c710c1ac819"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="700b86a4-bf27-4c21-8954-7e33d398430e">
-                    <propertyInstance
-                      Id="2ec71e71-6689-41b4-a293-9ff52a4ef656"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0171e1be-1524-4041-9fba-323936130057">
-                    <propertyInstance
-                      Id="898f4729-1348-444e-b968-ef0bbb4c810a"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bdd31e1f-ddbb-4c5d-a9b8-5282417c4cf0">
-                    <propertyInstance
-                      Id="2a599207-8d8c-43b8-a4da-26e8bb4abf03"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4e97c0a0-01b7-478e-aa25-385715ddd0ce">
-                    <propertyInstance
-                      Id="5605af67-e8a8-4729-be33-36e2a9cdef05"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e2f753e4-e0dc-4701-a2dc-0ddc48d51ee9">
-                    <propertyInstance
-                      Id="14ace5fc-4ee7-4eb5-85df-5b89eb624960"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="62a77202-6b5f-4a08-aa36-8976f94049e5">
-                    <propertyInstance
-                      Id="dfc4a009-8a3a-4bcf-86f8-424a056eb298"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1761cb49-0440-47a8-8567-2c836887e296"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="3a76f77c-b7f2-4163-bfb9-c887f352e948"
-            name="verifyLogin"
+            name="VerifyLogin"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2235,25 +2263,10 @@ Disk is a component
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="7fcbf771-ff92-434d-a191-aa897fe66383"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
           </operation>
           <operation
             Id="39ffca5c-d8f0-4e00-ae7c-150f45c9cd8e"
-            name="disconnect"
+            name="Disconnect"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2317,213 +2330,8 @@ Disk is a component
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="f435d8ae-34fd-4ab1-9292-93bd98c84027"
-        name="NetworkType"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="534eead2-1110-411e-b504-8136c1542eb1"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="6e6ddb58-da73-44da-83aa-e0873a64da48">
-                <propertyInstance
-                  Id="2837010d-8052-4552-b8d8-26c6c3debc4a"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="d51acd54-5dab-4c2d-95bf-958506ff5fac">
-                <propertyInstance
-                  Id="2bc4d98c-2de7-44fb-bddf-ccb8d9e18180"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="994b1c88-93db-47fb-acd4-82530b4d794e">
-                <propertyInstance
-                  Id="6731bed3-1144-42a7-ac97-0d723f5acfd5"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="0bce89a1-5d15-4f15-8e4d-60ccc264d73d">
-                <propertyInstance
-                  Id="6c87a8ba-cd47-490b-99c7-5f5457bdb7a5"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="3b8b11b3-330a-4d98-85e0-bbed158e46b1">
-                <propertyInstance
-                  Id="d0f36a56-fd6a-4bca-bab0-bfba764510e9"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="d6143797-87e3-4a71-9f17-eb59b0483c53"
-            name="Name"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="294ca01f-04b6-4789-bde9-73009b4af2f3"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6a908ca1-374d-4e0c-a987-96f2547ac77a">
-                    <propertyInstance
-                      Id="29fddaab-e002-4d46-a61a-76e617a3994b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6ede0db2-94c8-49db-bd66-0d76891ba1e2">
-                    <propertyInstance
-                      Id="cea46e09-533a-4029-b8ce-7af567ec56af"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="abdc6b1c-cef0-4232-8921-b4e133d3dda1">
-                    <propertyInstance
-                      Id="48d6371c-34cf-4b74-88e8-c01e63982772"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="70cfd153-e373-4ea9-bb58-8efc466b12c9">
-                    <propertyInstance
-                      Id="5f8b5c40-107c-4ecf-85df-7ed2649a41c2"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="03e5daa4-722e-49fa-8957-1b9926bff4d4">
-                    <propertyInstance
-                      Id="2cbb5714-1287-4858-ba6f-2a62f42bc143"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1bb2ea3-337d-4b8a-8f95-f824ecc6a081">
-                    <propertyInstance
-                      Id="6d35e5a7-6a7a-4876-aaa8-e15f0c9dfa2f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3729f3bc-45ae-4bba-8139-9a72e25d3779">
-                    <propertyInstance
-                      Id="954a62dd-a367-4c99-9ab1-dca3b7439f18"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Acolyte.DesignModel.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="ec652726-73bd-4f37-a050-7d917c83b5a6"
-            name="getType"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="cf1fc5e8-1e71-40f5-a382-b6e720590881"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6f8b4b65-168f-40c2-8dc2-e95342e54c1a">
-                    <propertyInstance
-                      Id="ceeed96a-0e6d-4d13-b7c3-51f6151c188e"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3862b533-2a2e-4706-9353-fd14797f41df">
-                    <propertyInstance
-                      Id="daa6764b-10d7-431c-9684-c906bd2c0bfb"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="81441bda-b08d-41a9-a846-6465ef514475">
-                    <propertyInstance
-                      Id="e1b1b09b-d2e3-4725-83f6-cffcbb700ca9"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b08e37d7-b141-48d8-9ae2-67f7470b8436">
-                    <propertyInstance
-                      Id="8c048450-fa24-42c7-a2b1-d335cf9b522a"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3a6cffac-dc79-43ff-a19d-56b76721d84c">
-                    <propertyInstance
-                      Id="28e41b09-d402-41e4-b834-5a44b529b9b4"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="814b82c9-c523-446c-80c2-3e4ec6672a83">
-                    <propertyInstance
-                      Id="5fbd51db-9581-4ac1-b58f-575ba7ac838f"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="081817d8-8d4b-469d-9bcd-b105a60babb4"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
+                      Id="d7d8d244-fb50-4dc4-82a4-949e065e265c"
+                      LastKnownName="voi"
                       LastKnownLocation="Acolyte.DesignModel.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -3415,6 +3223,16 @@ Disk is a component
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="c1730db4-fd53-41da-852b-e1792586ae23"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d25632c4-a47d-4dad-b93f-3023d3b58deb"
+              LastKnownName="Application"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="31f17d4e-e2b0-4c7d-b6b5-13c1c2a75d80"
@@ -3451,7 +3269,61 @@ Disk is a component
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0d31d453-5cb2-4d53-8ad6-fffdfcc47918"
+            isDerived="false"
+            sourceEndRoleName="Browser"
+            targetEndRoleName="BrowserWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="99e18cb5-59ff-49e2-a6ff-3eca3dba0706"
+              LastKnownName="BrowserWindow"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac1f4701-b9b5-4de9-84bb-bfc17e3054a5"
+                  name="Browser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23646d18-db1f-4003-ae69-20a99b8e76cc"
+                  name="BrowserWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7b9a3d39-7462-472b-8548-554f82001451"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="16062c2a-08d1-486b-981f-0d80a9b88d9e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -3611,7 +3483,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="a975e93c-024c-4b3b-91f3-4c793c7cbbd7"
-            name="openNewWindow"
+            name="OpenWindow"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3670,7 +3542,7 @@ Disk is a component
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="85fd5645-1d9f-4047-81af-4f40fee40d74"
+                  Id="0b430afc-4ef0-4846-adb7-4b6e03e56145"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -3685,7 +3557,7 @@ Disk is a component
           </operation>
           <operation
             Id="5705a499-461f-4afa-8e61-5a2797e6f818"
-            name="closeWindow"
+            name="CloseWindow"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3759,7 +3631,7 @@ Disk is a component
           </operation>
           <operation
             Id="1242a8aa-aa90-42b6-9e58-013f2da1f3f8"
-            name="getHistory"
+            name="GetHistory"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3818,7 +3690,7 @@ Disk is a component
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b1cf2c9e-c905-4c67-8dbc-a2402c0ca576"
+                  Id="7ed4401e-9df1-4bf7-a010-80dd25808317"
                   name="dateRange"
                   direction="In"
                   isUnique="false">
@@ -3830,9 +3702,20 @@ Disk is a component
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ef20d19f-4520-4d6d-9984-4975cd32484c"
+            name="CloseTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fadac8d7-b17c-473e-bcaf-e73424a9b280"
+                  Id="f2097353-363b-415a-bd96-60c7ac990e8e"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -3900,58 +3783,6 @@ Disk is a component
         </appliedStereotypesInternal>
         <targetEnds>
           <association
-            Id="f4341df7-fe15-464b-9205-8dbc7ed21324"
-            isDerived="false"
-            sourceEndRoleName="BrowserWindow"
-            targetEndRoleName="Browser"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="0f718ac1-4c9e-4984-a3c8-aa9bd440a715"
-              LastKnownName="Browser"
-              LastKnownLocation="Acolyte.DesignModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="94a58531-d5f3-43e7-b3c1-987e1ed38fc7"
-                  name="BrowserWindow"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f31546de-0019-4faa-b2a3-d696256d38ea"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="3ff40dcf-2dd0-4a81-b93d-0acaf04426d0"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4d7553b9-ccfa-4c47-b13d-9172ff4d8bff"
-                  name="Browser"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="390bc856-2dd1-4033-b5f0-e7337c731938"
             isDerived="false"
             sourceEndRoleName="BrowserWindow"
@@ -3986,7 +3817,8 @@ Disk is a component
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="false"
+                  isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
                       Id="addc426d-dac4-44e9-8672-6febe4d376ae"
@@ -4159,7 +3991,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="62f3d1b2-8c77-4190-9322-ded036e7b2ba"
-            name="close"
+            name="Close"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4233,7 +4065,7 @@ Disk is a component
           </operation>
           <operation
             Id="b44b98ca-611d-4f88-a108-976da1317f79"
-            name="newTab"
+            name="NewTab"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4307,7 +4139,7 @@ Disk is a component
           </operation>
           <operation
             Id="d8e011a2-14f0-4ef4-9799-2ae8ea080541"
-            name="closeTab"
+            name="CloseTab"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4602,7 +4434,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="a19b228c-0b5a-4a21-a106-16f86db9f839"
-            name="goBack"
+            name="GoBack"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4676,7 +4508,7 @@ Disk is a component
           </operation>
           <operation
             Id="42a426a5-94a6-400e-8eb0-a18d76ee090d"
-            name="goForward"
+            name="GoForward"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4750,7 +4582,7 @@ Disk is a component
           </operation>
           <operation
             Id="382c7797-87a9-4247-a292-c6dc564b5a28"
-            name="goToUrl"
+            name="GoToURL"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4809,20 +4641,6 @@ Disk is a component
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="846925ff-52e0-4fce-9f56-2ce3ba87e2a3"
-                  name="Url"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="de6cc653-a9d1-4bb9-9867-f2c740fd63ba"
                   direction="Return"
                   isUnique="false">
@@ -4838,7 +4656,7 @@ Disk is a component
           </operation>
           <operation
             Id="1df14ac8-203f-4c97-8809-1026cb149e77"
-            name="reload"
+            name="Reload"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -5198,7 +5016,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="d6152ab4-ae1b-4a22-a41e-e1f069a4ba3d"
-            name="open"
+            name="Open"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -5254,25 +5072,10 @@ Disk is a component
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="11206ce7-8acb-426d-9c8c-43873ff3559a"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
           </operation>
           <operation
             Id="13004cab-be08-4367-b54c-c01e800d0b2e"
-            name="close"
+            name="Close"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -5328,21 +5131,6 @@ Disk is a component
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="872c5d90-d77a-4673-b1a0-a35c6233e77c"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -5351,339 +5139,6 @@ Disk is a component
       <undefinedType
         Id="f165cc37-1052-4b7c-bae2-d019f9ca333b"
         name="long" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="0ddc5f5c-cdaa-43e3-a213-d4377f770008"
-        name="RunningApplications"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="8ec86d02-60c0-4d79-a884-dfbc51b3c976"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="ef134bfe-a3dc-4b21-a76f-28c91e90f6c4">
-                <propertyInstance
-                  Id="9f8d4f65-a537-436c-8899-7d68ee1693da"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="237a4305-39d4-4915-ad09-c9e5d369a0cb">
-                <propertyInstance
-                  Id="fe7eb479-57ba-46e1-a79b-10e7b7f30fff"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="f20d610e-97ea-4082-a1bc-db431de0ba3d">
-                <propertyInstance
-                  Id="75e4698b-2bc1-4142-8628-1445fcbf744a"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="fa955ee7-e476-4b24-a50e-625bf66f1d1a">
-                <propertyInstance
-                  Id="01d2a877-2644-4e47-b3ce-97729f97135d"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="e865a44f-af8b-4655-8a53-ba89598ac779">
-                <propertyInstance
-                  Id="44e5a55f-a891-47de-9844-8be1664dc924"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <targetEnds>
-          <association
-            Id="b52c61e9-07f5-495a-9722-efd5c5c8955a"
-            isDerived="false"
-            sourceEndRoleName="RunningApplications"
-            targetEndRoleName="Application"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="d25632c4-a47d-4dad-b93f-3023d3b58deb"
-              LastKnownName="Application"
-              LastKnownLocation="Acolyte.DesignModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3d912fc4-4fc8-48d6-b8b5-e0bf220f1299"
-                  name="RunningApplications"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="bce9bbc8-e61d-4671-9e77-36f344254c44"
-                  name="Application"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="4de8c430-1c5d-4661-9169-abf96acf3bc5"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="39df4b07-4748-4e58-8efb-16da47e595f5"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="4cdc0d3c-4738-4ca9-b0b5-2c4300120b6d"
-            name="RunningApplication"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="8ec06f39-7858-4166-a529-250a3085d00b"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d9a4b911-56a0-4aad-b7b6-12a3c08d6057">
-                    <propertyInstance
-                      Id="6a3a2a27-b320-40ef-8ca0-e1f7d27c8cb5"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ddc03a01-f9a7-46b0-a354-7352c6de074c">
-                    <propertyInstance
-                      Id="88601c05-9092-44ea-b4f3-0e8a2f3b7abd"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="92dec46b-bf36-4234-ba31-919d2c600b69">
-                    <propertyInstance
-                      Id="7d06f0b4-1d61-4b6e-b18f-d367be777851"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6f9c5ea3-f479-4bea-985f-4d0e29ed6eb3">
-                    <propertyInstance
-                      Id="60cd614d-f093-4494-b3d1-c32d481c3363"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cb8b2f27-b983-4788-8c78-be2465d93a7b">
-                    <propertyInstance
-                      Id="795e88c2-aa65-4a44-bbe8-9218ea54f01e"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="803d0db7-c753-4ee8-b760-b94060a3f8b5">
-                    <propertyInstance
-                      Id="20a8feb7-7e20-47a4-ac7a-f6d95463dcc7"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0af757e0-41fd-4ad1-b9ca-e6c3b1530fc8">
-                    <propertyInstance
-                      Id="4e45747d-7c51-4565-ae0d-331691f098f5"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="efc7e5f5-1782-4dd9-b375-a98b0e7c2413"
-                LastKnownName="List&lt;Application&gt;"
-                LastKnownLocation="Acolyte.DesignModel.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="3d15928b-96e8-4f4e-8d7f-0794261d0508"
-            name="findUnresponsive"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="268cb4e0-5dd1-4629-a28b-81ea69c5eb7f"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f64ec915-fd3c-4b6d-a3ff-adf42b05913a">
-                    <propertyInstance
-                      Id="fefb0336-3c15-4ee7-9361-d836ad2b16b0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1be33fa5-1fcc-4c6f-9c9f-3555531be6ba">
-                    <propertyInstance
-                      Id="2dc732eb-5a40-45f8-9435-ca02990f0ac6"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="df6f7d5d-2986-4098-b421-edefd7d67ce8">
-                    <propertyInstance
-                      Id="b779de75-79f1-497b-9d8c-e09df21fdfa8"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5d345570-46a7-43c8-8ca4-3c856aab159e">
-                    <propertyInstance
-                      Id="abbd8cc1-0314-412e-9051-b56d7c7086eb"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="25b32ef9-a98f-41ac-bf69-80db2d6a2d75">
-                    <propertyInstance
-                      Id="454e0b17-e738-471c-8e52-a9ae8c180114"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f06e54c6-0261-4eff-b6c0-0fae14e0b56d">
-                    <propertyInstance
-                      Id="06a000ef-e50f-475e-81b5-f4e5764ef2fb"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="90272b07-ea93-4021-b2d6-ec892f0c433e"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="63c1aeba-7ac9-4854-b453-6148865b0101"
-            name="showRunningApps"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="fa9d985f-c8ca-465f-8acb-1826ec2a53af"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="390f4ba3-01c7-445e-ae9c-6f1f4158e524">
-                    <propertyInstance
-                      Id="19aeca2f-4ecb-4b33-b690-9431cd20996b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4804325d-7795-4c68-b3f0-2b35c121177a">
-                    <propertyInstance
-                      Id="b07ffb50-67f9-47bf-a4c5-35deaa297856"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8d17656c-3fd7-4492-a0ca-2fb0f53001a2">
-                    <propertyInstance
-                      Id="50349ca1-35ff-44d7-be2f-2a51620ac070"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b2f915d3-9ea0-4b37-87fd-d62caf8ab557">
-                    <propertyInstance
-                      Id="50764991-339c-4681-9626-35875b8caf39"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c042fcf8-6ea2-407a-9594-172347d18cae">
-                    <propertyInstance
-                      Id="cc3cb3ff-5d7f-44b5-b167-624f65ed2cde"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e034e32a-ff9e-4ab9-bc3e-3ccd08f40b7c">
-                    <propertyInstance
-                      Id="775aebb4-2b20-41c9-85ea-c68fb2d210b6"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fda17a73-1c17-40b3-b855-e57fb0b20b5a"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
@@ -5892,501 +5347,6 @@ Disk is a component
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="01211a3e-44ab-420b-a19b-c017ec456baf"
-        name="AvailableApplications"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="a820b14d-759a-41dc-b7ae-cd3cc63052d8"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="d43d947d-dce5-4ab6-ae4e-f3e656452ba8">
-                <propertyInstance
-                  Id="bfc98b51-50e4-46e6-906e-1c7044d1e9d0"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="b43ddc71-8ba1-4433-96f3-26d7b3c58346">
-                <propertyInstance
-                  Id="537e0757-0cc1-4a50-b105-231dfb58cbfe"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="c731b5f7-c50d-4085-96b7-0d2f852cf968">
-                <propertyInstance
-                  Id="731dda26-1a3a-4ce0-9b3e-512a3e9237cd"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="39b7b49b-42d8-44bc-9c29-1b145ef9a9bf">
-                <propertyInstance
-                  Id="fb973421-5982-4192-aaa6-c8bc32e7d08a"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="b54591d1-f996-48f8-be4b-3763f8bb3131">
-                <propertyInstance
-                  Id="46efb767-a423-4789-bbf1-f398bf5af96e"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <targetEnds>
-          <association
-            Id="29ce2f65-2fc2-4e21-93c0-8bb20d6f320e"
-            isDerived="false"
-            sourceEndRoleName="AvailableApplications"
-            targetEndRoleName="ApplicationDto"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="d6038f9d-ec74-4d08-b955-643743f5cf74"
-              LastKnownName="ApplicationDto"
-              LastKnownLocation="Acolyte.DesignModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="28dddeb5-1ba2-4149-8103-e4a2087b0f4e"
-                  name="AvailableApplications"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="add5cb8a-3ba4-417e-b65b-455156b5bb18"
-                  name="ApplicationDto"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="e59e0e7d-c8c2-4f6b-a93f-505dbd7d1f7b"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="f4a67b42-7e6e-4538-b7be-8151712e0e9d"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="8cf0aab2-342b-4336-89ed-07cd47cf4973"
-            name="AllApps"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="ddfe27f3-49cf-457f-86f1-7cb8bb6bd843"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c11cb6d2-a288-4d07-8490-d561eea7444a">
-                    <propertyInstance
-                      Id="b8a9a016-6797-4e93-b931-26df08ed24ac"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="936fccbe-bb57-4cc3-af7d-340f17412ec0">
-                    <propertyInstance
-                      Id="ced89688-0248-4b45-82d5-c695b62e7f67"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1798916-2052-4994-8c65-942a33e71f92">
-                    <propertyInstance
-                      Id="9f9b0bc0-1d69-442f-ba64-686d7e35b5de"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="18ff0d58-d679-48ad-806c-0e81a2bd3ca9">
-                    <propertyInstance
-                      Id="7d5e3098-4245-44ee-b657-984302061b08"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c7feab52-c67d-4eae-a819-792afc6dc56f">
-                    <propertyInstance
-                      Id="8e87d628-010f-414c-a263-0a4ada331a0c"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b88a5078-2fa8-4eb9-8f37-73a68e4d90c2">
-                    <propertyInstance
-                      Id="8f879587-5e26-4a65-85cf-2e18ec9ee9ca"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9fd30d65-abb2-447f-a31f-f3ee2cca7f85">
-                    <propertyInstance
-                      Id="5b7aaf75-1307-489d-9c41-5d7a1e068d0e"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="8daac80a-827e-43f8-bf42-4c56005af11a"
-                LastKnownName="List&lt;ApplicationDto&gt;"
-                LastKnownLocation="Acolyte.DesignModel.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="ca9f527f-f7da-4b8f-9c01-5ffba5989fe1"
-            name="getList"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="4b5f2149-55fa-4a1b-b4a8-22eb6b0ec9bd"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b87f274e-ca31-41c3-b250-4e1a3c2161c6">
-                    <propertyInstance
-                      Id="1ac11295-c2cf-46b7-a68e-3133e786846e"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="616208f6-81f1-405c-a2d5-738f787fd3e0">
-                    <propertyInstance
-                      Id="c5f0549f-751d-4ecb-96ed-734618f5c9fa"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6282e5f7-729e-4ddb-9a47-92065a6eed50">
-                    <propertyInstance
-                      Id="d7190079-84b7-46eb-bcc7-45ac028b7b1f"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a4b48dd3-33c3-47aa-b0df-f5245a2f61ae">
-                    <propertyInstance
-                      Id="b1adcaec-214c-4195-b0e0-6f71278ba473"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f7617af4-bba6-4277-893e-d21cd5d57fa7">
-                    <propertyInstance
-                      Id="03a7f455-bf80-4fee-b80f-9f4c305ba879"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e0328b02-108e-4dc7-aae3-cc51c50b3171">
-                    <propertyInstance
-                      Id="1f70cd77-299b-408e-abef-1c164709669e"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c77dfca0-a3d4-43df-ad6f-f5d839b96505"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="29676291-1864-4fac-be32-dcc740a930d2"
-            name="resync"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="097f6cb1-f5e4-4fde-9e93-5b8aad81bfe2"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="449bd913-ccc4-4244-81f4-83f48c981f5b">
-                    <propertyInstance
-                      Id="6a21a64a-9e42-41a7-80fb-6b552c739cb7"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7a448f79-3b59-4074-b989-44e6b657d3ee">
-                    <propertyInstance
-                      Id="4c100fc9-c5ec-409d-98f0-fe6db0d4ef9c"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="da43b684-8a7f-4979-93a6-3a3e07329b7c">
-                    <propertyInstance
-                      Id="3b8ffdd7-a0ac-4c87-b42a-2b52f52000a8"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="43a63ac4-bbec-40d7-b39b-6bf5e7bc6f3c">
-                    <propertyInstance
-                      Id="da1307ce-b717-4a0f-9c5c-9a1b3cc928b1"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9fdbbc1c-fd6c-46a4-9449-e1517bbd8852">
-                    <propertyInstance
-                      Id="167b8cc6-1b80-404a-a9db-655dfdeefcd1"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="63712427-9b5c-43b7-9171-fd48d53198c1">
-                    <propertyInstance
-                      Id="9db78cc7-5ca4-402b-881e-14d0bff74f70"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e74b636c-7647-4f77-a818-b268b249f110"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="5907151f-8a46-45ac-b6ea-f7f589aaccd2"
-            name="addApplication"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="f7522099-3b4e-4c89-be30-068b5bcd6ceb"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2e038a7c-ccd1-4ab6-a2ed-85674ba45d7d">
-                    <propertyInstance
-                      Id="e837ebbf-6969-488a-8e2c-397c37d6ce76"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="27875a0c-cd6e-4131-a410-7f5aee507fe8">
-                    <propertyInstance
-                      Id="bb807be1-7718-4c2a-92d7-10f312d17567"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6563d4e1-dcfd-44c4-8fc1-a9cc7d3ab2ae">
-                    <propertyInstance
-                      Id="76e932b3-cb1e-41b0-9cc1-34dd84709a7f"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2672213a-0073-4270-bde5-caff6daf759a">
-                    <propertyInstance
-                      Id="e0e32a52-0398-4c04-b6f8-16a0f21454a2"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b8998050-3c3a-441c-98bb-374352831b0d">
-                    <propertyInstance
-                      Id="cd841bfd-b53a-471a-bba7-3d632b17d480"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="aca6fc9f-b0e7-45c4-b592-2e00dec2b22a">
-                    <propertyInstance
-                      Id="88dba99c-c63d-4af1-87b9-390a5cc5ba4c"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="03267431-201e-4354-8609-1394d4d43a3c"
-                  name="Application"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="22192fdf-99aa-4048-ad2e-1ce935513bec"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="e83ec59b-555d-442b-a6b8-1bcce4e18ce0"
-            name="addApplication"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="374818c2-0038-4202-a24e-b6cc8f0fcd19"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="994dd709-c1d0-4e55-a06c-68f562797d2d">
-                    <propertyInstance
-                      Id="20b10398-9139-4191-9452-f0f2f0c5814f"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="82095183-9830-43cf-ae91-3cc822bb0d8e">
-                    <propertyInstance
-                      Id="105bfffc-e5e5-4b21-a9fb-e45546a209a0"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b0df2d8b-0f26-4033-b682-467a3600d4a9">
-                    <propertyInstance
-                      Id="b5e3774f-4f77-477b-b5f9-169bfb98f2cf"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b427dba3-bd33-4a72-8802-821c1714d304">
-                    <propertyInstance
-                      Id="0aea7371-fcba-4250-9e23-cdae8908a3c0"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9c237fb2-9bab-42a2-82a8-737a68fb6037">
-                    <propertyInstance
-                      Id="28f7e0fe-ac3e-4728-9aae-79bb37619293"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e7ce5ef0-0aa5-44e0-b63d-d5d7ed8f3c15">
-                    <propertyInstance
-                      Id="b5d900ad-a43a-41bb-b2a2-ac54c645f685"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="987aca25-4c5a-4f72-b505-1f74b86d092f"
-                  name="ApplicationDto"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="5a8b2e1e-0dc6-4978-b1b8-c34d62196d85"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -6824,7 +5784,7 @@ Disk is a component
         <ownedOperationsInternal>
           <operation
             Id="c9f81615-ddea-41f5-b04e-1ea9c1d4e624"
-            name="adjustBrightness"
+            name="AdjustBrightness"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -6883,13 +5843,6 @@ Disk is a component
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="20c47745-6650-47ba-8a2d-63e3db6c5afc"
-                  name="double"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="31a2575e-aeaf-4789-ba13-d633e84d8044"
                   direction="Return"
                   isUnique="false">
@@ -6901,77 +5854,34 @@ Disk is a component
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="efa0c480-faa9-44da-a63f-ab10d941dbc8"
+                  name="level"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="51c2cf67-654a-45d7-8e79-0aa7132f9b7a"
+                      LastKnownName="int"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
-            Id="4962017d-7456-42fd-827b-4b302f541bc9"
-            name="adjustContrast"
+            Id="25bf4586-3a97-4bc8-b5c0-963242f7e82d"
+            name="AdjustHue"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="7c19bb17-e211-4299-bdc9-c955dffc7f60"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="68226c5d-5240-49c5-a8e1-c050d4712e7e">
-                    <propertyInstance
-                      Id="b04ae497-27dc-4e56-a815-15a2129c4ec7"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dc373ba0-9d26-4704-993f-c2e8ce614d8b">
-                    <propertyInstance
-                      Id="2266a153-564a-4e58-a15f-17d3db27e8a5"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c204b70b-9461-4bde-84a4-1d106495e9df">
-                    <propertyInstance
-                      Id="58309208-b8b0-4624-bf75-9eaa86b4db35"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="69b4feda-6e13-489d-b02b-2dee1e774e58">
-                    <propertyInstance
-                      Id="6daaadff-d66a-4a7b-b43e-deea32d534f0"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fd5fa57b-325b-4cc2-8ec4-bce2947d0c8d">
-                    <propertyInstance
-                      Id="7c9cb15d-13e6-42b3-b247-9d873b43959e"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ec8d0e19-8fd6-42ca-bf32-60b5e2869bf8">
-                    <propertyInstance
-                      Id="b8bad397-8039-4d6a-b186-2dd629b8b4f1"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c84c7e87-ea30-464c-9d88-c340c2dcdbc1"
-                  name="double"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="a901475b-df54-42e8-b4fe-22f00816c9a8"
+                  Id="66b1fe78-f15b-49ed-b90e-1eefb5195c8c"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -6982,83 +5892,16 @@ Disk is a component
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="2c28e6c4-fb71-4f9f-ad34-9faea7f0e61a"
-            name="adjustHue"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="83a44d55-f2c4-4a9d-b4ea-c3d41379220a"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d6c32d02-7833-4465-98e1-3b894713c8ad">
-                    <propertyInstance
-                      Id="85fb0387-cca2-4765-b754-d2d68b3101af"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="675399ea-1c35-4cda-a491-a282a3c1e6e7">
-                    <propertyInstance
-                      Id="009f0dfa-286b-4140-9058-4539b9d75095"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f1cc33c7-cf00-4861-a384-350e17b339a3">
-                    <propertyInstance
-                      Id="8ea334fd-85f0-4100-9bed-ce6e4c598cec"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ba90da16-2709-4fbb-9312-d6202473eb25">
-                    <propertyInstance
-                      Id="3c0af32c-e7b7-4395-92c7-77899fa2d53c"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1e8256c-c64d-4ef8-9121-272601e9e902">
-                    <propertyInstance
-                      Id="3c1a1c59-1bee-4934-9ba2-f21e03e94e47"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d39db571-c7f6-43b1-9fda-d1a44aa115d7">
-                    <propertyInstance
-                      Id="dcc73702-28de-49b4-b83e-5ed240fab26a"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="cebba32e-b730-44cb-b64c-b2dfee42512e"
-                  name="double"
+                  Id="0e349a8b-07b0-4e13-acc3-36e33fa5df9e"
+                  name="level"
                   direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0d64e200-4b7e-44c7-883e-cc61abdc8b6c"
-                  direction="Return"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="49295ccf-3729-4582-8398-5fe33b440610"
-                      LastKnownName="void"
+                      Id="51c2cf67-654a-45d7-8e79-0aa7132f9b7a"
+                      LastKnownName="int"
                       LastKnownLocation="Acolyte.DesignModel.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -7066,67 +5909,17 @@ Disk is a component
             </ownedParameters>
           </operation>
           <operation
-            Id="10b8ff0c-1a13-4b24-9b82-3965f2762dbc"
-            name="turnOff"
+            Id="45772876-9534-436f-9a95-7a38e237e99b"
+            name="TurnOff"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="379df001-6949-4b57-b727-911ae72df82e"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a92e7f70-1c8b-47aa-98df-6102052b52fd">
-                    <propertyInstance
-                      Id="9bfbda25-f8eb-4d03-860c-c794806dd81e"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="511fff3a-7c69-48ca-a879-8a9ae44a52a7">
-                    <propertyInstance
-                      Id="1bb4d2de-a64b-4532-bd68-cc78c7459df2"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a73091b0-f523-4957-970b-2fe4ff5235d3">
-                    <propertyInstance
-                      Id="c5a8759a-4854-4499-bafe-a2dbe9597ce4"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7b9c9517-0158-49ab-af4d-5cb51e8fc163">
-                    <propertyInstance
-                      Id="b26c9171-0be0-4b0b-b62e-84eaf7299798"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="19a056d0-205d-4ba7-ac52-7ab6b3c321ca">
-                    <propertyInstance
-                      Id="a83cfc51-7819-453b-8b63-959a1833f21f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dcd41275-8059-4f73-80c5-9870454c4873">
-                    <propertyInstance
-                      Id="8b2629c5-aaf9-4f9a-a26e-2684b6f00c97"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="554c3668-7f55-47f9-bf50-ff95c23ab25d"
+                  Id="9a950212-d549-4c0d-bd30-d68c7eba54dd"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -7151,272 +5944,6 @@ Disk is a component
       <undefinedType
         Id="3be31d98-3ba6-4268-8548-c529599bd70d"
         name="double" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="c4f5f4e9-83f3-4293-af3d-dcefaa850b21"
-        name="Monitors"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="0524f06d-ade0-45fc-9434-e80aa6eb42dc"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="970a869d-8f36-4ace-a443-29eb474626eb">
-                <propertyInstance
-                  Id="53d71e65-5b05-4e70-a636-df104305e00d"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="623520cb-94ed-4e55-bd12-752e96a38eb9">
-                <propertyInstance
-                  Id="776bae32-c1e5-4d81-b8d4-cd6bf66e2ced"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="20ebeaa7-a431-4321-be59-22a4ccca2e39">
-                <propertyInstance
-                  Id="7a28bae2-0214-4b95-b8c1-7730835fdb08"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="979f99b3-dba5-4913-b523-a1ddb6169c71">
-                <propertyInstance
-                  Id="edd2dd45-a9ae-4cb2-88d4-972c361cdc77"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="76c93ab0-4adb-4b42-a69d-7e9f10a4d8e3">
-                <propertyInstance
-                  Id="3d9a228d-dc0e-4943-a426-55d9357e9d99"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <targetEnds>
-          <association
-            Id="40c7c5c8-144a-455a-a8a6-b7353087d189"
-            isDerived="false"
-            sourceEndRoleName="Monitors"
-            targetEndRoleName="Monitor"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="a8421c44-e860-444d-96cb-e5eec0eb8988"
-              LastKnownName="Monitor"
-              LastKnownLocation="Acolyte.DesignModel.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a883e0c2-ca86-49bd-856f-507ad29fd03b"
-                  name="Monitors"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2768c612-709e-47f1-bf59-8abea1a1fe46"
-                  name="Monitor"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="46520e8e-0111-4025-99c3-b669998776ed"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="cbe78f99-19f9-403b-96ba-476014858b4b"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="d0fab746-145a-40c6-b146-6e8864adac93"
-            name="Monitors"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="60d1b5f8-78a8-436f-ad09-02a6ada517d7"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="227f0306-bfcb-4442-9c0f-56da0399173a">
-                    <propertyInstance
-                      Id="bd393b8a-cc5f-4bb6-bd3e-f17febd11779"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ed0f4bb0-52cd-47e3-8e63-2e3f72f5414d">
-                    <propertyInstance
-                      Id="d8dba39d-24f9-400b-a00d-9a89853736a4"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4a2d1208-6df7-4954-8930-c28778937ac8">
-                    <propertyInstance
-                      Id="d3da6d49-0246-4cff-a476-771f787721d1"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="40f5693f-8da0-4c04-ad9a-b144b584b274">
-                    <propertyInstance
-                      Id="326f89fc-cdc5-43c8-9294-74bc4d5a7f90"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5e1c9668-a211-4943-bd27-fa8f08211d47">
-                    <propertyInstance
-                      Id="e27a40e0-74d4-4d5b-a1b9-eca3c77aac63"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6e9b3d52-fca1-4713-9973-42185005a6af">
-                    <propertyInstance
-                      Id="120e66b9-7ab2-4ab9-8538-008f03137019"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="13d3a5bb-8952-4cae-bc9b-bea9bb16f31d">
-                    <propertyInstance
-                      Id="672ead35-564e-4901-a95a-1cff2c97d1dc"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="fd664e6d-36cd-45a7-b971-201d2ac8b356"
-                LastKnownName="List&lt;Monitor&gt;"
-                LastKnownLocation="Acolyte.DesignModel.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="37b29f63-a12c-464c-b9ed-5fc00253da8c"
-            name="getMonitor"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="64548163-c0bc-4fbb-9bcf-ff221a25ac9d"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3707e436-4d8b-4c07-82c3-b845e4779c5f">
-                    <propertyInstance
-                      Id="0169fcfd-052c-4f7c-a977-a84e3be491d2"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="96a7df21-8326-45e8-a24e-9ca39fcec3e5">
-                    <propertyInstance
-                      Id="d1149692-a87d-4813-9a4c-5286427ba890"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="022b4d4c-2952-4895-83ff-7b75062c32c2">
-                    <propertyInstance
-                      Id="d8094347-43cb-4b17-86c5-5b1790511f27"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="43dae48f-ef88-4ee1-8ee8-be008ce7cc76">
-                    <propertyInstance
-                      Id="8a71bdc8-e012-4e08-85d3-6af36dd0c327"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b89b662f-cd46-43be-843a-47bc1d88f617">
-                    <propertyInstance
-                      Id="b28a71ee-7aff-4f11-ba58-c127b6be13dd"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a15a0b57-bf58-40e6-884a-3551642dea12">
-                    <propertyInstance
-                      Id="ee8a35e5-40f1-4720-bbe0-9891a1200884"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="7a8e3528-d20e-4341-8ff1-31c569a01320"
-                  name="long"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0e85fd83-8c46-467d-ac17-a2b2a76eac81"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="a8421c44-e860-444d-96cb-e5eec0eb8988"
-                      LastKnownName="Monitor"
-                      LastKnownLocation="Acolyte.DesignModel.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
@@ -7520,6 +6047,1821 @@ Disk is a component
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1ead66e7-323e-411f-895b-9e9b29d34a22"
+        name="ApplicationViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1838835e-1425-412c-a7e8-8fa89a8ff63d"
+            isDerived="false"
+            sourceEndRoleName="AcolyteViewModel"
+            targetEndRoleName="ApplicationService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b724d489-6d6b-4862-9f6e-ad55727ad866"
+              LastKnownName="ApplicationService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31085b5c-2620-49de-80a5-96e3b2e25f06"
+                  name="AcolyteViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8627b66-036e-4d3f-b422-869f92702765"
+                  name="ApplicationService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="38ec3ef9-fee8-4f43-914b-b3d19e95bfb3"
+            name="ApplicationService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b724d489-6d6b-4862-9f6e-ad55727ad866"
+                LastKnownName="ApplicationService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ea7a7720-c3a7-4b82-be49-cba892789618"
+            name="OpenAppCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="44c94127-3387-4332-a482-d8223a06104e"
+            name="CloseAppCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ebb8c34c-b0df-4dd6-968b-a487563d2949"
+        name="Workflows"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="e26d6366-ef0a-4911-9a24-4c5ace4f402b"
+            name="ConnectToBluetoothDevice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b724d489-6d6b-4862-9f6e-ad55727ad866"
+        name="ApplicationService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ba04c20a-e127-4e37-be70-8e9663eb88ce"
+            isDerived="false"
+            sourceEndRoleName="ApplicationService"
+            targetEndRoleName="Application"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d25632c4-a47d-4dad-b93f-3023d3b58deb"
+              LastKnownName="Application"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d143121-2a39-417f-8a55-856f253468e2"
+                  name="ApplicationService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6cbc186-faca-4be7-af67-d67637ae5ed1"
+                  name="Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="de803951-d162-48a8-8a6c-1a302c08ce72"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f0be9778-ac5f-4fa0-8f4e-663e9689560a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d52ff6c3-7779-4e32-a4c5-89d0a531b1e3"
+            name="Applications"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="efc7e5f5-1782-4dd9-b375-a98b0e7c2413"
+                LastKnownName="List&lt;Application&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8589a22a-52d0-4c15-8712-0bde6a4c8850"
+            name="LaunchApplication"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="464fa835-8b8f-48e1-b37b-1137bc0d97c5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d25632c4-a47d-4dad-b93f-3023d3b58deb"
+                      LastKnownName="Application"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5eeaf430-efa3-47e9-b0cc-649e4c0ae1a7"
+            name="CloseApplication"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d03b73a-bf6c-40ac-a1b9-c0cb95910e7f"
+                  name="app"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d25632c4-a47d-4dad-b93f-3023d3b58deb"
+                      LastKnownName="Application"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0d0f70f-9acb-4874-8e3a-129d4736fd4f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb21dfec-930c-4518-8275-d92a82f7e8c2"
+                      LastKnownName="bool"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f4fb2cae-b210-4f61-b71e-fa3fc1b1a4b7"
+        name="BluetoothServices" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="52758158-69c3-4b28-9053-a4c538a6dbb8"
+        name="BluetoothService" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="20f27dff-a01f-4238-bf00-ee8495d5ce0f"
+        name="BluetoothViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="694dad07-2f5b-4579-9018-ee42d1cc6d5a"
+            isDerived="false"
+            sourceEndRoleName="BluetoothViewModel"
+            targetEndRoleName="BluetoothService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="92730a8e-5ffa-472c-92b9-93f2bfb19a65"
+              LastKnownName="BluetoothService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9193b758-a549-4bbd-9754-71674eba31ad"
+                  name="BluetoothViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8d3ff47-7f78-48e2-b2a4-a87ce148ddd0"
+                  name="BluetoothService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="81ba88f8-d590-45fa-9dae-c66d2cad6870"
+            name="BluetoothService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="92730a8e-5ffa-472c-92b9-93f2bfb19a65"
+                LastKnownName="BluetoothService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e0b05756-bd0d-4c1d-b424-a14cedb37a26"
+            name="PairedDevices"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e407f34a-8699-4e3c-a773-fb41b9b0073a"
+                LastKnownName="List&lt;BluetoothDevices&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2d5303f5-a544-4a0d-96ca-2ad194ebd74e"
+            name="AvailableDevices"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e407f34a-8699-4e3c-a773-fb41b9b0073a"
+                LastKnownName="List&lt;BluetoothDevices&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="11d39702-c80d-4f91-bfa1-7f5a7fc88c92"
+            name="PairDeviceCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="84227305-1ffe-4201-b622-ca023a5dc851"
+            name="ListPairedDevicesCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="31ecfbfc-05c4-4fff-b863-fdd8c170baad"
+            name="ForgetDeviceCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="72d2f2ba-8244-4f5d-9c63-f9397b28117c"
+            name="ListAvailableDevicesCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a5518730-bb6c-402d-bff6-13b310d76faa"
+            name="TogglePairingModeCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6210d3c4-9a8d-4944-bd4b-0e86b13682c2"
+                  name="boolean toggle"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bc0d83e1-18fe-42e5-b828-b5fa95013963"
+            name="SearchForDevicesCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="deb11a59-47be-4783-ba0f-0eb78feb49d5"
+        name="List&lt;Device&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="18fbbaaf-83d8-40de-b305-54cf9f9e3c18"
+        name="PairingMode" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="c58fb95b-2761-491d-8069-1a74856c29d0"
+        name="PairingMode"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="81638bbd-4774-4904-a993-fff8ded75b68"
+            name="PAIRING_ON" />
+          <enumerationLiteral
+            Id="f904dd10-a039-48e4-8ec0-ae27f8af1879"
+            name="PAIRING OFF" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="92730a8e-5ffa-472c-92b9-93f2bfb19a65"
+        name="BluetoothService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0d7db738-3431-4bbe-8f30-2fcb3d6f6198"
+            isDerived="false"
+            sourceEndRoleName="BluetoothService"
+            targetEndRoleName="BluetoothDevice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e3742735-2360-4a93-9f8f-6f14864f0d59"
+              LastKnownName="BluetoothDevice"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df6935fa-2e9d-4aba-aff5-a4b248a29025"
+                  name="BluetoothService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90f15b4e-343e-4302-8831-b9b415670aa5"
+                  name="BluetoothDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0adefc9e-98eb-4dea-9db8-30fa637b1960"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="50cc18a5-68b5-4326-b070-8a8a679f5e3a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="6f5acbb4-8ee0-4a00-a2b2-5d46842fb2ba"
+            name="SearchForDevices"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d94fee32-6e8c-4aad-ade4-e0764538b6ba"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e407f34a-8699-4e3c-a773-fb41b9b0073a"
+                      LastKnownName="List&lt;BluetoothDevices&gt;"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0e1e57fb-1097-4156-810b-7acb9963451a"
+            name="PairDevice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="93d7fe36-c404-4c14-a5bd-87de5516239b"
+                  name="name"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b"
+                      LastKnownName="string"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4383a16a-3301-47af-84e8-48ac98ccc618"
+            name="ForgetDevice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="401b9caa-0611-4746-92cf-0817997e71e6"
+                  name="name"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b"
+                      LastKnownName="string"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ce804935-30fb-485c-b5ec-b76bf28f199c"
+            name="EnablePairingMode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f1b7b7fc-59b2-4f94-b036-49664f84e3e9"
+                  name="device"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3742735-2360-4a93-9f8f-6f14864f0d59"
+                      LastKnownName="BluetoothDevice"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e407f34a-8699-4e3c-a773-fb41b9b0073a"
+        name="List&lt;BluetoothDevices&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0ade2bbd-ed6e-4063-a7a8-736d49314a5e"
+        name="ComputerSettingsViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a718580d-4358-4686-bf5e-2256c3fdefbf"
+            isDerived="false"
+            sourceEndRoleName="ComputerSettingsViewModel"
+            targetEndRoleName="ComputerSettingsService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="18eba832-4469-47b9-9ebe-21d57c5f3b18"
+              LastKnownName="ComputerSettingsService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64a9678d-c274-4071-a392-55f90dcc04ce"
+                  name="ComputerSettingsViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b38f3fe6-cab3-4c2e-b77b-564a08e93967"
+                  name="ComputerSettingsService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="24793d66-215c-4a18-b2d3-a865e31094be"
+            name="ComputerSettingsService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a0fa3b5b-6d2b-416d-8633-7a12b63fba57"
+                LastKnownName="ComputerSettingsService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="49de30e5-1faa-4e69-bb1f-893544785d70"
+            name="ViewNetworkStatsCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a96b0844-126b-4c08-84f5-a999f99cdcc2"
+            name="ViewCPUUtilizationCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="522bf190-9fdf-4f9a-830c-d0928805463e"
+            name="ViewRAMUsageCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a0fa3b5b-6d2b-416d-8633-7a12b63fba57"
+        name="ComputerSettingsService" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="18eba832-4469-47b9-9ebe-21d57c5f3b18"
+        name="ComputerSettingsService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6c706448-d7b6-467f-9afd-099c4bde83c3"
+            isDerived="false"
+            sourceEndRoleName="ComputerSettingsService"
+            targetEndRoleName="SystemStatistic"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9eca08bf-8a14-4ff6-949b-4a8d7cd6d053"
+              LastKnownName="SystemStatistic"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5a8f8fc-2ff9-4141-911f-2c510e325fa3"
+                  name="ComputerSettingsService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2bee740-49ba-48fb-88cb-71e48f211219"
+                  name="SystemStatistic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b24eee97-5874-409c-96c9-7d4ecce1d879"
+            name="SystemStatistics"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e74be8f0-c18a-4155-afa8-518f9922a81c"
+                LastKnownName="List&lt;SystemStatistic&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ee5a0d5a-984b-442e-abcb-972e9c437098"
+            name="GetStat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94d8d9dc-d74a-4cd0-8328-aab6ea29963c"
+                  name="stat"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9eca08bf-8a14-4ff6-949b-4a8d7cd6d053"
+                      LastKnownName="SystemStatistic"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2f549c9-6510-4b68-9973-e9b53eb38fdd"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3e5d5113-d4c1-43dc-9a99-7dcbee0e824b"
+                      LastKnownName="string"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8e27302f-7407-4388-807b-37af64845c73"
+        name="BrowserViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b7a93238-63e3-46d4-9864-90b02f797d3e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ead66e7-323e-411f-895b-9e9b29d34a22"
+              LastKnownName="ApplicationViewModel"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="014baadd-3db3-4440-9c2e-2b107f109935"
+            isDerived="false"
+            sourceEndRoleName="BrowserViewModel"
+            targetEndRoleName="BrowserService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="08b6ae2f-c08d-4936-a04f-1689152b573f"
+              LastKnownName="BrowserService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ff66d49-9429-499e-b2ec-88da94a2106a"
+                  name="BrowserViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8933738a-3f01-44f6-b54c-eb3d4c8aadfa"
+                  name="BrowserService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0b8d288e-b02d-45c3-ac6b-80b655da28e1"
+            name="BrowserService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="08b6ae2f-c08d-4936-a04f-1689152b573f"
+                LastKnownName="BrowserService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0cbb60b1-f3af-4d0a-a5f4-ffccb362d01d"
+            name="NewWindowCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="46c81cfe-0a8d-4605-95c1-b483fb4c8679"
+            name="NewTabCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="376474a4-315c-4903-84d7-bd11594d1de8"
+            name="ReloadCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="55ad43f5-63e8-46a1-b1e3-97f82696f490"
+            name="CloseTabCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="97e35a13-b38f-4067-8365-f09872ad3eaa"
+            name="CloseWindowCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d56e6984-9dbd-4b5e-8963-06aba27428d0"
+            name="GetBrowserHistoryCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d260a371-dd31-4fb7-8ca4-da8ea65a29d6"
+            name="PreviousPageCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="08b6ae2f-c08d-4936-a04f-1689152b573f"
+        name="BrowserService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a92ab2e7-eb11-4713-aa27-b097f30eec95"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b724d489-6d6b-4862-9f6e-ad55727ad866"
+              LastKnownName="ApplicationService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="09c41607-f1e8-4d3e-93ac-6aa42fae3a1e"
+            isDerived="false"
+            sourceEndRoleName="BrowserService"
+            targetEndRoleName="Browser"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0f718ac1-4c9e-4984-a3c8-aa9bd440a715"
+              LastKnownName="Browser"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15d83a35-dd12-48cc-aead-3dd35a12a43f"
+                  name="BrowserService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b432c2a-c213-454b-b026-35bc52a941cf"
+                  name="Browser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4e0e377b-ee00-4245-8752-dd5469cbc738"
+            name="OpenBrowsers"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="485811f1-8cab-4f72-96ab-551c821483bb"
+                LastKnownName="List&lt;Browser&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1428b0aa-63a8-4d34-9f1b-50424d23aeaa"
+            name="OpenNewWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67ce9e15-3a3b-4844-ae41-b33a2f75216c"
+                  name="browser"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0f718ac1-4c9e-4984-a3c8-aa9bd440a715"
+                      LastKnownName="Browser"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bb0e1885-42c8-468d-a8fd-56503ee1d3a7"
+            name="OpenNewTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f223c4f7-5261-4bdd-9381-0e1454d1105c"
+                  name="window"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="99e18cb5-59ff-49e2-a6ff-3eca3dba0706"
+                      LastKnownName="BrowserWindow"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="245b7648-d9c9-48d6-9794-e9a1b87d5525"
+            name="CloseTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dba61331-3d70-4553-824d-5e0570c7768f"
+            name="CloseWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a0465b5-f30b-4c15-b0de-519aa1e0a4fc"
+                  name="window"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="99e18cb5-59ff-49e2-a6ff-3eca3dba0706"
+                      LastKnownName="BrowserWindow"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="70e680b4-fd30-4750-b083-d46e84d3f580"
+            name="ReloadPage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48f383c2-41dd-423c-a337-a456ffc29d5f"
+                  name="tab"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="119b0d93-d54f-4c32-b7c4-b445558f5fe5"
+                      LastKnownName="BrowserTab"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6b5d1bbf-befd-4bd8-86e0-ccded4f5a067"
+            name="PreviousePage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="33dfc76a-4eba-4073-a06b-575d495ea21a"
+                  name="tab"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="119b0d93-d54f-4c32-b7c4-b445558f5fe5"
+                      LastKnownName="BrowserTab"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8e945b4e-ba2b-45b2-86b3-b0461be5a5ca"
+            name="GetBrowserHistory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b8bbad38-e412-4b22-8dad-0804354879b4"
+                  name="browser"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0f718ac1-4c9e-4984-a3c8-aa9bd440a715"
+                      LastKnownName="Browser"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="485811f1-8cab-4f72-96ab-551c821483bb"
+        name="List&lt;Browser&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="070870d3-56a0-46ce-84c5-d18ecf9e84bb"
+        name="Statistics" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bdc392d7-3532-4f93-8735-02c0175d1eba"
+        name="NetworkViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b194fbde-73aa-437b-b752-2abbc74346c7"
+            isDerived="false"
+            sourceEndRoleName="NetworkViewModel"
+            targetEndRoleName="NetworkService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f44f95f8-2603-4cf5-b601-9a8c040fc386"
+              LastKnownName="NetworkService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e69d0d9d-8070-4231-9cd4-268f20f0786a"
+                  name="NetworkViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10369b86-947b-4924-ae44-11bcbb199bda"
+                  name="NetworkService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9b0b9949-f7c4-4ec4-b81b-921069490d80"
+            name="NetworkService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3d026302-3e70-4d20-bc99-4aea9fabf548"
+                LastKnownName="NetworkService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3442b32d-3e18-4c06-8a4a-9cf33eb2a574"
+            name="AvailableNetworks"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e04e04d8-7a79-4096-89c7-cbd3f5c85317"
+                LastKnownName="List&lt;Network&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="74e3431f-3e83-4960-924f-c8c91848e06d"
+            name="CurrentNetwork"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="7125bbad-9eaa-42de-a7c7-d065198f9b69"
+                LastKnownName="Network"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="292e997a-4453-418d-92a2-59ef8161650e"
+            name="ConnectToNetworkCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5dc9efaa-2f44-4ebe-9b83-6c28681698b1"
+            name="ViewAvailableNetworksCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8954b140-d945-4a2d-9070-bb3a34ce8c4a"
+            name="DisconnectFromNetworkCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3d026302-3e70-4d20-bc99-4aea9fabf548"
+        name="NetworkService" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f44f95f8-2603-4cf5-b601-9a8c040fc386"
+        name="NetworkService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="3e5e25b5-2f6e-48ff-b70c-990122a509f4"
+            name="ConnectToNetwork"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d75ed24-c39e-479a-885b-17492c10a32b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7125bbad-9eaa-42de-a7c7-d065198f9b69"
+                      LastKnownName="Network"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="09885d89-9a92-4a44-ab30-6f3007359868"
+            name="SearchForAvailableNetworks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="817770c2-dd45-4693-8a84-6648a0ceef0a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e04e04d8-7a79-4096-89c7-cbd3f5c85317"
+                      LastKnownName="List&lt;Network&gt;"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bc64a0b5-273c-404a-8727-63b757dab390"
+            name="DisconnectFromNetwork"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="89013a34-6858-49ad-b18e-05394f49522f"
+                  name="network"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7125bbad-9eaa-42de-a7c7-d065198f9b69"
+                      LastKnownName="Network"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d27dc98c-07b4-4c5c-b8df-c1480dcc9d7b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb21dfec-930c-4518-8275-d92a82f7e8c2"
+                      LastKnownName="bool"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bb21dfec-930c-4518-8275-d92a82f7e8c2"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="3e20610f-6c2f-4069-a6b2-afe17b17e881"
+        name="NetworkType"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="bdc47f9e-cac4-4acc-b03f-eb7652ab7ee3"
+            name="WIFI" />
+          <enumerationLiteral
+            Id="99d7d4ad-5272-486a-ba07-0f07e206090c"
+            name="LAN" />
+          <enumerationLiteral
+            Id="151954ea-2113-456e-9648-13b8e19a7ea8"
+            name="DSL" />
+          <enumerationLiteral
+            Id="da07f6be-5aa5-48bb-9003-d29f505b4463"
+            name="FIBER" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d7d8d244-fb50-4dc4-82a4-949e065e265c"
+        name="voi" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a96f8559-c90c-4247-aeea-e938e2a36805"
+        name="DisplayViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3107612c-f1f5-4248-9bbe-c725014a87a4"
+            isDerived="false"
+            sourceEndRoleName="DisplayViewModel"
+            targetEndRoleName="DisplayMonitorService"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dfe94778-2a02-4fd8-9b5b-a0c72b5f799c"
+              LastKnownName="DisplayMonitorService"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0621b02-c99a-487b-81fb-53f1bcd16805"
+                  name="DisplayViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21bf381f-10a9-4d9f-8ff4-416f2cc2f8f2"
+                  name="DisplayMonitorService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="04493d4a-14b4-41fb-9dd5-bbb2329603e1"
+            name="ConnectedMonitors"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="fd664e6d-36cd-45a7-b971-201d2ac8b356"
+                LastKnownName="List&lt;Monitor&gt;"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="eaeec24a-3446-4d9c-b12a-e55f53d2d838"
+            name="DisplayMonitorService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c9735103-6084-46f7-9288-84be6308f624"
+                LastKnownName="DisplayMonitorService"
+                LastKnownLocation="Acolyte.DesignModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="acc5275e-712f-42fe-8e72-b3f5e1cb3cb3"
+            name="AdjustBrigtnessCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c87d006a-702f-40ba-8a13-1af46fdf3769"
+            name="AdjustContrastCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0620d2c7-36ca-4dd2-8af3-404d7140bada"
+            name="TurnOffMonitorCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b6733138-30df-468a-a828-8e714ab99572"
+            name="AdjustHueCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c9735103-6084-46f7-9288-84be6308f624"
+        name="DisplayMonitorService" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dfe94778-2a02-4fd8-9b5b-a0c72b5f799c"
+        name="DisplayMonitorService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d94f5b7d-6383-4975-9efa-a33f9b4c1f3d"
+            isDerived="false"
+            sourceEndRoleName="DisplayMonitorService"
+            targetEndRoleName="Monitor"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a8421c44-e860-444d-96cb-e5eec0eb8988"
+              LastKnownName="Monitor"
+              LastKnownLocation="Acolyte.DesignModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb376c13-9daf-4de2-ab85-759ac833b7f7"
+                  name="DisplayMonitorService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d16b128e-dba2-463f-a77e-10467e7e044a"
+                  name="Monitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="558489f5-c725-4407-b509-c16a667c50ca"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e3fae09f-b3c2-4e6d-8c40-3e67755c05b8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="f917ea71-163f-4dd3-9483-16d7c59198fa"
+            name="AdjustBrightness"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7ccbfc03-26bb-43c8-9fbd-ff3a659e521b"
+                  name="level"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="51c2cf67-654a-45d7-8e79-0aa7132f9b7a"
+                      LastKnownName="int"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1b2362a0-4065-4748-b194-b6dae04857f0"
+                  name="monitor"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a8421c44-e860-444d-96cb-e5eec0eb8988"
+                      LastKnownName="Monitor"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1d712307-a70a-4db0-b995-ea3ed52f11dd"
+            name="AdjustContrast"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6603618f-eca9-44ee-8256-92831544a544"
+                  name="level"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="51c2cf67-654a-45d7-8e79-0aa7132f9b7a"
+                      LastKnownName="int"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e03bc6c-a821-4ba2-ba6c-0abbddfa5872"
+                  name="monitor"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a8421c44-e860-444d-96cb-e5eec0eb8988"
+                      LastKnownName="Monitor"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eac50ab6-4a0f-48fd-92fc-1d175ca3b864"
+            name="AdjustHue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27cad3cc-9bf2-433d-81fc-0d54d720756c"
+                  name="level"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="51c2cf67-654a-45d7-8e79-0aa7132f9b7a"
+                      LastKnownName="int"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fa915414-527e-49e7-8a6f-3c31ef7c942f"
+                  name="monitor"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6e9bfdec-2e27-4332-a071-25ec6a1c0a5d"
+                      LastKnownName="monitor"
+                      LastKnownLocation="Acolyte.DesignModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6e9bfdec-2e27-4332-a071-25ec6a1c0a5d"
+        name="monitor" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
