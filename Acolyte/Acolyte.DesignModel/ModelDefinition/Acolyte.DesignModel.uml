@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="ee440c85-e4db-4a7d-92d3-a59a6ee71a91"
   name="Acolyte.DesignModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -8063,7 +8063,7 @@ Disk is a component
     <packageHasNamedElement>
       <class
         Id="0ade2bbd-ed6e-4063-a7a8-736d49314a5e"
-        name="ComputerSettingsViewModel"
+        name="ComputerStatsViewModel"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8120,7 +8120,7 @@ Disk is a component
             isAbstract="false">
             <classMoniker
               Id="18eba832-4469-47b9-9ebe-21d57c5f3b18"
-              LastKnownName="ComputerSettingsService"
+              LastKnownName="ComputerStatsService"
               LastKnownLocation="Acolyte.DesignModel.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -8418,7 +8418,7 @@ Disk is a component
     <packageHasNamedElement>
       <class
         Id="18eba832-4469-47b9-9ebe-21d57c5f3b18"
-        name="ComputerSettingsService"
+        name="ComputerStatsService"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11699,6 +11699,24 @@ Disk is a component
       <undefinedType
         Id="6e9bfdec-2e27-4332-a071-25ec6a1c0a5d"
         name="monitor" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="d42f4589-1b9d-48b4-b056-0fb2575e2e1e"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="7aa4f795-e207-4e90-a3a6-556d9f3d30f8"
+            name="Lifeline1"
+            isActor="false"
+            lifelineDisplayName="Lifeline1" />
+        </lifelines>
+      </interaction>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

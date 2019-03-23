@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="8148eb7a-8385-46a6-871f-181720630135" name="Acolyte" linkedPackageId="e20222aa-82e4-4f79-82f8-61b9e95846b9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="8148eb7a-8385-46a6-871f-181720630135" name="Acolyte" linkedPackageId="e20222aa-82e4-4f79-82f8-61b9e95846b9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="f1e1ce7e-b196-4b52-9a6e-fb9789ac28c8" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="cfaa37df-581b-49b0-9be6-72265899c6b9" />
@@ -3625,7 +3625,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="362a01e4-abfe-41ab-844d-096e49678302" name="ComputerSettingsViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="362a01e4-abfe-41ab-844d-096e49678302" name="ComputerStatsViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
         <appliedStereotypesInternal>
           <stereotypeInstance Id="c63abd58-0422-4a72-8b33-260162c8cbae" name="class" profile="CSharpProfile">
             <elementDefinition Id="e4babdd9-6227-48c3-a347-fffd9d07064f" />
@@ -3666,7 +3666,7 @@
         <elementDefinition Id="0ade2bbd-ed6e-4063-a7a8-736d49314a5e" />
         <targetEnds>
           <association Id="1b3fb71f-17ce-4f0b-a38b-5f109f0c3b1a" isDerived="false" sourceEndRoleName="ComputerSettingsViewModel" targetEndRoleName="ComputerSettingsService" isLeaf="false" isAbstract="false">
-            <classMoniker Id="02222db9-8a81-4afe-82cc-13b44a8a74ab" LastKnownName="ComputerSettingsService" />
+            <classMoniker Id="02222db9-8a81-4afe-82cc-13b44a8a74ab" LastKnownName="ComputerStatsService" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="69c40c27-891b-4c86-9241-8fd40d33f949" name="ComputerSettingsViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -3887,7 +3887,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="02222db9-8a81-4afe-82cc-13b44a8a74ab" name="ComputerSettingsService" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="02222db9-8a81-4afe-82cc-13b44a8a74ab" name="ComputerStatsService" isAbstract="false" isLeaf="false" isActiveClass="false">
         <appliedStereotypesInternal>
           <stereotypeInstance Id="f84929a6-131c-4835-9397-e1d81b469c16" name="class" profile="CSharpProfile">
             <elementDefinition Id="6fecd171-0fd9-43b7-80bd-b8f1bfafa15d" />
